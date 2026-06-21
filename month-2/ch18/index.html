@@ -1,0 +1,1143 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chương 18: Phân tích giá trị biên — Lộ trình QA Engineer</title>
+  <meta name="description" content="Ebook HTML tiếng Việt dạy nghề QA từ con số 0: tư duy, manual testing, agile, và lộ trình sự nghiệp.">
+  <link rel="stylesheet" href="/qa-guide/assets/css/main.css">
+  <link rel="stylesheet" href="/qa-guide/assets/css/feedback.css">
+  <link rel="stylesheet" href="/qa-guide/assets/css/learner.css">
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js" defer></script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Bỏ qua đến nội dung chính</a>
+  <div class="app-shell">
+    <nav class="sidebar" aria-label="Mục lục khóa học">
+  <div class="sidebar__brand">
+    <a href="/qa-guide/">
+      <strong>Lộ trình QA Engineer</strong>
+      <span>Hướng dẫn toàn diện cho người chuyển ngành — 3 tháng</span>
+    </a>
+  </div>
+  <div class="sidebar__progress">
+    <div class="progress-bar"><div class="progress-bar__fill" id="global-progress"></div></div>
+    <span id="progress-text">0% hoàn thành</span>
+  </div>
+  <div class="sidebar__gamify" id="sidebar-gamify">
+    <div class="xp-bar" aria-label="Tiến độ XP">
+      <div class="xp-bar__fill" id="xp-bar-fill"></div>
+    </div>
+    <div class="gamify-meta">
+      <span class="streak-pill" id="gamify-streak"></span>
+      <span class="achievement-badge" id="gamify-level">Lv 1</span>
+      <span class="gamify-xp" id="gamify-xp-text">0 XP</span>
+    </div>
+  </div>
+  <div class="sidebar__learner" id="sidebar-learner" hidden>
+    <span class="sidebar__learner-name" id="learner-display-name"></span>
+    <span class="sidebar__learner-email" id="learner-display-email"></span>
+    <button type="button" class="learner-logout" id="learner-logout">Đăng xuất</button>
+  </div>
+  <ul class="sidebar__links">
+    <li><a href="/qa-guide/search/">🔍 Tìm kiếm</a></li>
+    <li><a href="/qa-guide/dashboard/">📊 Bảng tiến độ</a></li>
+    <li><a href="/qa-guide/appendices/vietnam-job-market/"><strong>🇻🇳 VN Job Market</strong></a></li>
+    <li><a href="/qa-guide/appendices/practicing-qa/"><strong>🛠 Practicing QA</strong></a></li>
+    <li><a href="/qa-guide/appendices/advanced-qa/"><strong>📘 Part 2 Advanced</strong></a></li>
+    <li><a href="/qa-guide/appendices/glossary/">📖 Glossary</a></li>
+    <li><a href="/qa-guide/appendices/testing-mindset/">🧠 Tư duy QA</a></li>
+    <li><a href="/qa-guide/appendices/schedule/">📅 Lịch 12 tuần</a></li>
+  </ul>
+  
+  <details class="sidebar__month" open>
+    <summary>Tháng 1 — Nền tảng &amp; Tư duy QA</summary>
+    <ul>
+      
+      
+      <li>
+        <a href="/qa-guide/month-1/ch01/" data-chapter-link="1" class="chapter-link">
+          <span class="chapter-num">1.</span> Chào mừng đến với QA
+        </a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/qa-guide/month-1/ch02/" data-chapter-link="2" class="chapter-link">
+          <span class="chapter-num">2.</span> Phần mềm là gì
+        </a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/qa-guide/month-1/ch03/" data-chapter-link="3" class="chapter-link">
+          <span class="chapter-num">3.</span> Vòng đời phần mềm
+        </a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/qa-guide/month-1/ch04/" data-chapter-link="4" class="chapter-link">
+          <span class="chapter-num">4.</span> Frontend Backend Database
+        </a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/qa-guide/month-1/ch05/" data-chapter-link="5" class="chapter-link">
+          <span class="chapter-num">5.</span> Vai trò trong team
+        </a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/qa-guide/month-1/ch06/" data-chapter-link="6" class="chapter-link">
+          <span class="chapter-num">6.</span> Sứ mệnh của QA
+        </a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/qa-guide/month-1/ch07/" data-chapter-link="7" class="chapter-link">
+          <span class="chapter-num">7.</span> Manual và Automation
+        </a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/qa-guide/month-1/ch08/" data-chapter-link="8" class="chapter-link">
+          <span class="chapter-num">8.</span> Quality advocacy
+        </a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/qa-guide/month-1/ch09/" data-chapter-link="9" class="chapter-link">
+          <span class="chapter-num">9.</span> User empathy
+        </a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/qa-guide/month-1/ch10/" data-chapter-link="10" class="chapter-link">
+          <span class="chapter-num">10.</span> Collaboration
+        </a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/qa-guide/month-1/ch11/" data-chapter-link="11" class="chapter-link">
+          <span class="chapter-num">11.</span> Thoroughness vs Speed
+        </a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/qa-guide/month-1/ch12/" data-chapter-link="12" class="chapter-link">
+          <span class="chapter-num">12.</span> Ownership
+        </a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/qa-guide/month-1/ch13/" data-chapter-link="13" class="chapter-link">
+          <span class="chapter-num">13.</span> Agile Scrum
+        </a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/qa-guide/month-1/ch14/" data-chapter-link="14" class="chapter-link">
+          <span class="chapter-num">14.</span> Scrum ceremonies
+        </a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/qa-guide/month-1/ch15/" data-chapter-link="15" class="chapter-link">
+          <span class="chapter-num">15.</span> User stories
+        </a>
+      </li>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </ul>
+  </details>
+  
+  <details class="sidebar__month" open>
+    <summary>Tháng 2 — QA chuyên nghiệp (test + Jira + API + SQL)</summary>
+    <ul>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="/qa-guide/month-2/ch16/" data-chapter-link="16" class="chapter-link">
+          <span class="chapter-num">16.</span> Test case nền tảng
+        </a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/qa-guide/month-2/ch17/" data-chapter-link="17" class="chapter-link">
+          <span class="chapter-num">17.</span> Equivalence partitioning
+        </a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/qa-guide/month-2/ch18/" data-chapter-link="18" class="chapter-link">
+          <span class="chapter-num">18.</span> Boundary value analysis
+        </a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/qa-guide/month-2/ch19/" data-chapter-link="19" class="chapter-link">
+          <span class="chapter-num">19.</span> Decision table testing
+        </a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/qa-guide/month-2/ch20/" data-chapter-link="20" class="chapter-link">
+          <span class="chapter-num">20.</span> State transition testing
+        </a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/qa-guide/month-2/ch21/" data-chapter-link="21" class="chapter-link">
+          <span class="chapter-num">21.</span> Functional E2E với Sauce Demo
+        </a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/qa-guide/month-2/ch22/" data-chapter-link="22" class="chapter-link">
+          <span class="chapter-num">22.</span> Exploratory testing
+        </a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/qa-guide/month-2/ch23/" data-chapter-link="23" class="chapter-link">
+          <span class="chapter-num">23.</span> Bug lifecycle
+        </a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/qa-guide/month-2/ch24/" data-chapter-link="24" class="chapter-link">
+          <span class="chapter-num">24.</span> Bug report chuyên nghiệp
+        </a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/qa-guide/month-2/ch25/" data-chapter-link="25" class="chapter-link">
+          <span class="chapter-num">25.</span> Severity vs Priority
+        </a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/qa-guide/month-2/ch26/" data-chapter-link="26" class="chapter-link">
+          <span class="chapter-num">26.</span> Test documentation
+        </a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/qa-guide/month-2/ch27/" data-chapter-link="27" class="chapter-link">
+          <span class="chapter-num">27.</span> Regression testing
+        </a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/qa-guide/month-2/ch28/" data-chapter-link="28" class="chapter-link">
+          <span class="chapter-num">28.</span> Smoke và sanity
+        </a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/qa-guide/month-2/ch29/" data-chapter-link="29" class="chapter-link">
+          <span class="chapter-num">29.</span> Test environment
+        </a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/qa-guide/month-2/ch30/" data-chapter-link="30" class="chapter-link">
+          <span class="chapter-num">30.</span> Test reporting
+        </a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/qa-guide/month-2/ch31/" data-chapter-link="31" class="chapter-link">
+          <span class="chapter-num">31.</span> Capstone test plan
+        </a>
+      </li>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </ul>
+  </details>
+  
+  <details class="sidebar__month" open>
+    <summary>Tháng 3 — Sẵn sàng thị trường (Git + Playwright + portfolio)</summary>
+    <ul>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="/qa-guide/month-3/ch32/" data-chapter-link="32" class="chapter-link">
+          <span class="chapter-num">32.</span> Performance intro
+        </a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/qa-guide/month-3/ch33/" data-chapter-link="33" class="chapter-link">
+          <span class="chapter-num">33.</span> Security &amp; OWASP
+        </a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/qa-guide/month-3/ch34/" data-chapter-link="34" class="chapter-link">
+          <span class="chapter-num">34.</span> QA trong CI/CD
+        </a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/qa-guide/month-3/ch35/" data-chapter-link="35" class="chapter-link">
+          <span class="chapter-num">35.</span> Automation concepts
+        </a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/qa-guide/month-3/ch36/" data-chapter-link="36" class="chapter-link">
+          <span class="chapter-num">36.</span> API concept
+        </a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/qa-guide/month-3/ch37/" data-chapter-link="37" class="chapter-link">
+          <span class="chapter-num">37.</span> Data &amp; privacy
+        </a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/qa-guide/month-3/ch38/" data-chapter-link="38" class="chapter-link">
+          <span class="chapter-num">38.</span> Soft skills QA
+        </a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/qa-guide/month-3/ch39/" data-chapter-link="39" class="chapter-link">
+          <span class="chapter-num">39.</span> QA metrics
+        </a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/qa-guide/month-3/ch40/" data-chapter-link="40" class="chapter-link">
+          <span class="chapter-num">40.</span> Junior QA 90 days
+        </a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/qa-guide/month-3/ch41/" data-chapter-link="41" class="chapter-link">
+          <span class="chapter-num">41.</span> Mid/Senior QA
+        </a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/qa-guide/month-3/ch42/" data-chapter-link="42" class="chapter-link">
+          <span class="chapter-num">42.</span> Lead/Manager path
+        </a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/qa-guide/month-3/ch43/" data-chapter-link="43" class="chapter-link">
+          <span class="chapter-num">43.</span> Chuyên môn hóa QA
+        </a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/qa-guide/month-3/ch44/" data-chapter-link="44" class="chapter-link">
+          <span class="chapter-num">44.</span> Portfolio &amp; interview
+        </a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/qa-guide/month-3/ch45/" data-chapter-link="45" class="chapter-link">
+          <span class="chapter-num">45.</span> Capstone cuối khóa
+        </a>
+      </li>
+      
+      
+    </ul>
+  </details>
+  
+  <details class="sidebar__month" open>
+    <summary>Tháng 4 — Interview &amp; ứng tuyển (phụ lục)</summary>
+    <ul>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </ul>
+  </details>
+  
+  <details class="sidebar__month">
+    <summary>Phụ lục</summary>
+    <ul>
+      
+      <li><a href="/qa-guide/appendices/testing-mindset/">Tư duy kiểm thử chuyên nghiệp</a></li>
+      
+      <li><a href="/qa-guide/appendices/capstone-sample/">Mẫu capstone — Sauce Demo</a></li>
+      
+      <li><a href="/qa-guide/appendices/vietnam-job-market/">VN Job Market — Lộ trình 4 tháng</a></li>
+      
+      <li><a href="/qa-guide/appendices/glossary/">Phụ lục A: Glossary EN↔VI</a></li>
+      
+      <li><a href="/qa-guide/appendices/practicing-qa/">Practicing QA — Từ hiểu sang làm được</a></li>
+      
+      <li><a href="/qa-guide/appendices/templates/">Phụ lục B: Mẫu tài liệu QA</a></li>
+      
+      <li><a href="/qa-guide/appendices/advanced-qa/">QA Guide Advanced — Part 2</a></li>
+      
+      <li><a href="/qa-guide/appendices/references/">Phụ lục C: Tài liệu tham khảo tiếng Việt</a></li>
+      
+      <li><a href="/qa-guide/appendices/schedule/">Phụ lục D: Lịch học 16 tuần</a></li>
+      
+      <li><a href="/qa-guide/appendices/jira-for-qa/">Jira cho QA</a></li>
+      
+      <li><a href="/qa-guide/appendices/api-testing-handson/">API testing hands-on</a></li>
+      
+      <li><a href="/qa-guide/appendices/sql-for-qa/">SQL cho QA</a></li>
+      
+      <li><a href="/qa-guide/appendices/browser-devtools/">Browser DevTools cho QA</a></li>
+      
+      <li><a href="/qa-guide/appendices/qa-english/">QA English vocabulary</a></li>
+      
+      <li><a href="/qa-guide/appendices/git-for-qa/">Git cho QA</a></li>
+      
+      <li><a href="/qa-guide/appendices/playwright-intro/">Playwright intro</a></li>
+      
+      <li><a href="/qa-guide/appendices/portfolio-four-projects/">Portfolio 4 dự án</a></li>
+      
+      <li><a href="/qa-guide/appendices/interview-track/">Interview track QA</a></li>
+      
+      <li><a href="/qa-guide/appendices/career-vietnam/">Career QA tại Việt Nam</a></li>
+      
+      <li><a href="/qa-guide/appendices/day-one-workflow/">Workflow ngày 1 — Requirement đến Bug report</a></li>
+      
+      <li><a href="/qa-guide/appendices/requirement-analysis-lab/">Lab phân tích requirement</a></li>
+      
+      <li><a href="/qa-guide/appendices/risk-based-scenarios/">Risk-based testing — Scenarios thực tế</a></li>
+      
+      <li><a href="/qa-guide/appendices/exploratory-thinking/">Tư duy exploratory — Tester giàu kinh nghiệm nghĩ gì?</a></li>
+      
+      <li><a href="/qa-guide/appendices/buggy-apps-playground/">Buggy apps — Sân luyện có chủ đích</a></li>
+      
+      <li><a href="/qa-guide/appendices/production-escape-stories/">Production escapes — Vì sao bug lọt?</a></li>
+      
+      <li><a href="/qa-guide/appendices/economics-of-quality/">Economics of Quality — Tại sao trả tiền cho QA?</a></li>
+      
+      <li><a href="/qa-guide/appendices/requirements-in-the-wild/">Requirements in the wild — Đọc spec thực tế</a></li>
+      
+      <li><a href="/qa-guide/appendices/conflict-management-qa/">Conflict management — QA và stakeholder</a></li>
+      
+      <li><a href="/qa-guide/appendices/risk-release-decisions/">Risk &amp; release decisions — 2 giờ trước ship</a></li>
+      
+      <li><a href="/qa-guide/appendices/product-thinking-qa/">Product thinking cho QA</a></li>
+      
+      <li><a href="/qa-guide/appendices/workplace-war-stories/">Workplace war stories — Tình huống thực chiến</a></li>
+      
+    </ul>
+  </details>
+</nav>
+
+    <div class="main-area">
+      <header class="top-bar">
+        <button type="button" class="menu-toggle" aria-label="Mở menu" aria-expanded="false">☰</button>
+        <div class="top-bar__title">Lộ trình QA Engineer</div>
+        <div class="top-bar__actions">
+          <button type="button" class="theme-toggle" aria-label="Đổi giao diện sáng/tối">🌓</button>
+          <button type="button" class="print-toggle" aria-label="In trang" onclick="window.print()">🖨</button>
+        </div>
+      </header>
+      <main id="main-content" class="content">
+        <article class="chapter" data-chapter-id="18" data-module="month-2">
+  <header class="chapter-header">
+    <p class="chapter-meta">
+      <span class="badge">Tháng 2 — QA chuyên nghiệp</span>
+      <span class="badge badge--effort">⏱ 3h</span>
+      
+      
+      <span class="badge badge--mindset">quality_advocacy</span>
+      
+      <span class="badge badge--mindset">user_empathy</span>
+      
+      <span class="badge badge--mindset">team_collab</span>
+      
+      
+    </p>
+    <h1>Chương 18: Phân tích giá trị biên</h1>
+    
+    <p class="prerequisites">Yêu cầu: Chương 17</p>
+    
+  </header>
+
+  
+  <aside class="eli5-box" aria-label="Tóm tắt ELI5">
+    <h2>ELI5 — Tóm tắt 60 giây</h2>
+    <blockquote>Lỗi thường xuất hiện ở rìa của luật: vừa chạm giới hạn, vừa vượt giới hạn hoặc thiếu một chút so với giới hạn.</blockquote>
+  </aside>
+  
+
+  <div class="chapter-body">
+    <div class="qa-journey">
+<p class="qa-journey__label">Hành trình · Chương 18</p>
+<p>Tháng 2 · **<span class="glossary-term" data-term="boundary value analysis" tabindex="0"><span class="glossary-term" data-term="boundary value" tabindex="0">Boundary value</span> analysis</span>** — kỹ thuật này chỉ có giá khi giúp team **quyết định <span class="glossary-term" data-term="release" tabindex="0">release</span>**, không phải làm đẹp tài liệu.</p>
+</div>
+<details class="qa-box qa-box--challenge">
+<summary>👉 Quick Challenge</summary>
+<p class="qa-prompt">Range [1,99]: giá trị nào hay gây <span class="glossary-term" data-term="off-by-one" tabindex="0">off-by-one</span>?</p>
+<div class="qa-reveal"><strong>✅ Gợi ý:</strong> 0, 1, 2, 98, 99, 100 — min-1, min, min+1, max-1, max, max+1.</div>
+</details>
+<div class="qa-box qa-box--think">
+<strong>🧠 Think Like a <span class="glossary-term" data-term="qa" tabindex="0">QA</span></strong>
+<p>Field quantity trên Sauce Demo — bạn đã test 0 và 100 chưa?</p>
+</div>
+<h2>Mục tiêu học</h2>
+<ul>
+<li>Nắm vững bản chất của <span class="glossary-term" data-term="boundary value analysis" tabindex="0"><span class="glossary-term" data-term="boundary value" tabindex="0">boundary value</span> analysis</span> trong quy trình <span class="glossary-term" data-term="qa" tabindex="0">QA</span>.</li>
+<li>Biết cách áp dụng vào sản phẩm thật thay vì chỉ học lý thuyết.</li>
+<li>Viết được đầu ra kiểm thử giúp team ra quyết định <span class="glossary-term" data-term="release" tabindex="0">release</span> rõ ràng.</li>
+</ul>
+<blockquote>
+<p><strong>Đọc thêm:</strong> <a href="/qa-guide/appendices/testing-mindset/">Tư duy kiểm thử chuyên nghiệp</a> — khung <span class="glossary-term" data-term="risk-based testing" tabindex="0">risk-based <span class="glossary-term" data-term="testing" tabindex="0">testing</span></span>, chọn kỹ thuật đúng lúc, và mẫu ghi chép test dùng chung Tháng 2–3.</p>
+</blockquote>
+<h3>Phân tích trọng tâm: Chương 18: Phân tích giá trị biên</h3>
+<p><span class="glossary-term" data-term="boundary value analysis" tabindex="0"><span class="glossary-term" data-term="boundary value" tabindex="0">Boundary Value</span> Analysis</span> bổ sung trực tiếp cho <span class="glossary-term" data-term="equivalence partitioning" tabindex="0">Equivalence Partitioning</span>. Nếu partition giúp chọn đại diện vùng, thì BVA tập trung vào mép vùng nơi <span class="glossary-term" data-term="bug" tabindex="0">bug</span> xuất hiện nhiều nhất. Với khoảng [min, max], bộ giá trị cơ bản là min-1, min, min+1, max-1, max, max+1. Khi hệ thống có nhiều điều kiện phụ (định dạng, độ dài, kiểu dữ liệu), bạn cần kết hợp boundary theo từng điều kiện để tránh bỏ sót. Trong sản phẩm tài chính hoặc dữ liệu nhạy cảm, <span class="glossary-term" data-term="bug" tabindex="0">bug</span> ở biên có thể dẫn đến tính toán sai số, từ chối giao dịch hợp lệ, hoặc chấp nhận dữ liệu không hợp lệ.</p>
+<h3>Khung quyết định — <span class="glossary-term" data-term="boundary value analysis" tabindex="0"><span class="glossary-term" data-term="boundary value" tabindex="0">Boundary value</span> analysis</span></h3>
+<p><strong>Khi nào BVA bắt buộc?</strong> Field số, tiền, quantity, độ dài chuỗi.
+<strong><span class="glossary-term" data-term="trade-off" tabindex="0">Trade-off</span>:</strong> 6 giá trị biên/field — ưu tiên field payment/auth trước cosmetic.
+<strong>Anti-pattern:</strong> Chỉ test min và max, bỏ min+1/max-1.</p>
+<h2>Bài tập áp dụng</h2>
+<p>Với trường số lượng sản phẩm cho phép 1-99, hãy viết test cho toàn bộ điểm biên chuẩn BVA. Mở rộng thêm cho trường password độ dài 8-32 ký tự và so sánh lỗi nào dễ bỏ sót nếu chỉ test giá trị giữa.</p>
+<h3>Sơ đồ 1</h3>
+<div class="mermaid">
+flowchart LR
+  A[min-1] --> B[min]
+  B --> C[min+1]
+  C --> D[...]
+  D --> E[max-1]
+  E --> F[max]
+  F --> G[max+1]
+</div>
+<h3>Sơ đồ 2</h3>
+<div class="mermaid">
+stateDiagram-v2
+  [*] --> UnderMin
+  UnderMin --> InRange : +1
+  InRange --> OverMax : exceed
+  OverMax --> InRange : adjust
+</div>
+<h3>Thuật ngữ cần nắm</h3>
+<p><span class="glossary-term" data-term="boundary value" tabindex="0">boundary value</span>, <span class="glossary-term" data-term="minimum" tabindex="0">minimum</span>, <span class="glossary-term" data-term="maximum" tabindex="0">maximum</span>, <span class="glossary-term" data-term="off-by-one" tabindex="0">off-by-one</span>, <span class="glossary-term" data-term="range validation" tabindex="0">range validation</span>, <span class="glossary-term" data-term="edge case" tabindex="0">edge case</span></p>
+<p>Khi gặp các thuật ngữ trên trong <span class="glossary-term" data-term="user story" tabindex="0">user story</span>, <span class="glossary-term" data-term="bug" tabindex="0">bug</span> <span class="glossary-term" data-term="ticket" tabindex="0">ticket</span>, hoặc báo cáo test, bạn nên giữ nguyên tiếng Anh để đồng bộ với team. Chỉ dịch nghĩa khi cần giải thích cho người mới.</p>
+<h2><span class="glossary-term" data-term="checklist" tabindex="0">Checklist</span> tự đánh giá</h2>
+<ul>
+<li>Tôi đã xác định phạm vi test và rủi ro chính trước khi thực thi.</li>
+<li>Tôi có thể giải thích vì sao chọn kỹ thuật này thay vì kỹ thuật khác.</li>
+<li>Tôi ghi rõ dữ liệu test, môi trường test, và điều kiện tiền đề.</li>
+<li>Kết quả test của tôi có thể được tái lập bởi người khác trong team.</li>
+<li>Tôi đưa ra khuyến nghị hành động (go / no-go / cần thêm test) dựa trên dữ liệu.</li>
+</ul>
+<h2>Tổng kết</h2>
+<p>Sau chương này, bạn không chỉ nhớ định nghĩa mà còn biết dùng <span class="glossary-term" data-term="boundary value analysis" tabindex="0"><span class="glossary-term" data-term="boundary value" tabindex="0">boundary value</span> analysis</span> như một công cụ ra quyết định chất lượng. Mục tiêu của tháng 2 là tạo nền thực chiến: test có chủ đích, báo cáo có bằng chứng, và phối hợp có trách nhiệm.</p>
+<h2>Checkpoint — Tự kiểm tra nhanh</h2>
+<details class="checkpoint-box">
+<summary>Câu 1: 🧩 Quick Challenge: Range [1,99]: giá trị nào hay gây <span class="glossary-term" data-term="off-by-one" tabindex="0">off-by-one</span>?</summary>
+<p class="checkpoint-hint">✅ 0, 1, 2, 98, 99, 100 — min-1, min, min+1, max-1, max, max+1.</p>
+</details>
+<details class="checkpoint-box">
+<summary>Câu 2: 🧠 Think Like a <span class="glossary-term" data-term="qa" tabindex="0">QA</span>: Field quantity trên Sauce Demo — bạn đã test 0 và 100 chưa?</summary>
+<p class="checkpoint-hint">Ghi câu trả lời 3–5 dòng hoặc <span class="glossary-term" data-term="expected" tabindex="0">Expected</span>/<span class="glossary-term" data-term="actual" tabindex="0">Actual</span> có <span class="glossary-term" data-term="evidence" tabindex="0">evidence</span> trên app thật.</p>
+</details>
+<details class="checkpoint-box">
+<summary>Câu 3: ⚠️ Common Trap: "Chỉ test min và max" — bạn tránh được chưa?</summary>
+<p class="checkpoint-hint"><span class="glossary-term" data-term="off-by-one" tabindex="0">Off-by-one</span> thường ở min+1 và max-1 — bỏ sót <span class="glossary-term" data-term="bug" tabindex="0">bug</span> phổ biến.</p>
+</details>
+<h2>Ví dụ làm mẫu</h2>
+<h3>BVA — quantity [1,99]</h3>
+<table>
+<thead>
+<tr>
+<th>Giá trị</th>
+<th>Loại</th>
+<th><span class="glossary-term" data-term="expected" tabindex="0">Expected</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>min-1</td>
+<td>Reject</td>
+</tr>
+<tr>
+<td>1</td>
+<td>min</td>
+<td>Accept</td>
+</tr>
+<tr>
+<td>2</td>
+<td>min+1</td>
+<td>Accept</td>
+</tr>
+<tr>
+<td>98</td>
+<td>max-1</td>
+<td>Accept</td>
+</tr>
+<tr>
+<td>99</td>
+<td>max</td>
+<td>Accept</td>
+</tr>
+<tr>
+<td>100</td>
+<td>max+1</td>
+<td>Reject</td>
+</tr>
+</tbody>
+</table>
+<h2>Minh họa</h2>
+<figure class="svg-illustration" data-svg="equivalence-partition">
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" role="img" aria-label="Equivalence partition">
+  <rect width="400" height="200" rx="12" fill="var(--bg-elevated)" stroke="var(--border)"/>
+  <text x="200" y="24" text-anchor="middle" font-size="14" font-weight="600" fill="var(--text)">Equivalence Partition</text>
+  <rect x="40" y="50" width="100" height="100" rx="6" fill="var(--warning-soft)" stroke="var(--warning)"/>
+  <rect x="150" y="50" width="100" height="100" rx="6" fill="var(--success-soft)" stroke="var(--success)"/>
+  <rect x="260" y="50" width="100" height="100" rx="6" fill="var(--warning-soft)" stroke="var(--warning)"/>
+  <text x="90" y="105" text-anchor="middle" font-size="11" fill="var(--text)">Invalid</text>
+  <text x="200" y="105" text-anchor="middle" font-size="11" fill="var(--text)">Valid</text>
+  <text x="310" y="105" text-anchor="middle" font-size="11" fill="var(--text)">Invalid</text>
+  <text x="200" y="175" text-anchor="middle" font-size="10" fill="var(--text-muted)">One representative value per partition</text>
+</svg>
+<figcaption>Phân vùng <span class="glossary-term" data-term="input" tabindex="0">input</span> hợp lệ / không hợp lệ.</figcaption>
+</figure>
+<figure class="svg-illustration" data-svg="state-machine">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 220" role="img" aria-label="State machine">
+  <rect width="400" height="220" rx="12" fill="var(--bg-elevated)" stroke="var(--border)"/>
+  <text x="200" y="24" text-anchor="middle" font-size="14" font-weight="600" fill="var(--text)">State Transition</text>
+  <circle cx="80" cy="110" r="28" fill="var(--accent-soft)" stroke="var(--accent)"/>
+  <text x="80" y="114" text-anchor="middle" font-size="10" fill="var(--text)">A</text>
+  <circle cx="200" cy="110" r="28" fill="var(--accent-soft)" stroke="var(--accent)"/>
+  <text x="200" y="114" text-anchor="middle" font-size="10" fill="var(--text)">B</text>
+  <circle cx="320" cy="110" r="28" fill="var(--success-soft)" stroke="var(--success)"/>
+  <text x="320" y="114" text-anchor="middle" font-size="10" fill="var(--text)">C</text>
+  <path d="M108 110 H172" stroke="var(--text-muted)" marker-end="url(#arr)"/>
+  <path d="M228 110 H292" stroke="var(--text-muted)"/>
+  <defs><marker id="arr" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6" fill="var(--text-muted)"/></marker></defs>
+</svg>
+<figcaption>Chuyển trạng thái hệ thống khi test.</figcaption>
+</figure>
+<div class="exercise-box" data-chapter-id="18">
+<h3>Bài tập thực hành</h3>
+<p><strong>Site:</strong> <a href="https://www.saucedemo.com">https://www.saucedemo.com</a></p>
+<ul class="exercise-checklist">
+<li><label><input type="checkbox"> Áp dụng "<span class="glossary-term" data-term="boundary value analysis" tabindex="0"><span class="glossary-term" data-term="boundary value" tabindex="0">Boundary value</span> analysis</span>": 3 <span class="glossary-term" data-term="observation" tabindex="0">observation</span> có <span class="glossary-term" data-term="evidence" tabindex="0">evidence</span>.</label></li>
+<li><label><input type="checkbox"> 1 <span class="glossary-term" data-term="bug" tabindex="0">bug</span> report hoặc <span class="glossary-term" data-term="quality" tabindex="0">quality</span> note (steps, <span class="glossary-term" data-term="expected" tabindex="0">expected</span>, <span class="glossary-term" data-term="actual" tabindex="0">actual</span>, <span class="glossary-term" data-term="impact" tabindex="0">impact</span>).</label></li>
+</ul>
+<p><strong><span class="glossary-term" data-term="rubric" tabindex="0">Rubric</span>:</strong> Có lý do ưu tiên, minh chứng, bài học rút ra.</p>
+</div>
+<h2>Flashcard — Thuật ngữ chương này</h2>
+<div class="flashcard" tabindex="0">
+<div class="flashcard-front">Thuật ngữ: <span class="glossary-term" data-term="boundary value" tabindex="0">boundary value</span></div>
+<div class="flashcard-back">Giá trị biên — <span class="glossary-term" data-term="boundary value" tabindex="0">boundary value</span></div>
+</div>
+<div class="flashcard" tabindex="0">
+<div class="flashcard-front">Thuật ngữ: <span class="glossary-term" data-term="minimum" tabindex="0">minimum</span></div>
+<div class="flashcard-back">Giá trị tối thiểu — <span class="glossary-term" data-term="minimum" tabindex="0">minimum</span></div>
+</div>
+<div class="flashcard" tabindex="0">
+<div class="flashcard-front">Thuật ngữ: <span class="glossary-term" data-term="maximum" tabindex="0">maximum</span></div>
+<div class="flashcard-back">Giá trị tối đa — <span class="glossary-term" data-term="maximum" tabindex="0">maximum</span></div>
+</div>
+<h2>Tóm tắt &amp; Thuật ngữ</h2>
+<table>
+<thead>
+<tr>
+<th>English</th>
+<th>Tiếng Việt</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="glossary-term" data-term="boundary value" tabindex="0">boundary value</span></td>
+<td>Giá trị biên</td>
+</tr>
+<tr>
+<td><span class="glossary-term" data-term="minimum" tabindex="0">minimum</span></td>
+<td>Giá trị tối thiểu</td>
+</tr>
+<tr>
+<td><span class="glossary-term" data-term="maximum" tabindex="0">maximum</span></td>
+<td>Giá trị tối đa</td>
+</tr>
+<tr>
+<td><span class="glossary-term" data-term="off-by-one" tabindex="0">off-by-one</span></td>
+<td>Lệch một</td>
+</tr>
+<tr>
+<td><span class="glossary-term" data-term="range validation" tabindex="0">range <span class="glossary-term" data-term="validation" tabindex="0">validation</span></span></td>
+<td><span class="glossary-term" data-term="validate" tabindex="0">Validate</span> khoảng</td>
+</tr>
+<tr>
+<td><span class="glossary-term" data-term="edge case" tabindex="0">edge case</span></td>
+<td>Trường hợp biên</td>
+</tr>
+</tbody>
+</table>
+
+  </div>
+
+  
+  <section class="quiz-section" data-quiz='[{"question":"Bộ giá trị biên kinh điển cho khoảng [1, 99] là gì?","options":["1, 50, 99","0, 1, 2, 98, 99, 100","1 đến 99","10, 20, 30"],"answer":1,"explanation":"BVA kiểm tra sát biên và ngay ngoài biên."},{"question":"Bug off-by-one thường liên quan đến gì?","options":["Lỗi chính tả","Sai lệch +1/-1 ở logic biên","Lỗi mạng","Lỗi UI màu sắc"],"answer":1,"explanation":"Off-by-one là lỗi xử lý sai tại mép giới hạn."},{"question":"BVA thường kết hợp tốt nhất với kỹ thuật nào?","options":["Exploratory random","Equivalence Partitioning","Smoke test","A/B testing"],"answer":1,"explanation":"Hai kỹ thuật bổ trợ trực tiếp cho nhau trong thiết kế dữ liệu test."}]'>
+    <h2>Tự kiểm tra (Quiz)</h2>
+    <div class="quiz-container"></div>
+    <button type="button" class="btn btn--primary quiz-submit">Nộp bài</button>
+    <div class="quiz-result" hidden></div>
+  </section>
+  
+
+  <footer class="chapter-footer">
+    <button type="button" class="btn btn--complete mark-complete" data-chapter="18">
+      ✓ Đánh dấu hoàn thành
+    </button>
+    <nav class="chapter-nav">
+      
+      
+      <a href="/qa-guide/month-2/ch17/" class="nav-prev">← Chương 17: Phân vùng tương đương</a>
+      <a href="/qa-guide/month-2/ch19/" class="nav-next">Chương 19: Kiểm thử theo bảng quyết định →</a>
+    </nav>
+  </footer>
+</article>
+
+      </main>
+      <footer class="site-footer">
+        <p>TechBank Software · Hướng dẫn toàn diện cho người chuyển ngành — 3 tháng</p>
+        <p class="site-footer__hint">Có thắc mắc? Hover dòng bài học → icon 💬 để hỏi.</p>
+      </footer>
+    </div>
+  </div>
+  <dialog id="learner-welcome-dialog" class="learner-welcome-dialog" aria-labelledby="learner-welcome-title">
+  <form id="learner-welcome-form" class="learner-welcome-dialog__inner">
+    <header class="learner-welcome-dialog__header">
+      <h2 id="learner-welcome-title">Chào mừng đến Lộ trình QA</h2>
+    </header>
+    <p class="learner-welcome-dialog__intro">Nhập tên và email để lưu tiến độ học trên trình duyệt này và gửi câu hỏi khi cần.</p>
+    <div class="learner-welcome-dialog__body">
+      <label class="learner-welcome-dialog__label" for="learner-name">Họ tên</label>
+      <input
+        type="text"
+        id="learner-name"
+        name="name"
+        required
+        minlength="2"
+        maxlength="80"
+        autocomplete="name"
+        placeholder="vd: Nguyễn Văn A"
+      />
+      <label class="learner-welcome-dialog__label" for="learner-email">Email</label>
+      <input
+        type="email"
+        id="learner-email"
+        name="email"
+        required
+        autocomplete="email"
+        placeholder="vd: ten@gmail.com"
+      />
+      <p id="learner-welcome-error" class="learner-welcome-error" role="alert" hidden></p>
+    </div>
+    <footer class="learner-welcome-dialog__footer">
+      <button type="submit" class="btn btn--primary btn--block" id="learner-welcome-submit">Bắt đầu học</button>
+    </footer>
+  </form>
+</dialog>
+
+  <dialog id="feedback-dialog" class="feedback-dialog" aria-labelledby="feedback-dialog-title">
+  <form id="feedback-form" method="dialog" class="feedback-dialog__inner">
+    <header class="feedback-dialog__header">
+      <h2 id="feedback-dialog-title">Đặt câu hỏi</h2>
+      <button type="button" class="feedback-dialog__close" data-feedback-close aria-label="Đóng">×</button>
+    </header>
+    <div class="feedback-dialog__body">
+      <p class="feedback-dialog__meta">
+        <span class="feedback-dialog__label">Đoạn bạn đang đọc</span>
+        <code id="feedback-line-id" class="feedback-line-id"></code>
+      </p>
+      <blockquote id="feedback-line-preview" class="feedback-line-preview"></blockquote>
+      <p id="feedback-sender" class="feedback-sender" hidden></p>
+      <label class="feedback-dialog__label" for="feedback-question">Câu hỏi</label>
+      <textarea
+        id="feedback-question"
+        name="question"
+        rows="4"
+        required
+        maxlength="2000"
+        placeholder="Viết câu hỏi liên quan đến đoạn này…"
+      ></textarea>
+      <p id="feedback-status" class="feedback-status" role="status" hidden></p>
+    </div>
+    <footer class="feedback-dialog__footer">
+      <button type="button" class="btn" data-feedback-close>Đóng</button>
+      <button type="submit" class="btn btn--primary" id="feedback-submit">Gửi câu hỏi</button>
+    </footer>
+  </form>
+</dialog>
+
+  <div id="glossary-popover" class="glossary-popover" role="tooltip" hidden></div>
+  <script>
+    window.SITE_CONFIG = {
+      baseUrl: "/qa-guide/",
+      glossary: {"404":{"en":"404 Not Found","vi":"Không tìm thấy","note":"HTTP status: trang/resource không tồn tại"},"500":{"en":"500 Internal Server Error","vi":"Lỗi server","note":"HTTP status: lỗi phía backend"},"qa":{"en":"Quality Assurance","vi":"Đảm bảo chất lượng","note":"Toàn bộ hoạt động đảm bảo sản phẩm đáp ứng yêu cầu"},"qc":{"en":"Quality Control","vi":"Kiểm soát chất lượng","note":"Hoạt động kiểm tra cụ thể"},"bug":{"en":"Bug / Defect","vi":"Lỗi phần mềm","note":"Hành vi không đúng so với mong đợi"},"defect":{"en":"Defect","vi":"Khuyết tật","note":"Tương đương bug trong ngữ cảnh chính thức"},"test case":{"en":"Test Case","vi":"Kịch bản kiểm thử","note":"Tập hợp bước, dữ liệu, kết quả mong đợi"},"test plan":{"en":"Test Plan","vi":"Kế hoạch kiểm thử","note":"Tài liệu chiến lược test tổng thể"},"test suite":{"en":"Test Suite","vi":"Bộ kiểm thử","note":"Nhóm test case liên quan"},"requirement":{"en":"Requirement","vi":"Yêu cầu","note":"Mô tả chức năng hệ thống phải có"},"user story":{"en":"User Story","vi":"Câu chuyện người dùng","note":"Yêu cầu dạng: Là [ai], tôi muốn [gì], để [lợi ích]"},"acceptance criteria":{"en":"Acceptance Criteria","vi":"Tiêu chí chấp nhận","note":"Điều kiện để coi story là hoàn thành"},"sprint":{"en":"Sprint","vi":"Chu kỳ phát triển ngắn","note":"Thường 1–2 tuần trong Scrum"},"scrum":{"en":"Scrum","vi":"Khung Agile phổ biến","note":"Có Sprint, Daily, Review, Retro"},"agile":{"en":"Agile","vi":"Phương pháp linh hoạt","note":"Phát triển lặp, giao hàng liên tục"},"sdlc":{"en":"Software Development Life Cycle","vi":"Vòng đời phát triển phần mềm","note":"Từ ý tưởng đến bảo trì"},"frontend":{"en":"Frontend","vi":"Giao diện người dùng","note":"Phần người dùng nhìn thấy và tương tác"},"backend":{"en":"Backend","vi":"Phía máy chủ","note":"Xử lý logic, dữ liệu, API"},"database":{"en":"Database","vi":"Cơ sở dữ liệu","note":"Nơi lưu trữ dữ liệu lâu dài"},"api":{"en":"Application Programming Interface","vi":"Giao diện lập trình ứng dụng","note":"Cách phần mềm giao tiếp"},"rest":{"en":"REST","vi":"Kiến trúc API phổ biến","note":"Dùng HTTP methods: GET, POST, PUT, DELETE"},"manual testing":{"en":"Manual Testing","vi":"Kiểm thử thủ công","note":"Tester thực hiện bước bằng tay"},"automated testing":{"en":"Automated Testing","vi":"Kiểm thử tự động","note":"Script chạy test tự động"},"regression":{"en":"Regression Testing","vi":"Kiểm thử hồi quy","note":"Đảm bảo sửa lỗi không phá tính năng cũ"},"smoke test":{"en":"Smoke Test","vi":"Kiểm thử khói","note":"Test nhanh các chức năng chính"},"sanity test":{"en":"Sanity Test","vi":"Kiểm thử cơ bản","note":"Test hẹp sau khi sửa bug cụ thể"},"exploratory testing":{"en":"Exploratory Testing","vi":"Kiểm thử khám phá","note":"Vừa học vừa thiết kế test đồng thời"},"functional testing":{"en":"Functional Testing","vi":"Kiểm thử chức năng","note":"Verify tính năng hoạt động đúng spec"},"non-functional testing":{"en":"Non-functional Testing","vi":"Kiểm thử phi chức năng","note":"Performance, security, usability..."},"performance testing":{"en":"Performance Testing","vi":"Kiểm thử hiệu năng","note":"Đo tốc độ, throughput dưới tải"},"load testing":{"en":"Load Testing","vi":"Kiểm thử tải","note":"Test với số user dự kiến"},"stress testing":{"en":"Stress Testing","vi":"Kiểm thử căng thẳng","note":"Vượt ngưỡng bình thường"},"security testing":{"en":"Security Testing","vi":"Kiểm thử bảo mật","note":"Tìm lỗ hổng bảo mật"},"severity":{"en":"Severity","vi":"Mức độ nghiêm trọng","note":"Bug ảnh hưởng kỹ thuật thế nào"},"priority":{"en":"Priority","vi":"Độ ưu tiên","note":"Bug cần sửa trước hay sau"},"reproducible":{"en":"Reproducible","vi":"Có thể tái hiện","note":"Bug report phải mô tả cách lặp lại lỗi"},"environment":{"en":"Environment","vi":"Môi trường","note":"Staging, QA, Production","introducedIn":29},"staging":{"en":"Staging","vi":"Môi trường pre-prod","note":"Gần giống production để test cuối"},"production":{"en":"Production","vi":"Môi trường thật","note":"Người dùng thật đang dùng"},"deployment":{"en":"Deployment","vi":"Triển khai","note":"Đưa code lên môi trường"},"ci":{"en":"Continuous Integration","vi":"Tích hợp liên tục","note":"Build/test tự động mỗi commit"},"cd":{"en":"Continuous Delivery","vi":"Giao hàng liên tục","note":"Sẵn sàng deploy bất cứ lúc nào"},"pipeline":{"en":"Pipeline","vi":"Pipeline CI/CD","note":"Chuỗi build-test-deploy","introducedIn":34},"commit":{"en":"Commit","vi":"Commit code","note":"Lưu thay đổi vào Git","introducedIn":34},"pull request":{"en":"Pull Request","vi":"Yêu cầu gộp code","note":"PR/MR để review trước khi merge"},"code review":{"en":"Code Review","vi":"Review mã nguồn","note":"Dev kiểm tra code của nhau"},"dev":{"en":"Developer","vi":"Lập trình viên","note":"Viết code"},"pm":{"en":"Product Manager","vi":"Quản lý sản phẩm","note":"Quyết định làm gì và thứ tự ưu tiên"},"po":{"en":"Product Owner","vi":"Chủ sản phẩm","note":"Đại diện stakeholder trong Scrum"},"ux":{"en":"User Experience","vi":"Trải nghiệm người dùng","note":"Thiết kế cách người dùng cảm nhận sản phẩm"},"ui":{"en":"User Interface","vi":"Giao diện người dùng","note":"Nút, form, màu sắc, layout"},"shift-left":{"en":"Shift-left","vi":"Shift-left testing","note":"Test sớm hơn trong SDLC","introducedIn":6},"test data":{"en":"Test Data","vi":"Dữ liệu kiểm thử","note":"Input dùng khi chạy test"},"traceability":{"en":"Traceability","vi":"Truy vết","note":"Liên kết requirement → test case → bug"},"equivalence partitioning":{"en":"Equivalence Partitioning","vi":"Phân vùng tương đương","note":"Chia input thành nhóm hợp lệ/không hợp lệ"},"boundary value analysis":{"en":"Boundary Value Analysis","vi":"Phân tích giá trị biên","note":"Test tại và cạnh ranh giới"},"decision table":{"en":"Decision Table","vi":"Bảng quyết định","note":"Test logic nhiều điều kiện"},"state transition":{"en":"State Transition","vi":"Chuyển trạng thái","note":"Test flow thay đổi trạng thái hệ thống"},"test pyramid":{"en":"Test Pyramid","vi":"Kim tự tháp kiểm thử","note":"Nhiều unit, ít E2E"},"e2e":{"en":"End-to-End","vi":"Đầu cuối","note":"Test toàn flow người dùng"},"unit test":{"en":"Unit Test","vi":"Kiểm thử đơn vị","note":"Test function/class nhỏ nhất"},"integration test":{"en":"Integration Test","vi":"Kiểm thử tích hợp","note":"Test nhiều module kết hợp"},"flaky test":{"en":"Flaky Test","vi":"Test không ổn định","note":"Lúc pass lúc fail không rõ lý do"},"owasp":{"en":"OWASP","vi":"Tổ chức bảo mật web","note":"OWASP Top 10 là checklist phổ biến"},"sql injection":{"en":"SQL Injection","vi":"Tiêm SQL","note":"Lỗ hổng inject query độc hại"},"xss":{"en":"Cross-Site Scripting","vi":"Script chéo trang","note":"Inject script vào trang web"},"pii":{"en":"Personally Identifiable Information","vi":"Thông tin nhận dạng cá nhân","note":"Email, CMND, SĐT..."},"kpi":{"en":"Key Performance Indicator","vi":"Chỉ số KPI","note":"Metric đo hiệu quả","introducedIn":40},"risk-based testing":{"en":"Risk-based Testing","vi":"Test theo rủi ro","note":"Ưu tiên vùng rủi ro cao","introducedIn":41},"retrospective":{"en":"Retrospective","vi":"Họp cải tiến","note":"Cuối sprint: tốt/xấu/cải thiện"},"daily standup":{"en":"Daily Standup","vi":"Họp daily","note":"15 phút sync tiến độ mỗi ngày"},"backlog":{"en":"Backlog","vi":"Danh sách công việc","note":"Tập story/task chưa làm"},"epic":{"en":"Epic","vi":"Epic","note":"Nhóm user story lớn"},"story point":{"en":"Story Point","vi":"Điểm story","note":"Ước lượng effort tương đối"},"velocity":{"en":"Velocity","vi":"Vận tốc team","note":"Story point hoàn thành mỗi sprint"},"dod":{"en":"Definition of Done","vi":"DoD","note":"Tiêu chí chung task hoàn thành","introducedIn":15},"dor":{"en":"Definition of Ready","vi":"DoR","note":"Story đủ rõ để bắt đầu","introducedIn":15},"blocker":{"en":"Blocker","vi":"Vật cản","note":"Vấn đề chặn tiến độ","introducedIn":14},"hotfix":{"en":"Hotfix","vi":"Sửa khẩn","note":"Patch nhanh cho production","introducedIn":27},"rollback":{"en":"Rollback","vi":"Hoàn tác","note":"Quay về phiên bản trước","introducedIn":27},"release":{"en":"Release","vi":"Phát hành","note":"Phiên bản mới giao cho người dùng","introducedIn":3},"build":{"en":"Build","vi":"Build","note":"Biên dịch/đóng gói code","introducedIn":34},"version control":{"en":"Version Control","vi":"Quản lý phiên bản","note":"Git, SVN..."},"git":{"en":"Git","vi":"Hệ thống Git","note":"Version control phổ biến nhất"},"branch":{"en":"Branch","vi":"Nhánh","note":"Dòng phát triển tách biệt"},"merge":{"en":"Merge","vi":"Gộp","note":"Kết hợp branch vào nhau"},"ticket":{"en":"Ticket","vi":"Phiếu công việc","note":"Task hoặc bug trên Jira/Linear","introducedIn":23},"jira":{"en":"Jira","vi":"Công cụ quản lý","note":"Phổ biến cho bug tracking"},"status":{"en":"Status","vi":"Trạng thái","note":"New, In Progress, Done..."},"assignee":{"en":"Assignee","vi":"Người được giao","note":"Ai chịu trách nhiệm ticket"},"reporter":{"en":"Reporter","vi":"Người báo cáo","note":"Ai tạo bug report"},"verification":{"en":"Verification","vi":"Xác minh","note":"Build đúng theo spec không?"},"validation":{"en":"Validation","vi":"Thẩm định","note":"Build đúng thứ user cần không?"},"uat":{"en":"User Acceptance Testing","vi":"UAT","note":"User test chấp nhận trước go-live","introducedIn":6},"go-live":{"en":"Go-live","vi":"Ra mắt","note":"Đưa sản phẩm cho người dùng thật"},"mvp":{"en":"Minimum Viable Product","vi":"Sản phẩm tối thiểu","note":"Phiên bản nhỏ nhất có giá trị"},"scope":{"en":"Scope","vi":"Phạm vi","note":"Ran giới công việc được làm"},"scope creep":{"en":"Scope Creep","vi":"Phạm vi tràn","note":"Yêu cầu thêm không kiểm soát"},"edge case":{"en":"Edge Case","vi":"Trường hợp biên","note":"Tình huống hiếm nhưng quan trọng","introducedIn":9},"happy path":{"en":"Happy Path","vi":"Luồng thuận lợi","note":"User dùng đúng cách, không lỗi","introducedIn":21},"negative testing":{"en":"Negative Testing","vi":"Test tiêu cực","note":"Test input sai, hành vi lỗi","introducedIn":17},"positive testing":{"en":"Positive Testing","vi":"Test tích cực","note":"Test input hợp lệ","introducedIn":17},"test charter":{"en":"Test Charter","vi":"Bản mô tả session ET","note":"Mục tiêu, phạm vi, thời gian ET session"},"session-based testing":{"en":"Session-based Testing","vi":"ET theo phiên","note":"ET có cấu trúc thời gian và ghi chép"},"heuristic":{"en":"Heuristic","vi":"Quy tắc kinh nghiệm","note":"Hướng dẫn khám phá khi test","introducedIn":22},"oracle":{"en":"Oracle","vi":"Oracle kiểm thử","note":"Cách biết kết quả đúng hay sai","introducedIn":22},"assertion":{"en":"Assertion","vi":"Khẳng định","note":"Trong automation: kiểm tra kết quả mong đợi"},"mock":{"en":"Mock","vi":"Mock object","note":"Giả lập dependency khi test"},"stub":{"en":"Stub","vi":"Stub","note":"Trả về dữ liệu cố định khi test"},"test double":{"en":"Test Double","vi":"Test double","note":"Thuật ngữ chung cho mock/stub/fake"},"coverage":{"en":"Test Coverage","vi":"Độ phủ kiểm thử","note":"Phần code/requirement được test bao nhiêu %"},"metric":{"en":"Metric","vi":"Chỉ số","note":"Số liệu đo chất lượng hoặc tiến độ"},"sla":{"en":"Service Level Agreement","vi":"SLA","note":"Cam kết mức dịch vụ","introducedIn":32},"uptime":{"en":"Uptime","vi":"Thời gian hoạt động","note":"Hệ thống online bao lâu"},"downtime":{"en":"Downtime","vi":"Thời gian ngừng","note":"Hệ thống offline"},"latency":{"en":"Latency","vi":"Độ trễ","note":"Thời gian phản hồi","introducedIn":32},"throughput":{"en":"Throughput","vi":"Thông lượng","note":"Số request xử lý/giây","introducedIn":32},"scalability":{"en":"Scalability","vi":"Khả năng mở rộng","note":"Hệ thống chịu tải tăng thế nào"},"browser":{"en":"Browser","vi":"Trình duyệt","note":"Chrome, Firefox, Safari","introducedIn":21},"cross-browser":{"en":"Cross-browser Testing","vi":"Test đa trình duyệt","note":"App hoạt động trên nhiều browser"},"responsive":{"en":"Responsive","vi":"Responsive design","note":"Giao diện adapt nhiều kích thước","introducedIn":9},"cookie":{"en":"Cookie","vi":"Cookie","note":"Dữ liệu trình duyệt lưu tạm"},"session":{"en":"Session","vi":"Phiên đăng nhập","note":"Trạng thái user đang logged in"},"authentication":{"en":"Authentication","vi":"Xác thực","note":"Verify user là ai (login)"},"authorization":{"en":"Authorization","vi":"Phân quyền","note":"User được phép làm gì"},"http":{"en":"HyperText Transfer Protocol","vi":"Giao thức HTTP","note":"Cách browser và server giao tiếp"},"json":{"en":"JSON","vi":"Định dạng JSON","note":"Cấu trúc dữ liệu text phổ biến cho API"},"payload":{"en":"Payload","vi":"Payload","note":"Dữ liệu trong request/response","introducedIn":36},"endpoint":{"en":"Endpoint","vi":"Endpoint API","note":"URL cụ thể của API","introducedIn":36},"postman":{"en":"Postman","vi":"Công cụ test API","note":"Gửi request, xem response"},"selenium":{"en":"Selenium","vi":"Framework automation web","note":"Điều khiển browser tự động"},"playwright":{"en":"Playwright","vi":"Framework automation hiện đại","note":"Microsoft, hỗ trợ multi-browser"},"cypress":{"en":"Cypress","vi":"Framework automation JS","note":"Phổ biến cho frontend JS apps"},"locator":{"en":"Locator","vi":"Bộ định vị element","note":"Cách automation tìm element trên UI"},"selector":{"en":"Selector","vi":"Selector CSS/XPath","note":"Cú pháp chọn element"},"headless":{"en":"Headless Browser","vi":"Browser không giao diện","note":"Chạy browser ẩn, nhanh hơn"},"screenshot":{"en":"Screenshot","vi":"Ảnh chụp màn hình","note":"Bằng chứng trực quan cho bug report"},"log":{"en":"Log","vi":"Nhật ký","note":"Ghi lại sự kiện hệ thống"},"debug":{"en":"Debug","vi":"Gỡ lỗi","note":"Tìm nguyên nhân bug"},"root cause":{"en":"Root Cause","vi":"Nguyên nhân gốc","note":"Lý do thật sự gây bug","introducedIn":23},"workaround":{"en":"Workaround","vi":"Cách tạm thời","note":"Giải pháp tạm chưa fix gốc","introducedIn":24},"fix":{"en":"Fix","vi":"Sửa lỗi","note":"Dev sửa bug trong code"},"retest":{"en":"Retest","vi":"Test lại","note":"Chạy lại test case đã fail sau khi fix"},"closed":{"en":"Closed","vi":"Đóng","note":"Trạng thái bug đã xử lý xong"},"reopened":{"en":"Reopened","vi":"Mở lại","note":"Bug tái phát sau khi đóng"},"duplicate":{"en":"Duplicate","vi":"Trùng lặp","note":"Bug report trùng bug khác"},"wontfix":{"en":"Won't Fix","vi":"Không sửa","note":"Quyết định chấp nhận bug"},"technical debt":{"en":"Technical Debt","vi":"Nợ kỹ thuật","note":"Shortcut code gây chi phí sau này"},"refactoring":{"en":"Refactoring","vi":"Tái cấu trúc","note":"Cải thiện code không đổi behavior"},"legacy system":{"en":"Legacy System","vi":"Hệ thống cũ","note":"Code cũ khó bảo trì"},"microservices":{"en":"Microservices","vi":"Kiến trúc microservices","note":"App chia thành service nhỏ độc lập"},"monolith":{"en":"Monolith","vi":"Kiến trúc monolith","note":"Toàn bộ app trong một codebase"},"saas":{"en":"Software as a Service","vi":"Phần mềm dịch vụ","note":"Dùng qua web, trả phí subscription"},"on-premise":{"en":"On-premise","vi":"Triển khai tại chỗ","note":"Cài trên server của khách hàng"},"cloud":{"en":"Cloud","vi":"Đám mây","note":"AWS, Azure, GCP..."},"docker":{"en":"Docker","vi":"Container hóa","note":"Đóng gói app và dependency"},"kubernetes":{"en":"Kubernetes","vi":"Orchestration container","note":"Quản lý nhiều container"},"monitoring":{"en":"Monitoring","vi":"Giám sát","note":"Theo dõi health hệ thống production"},"alert":{"en":"Alert","vi":"Cảnh báo","note":"Thông báo khi metric vượt ngưỡng"},"incident":{"en":"Incident","vi":"Sự cố","note":"Sự kiện ảnh hưởng user/production"},"postmortem":{"en":"Postmortem","vi":"Phân tích sau sự cố","note":"Họp rút kinh nghiệm sau incident"},"rca":{"en":"Root Cause Analysis","vi":"Phân tích nguyên nhân gốc","note":"Tìm tại sao incident xảy ra"},"stakeholder":{"en":"Stakeholder","vi":"Bên liên quan","note":"PM, user, dev, QA, business","introducedIn":5},"requirement gap":{"en":"Requirement Gap","vi":"Khoảng trống yêu cầu","note":"Spec thiếu gây hiểu nhầm","introducedIn":15},"ambiguity":{"en":"Ambiguity","vi":"Mơ hồ","note":"Yêu cầu không rõ ràng"},"assumption":{"en":"Assumption","vi":"Giả định","note":"Điều team cho là đúng nhưng chưa verify"},"peer review":{"en":"Peer Review","vi":"Review đồng nghiệp","note":"QA review test case của QA khác"},"checklist":{"en":"Checklist","vi":"Danh sách kiểm tra","note":"Liệt kê mục cần verify"},"template":{"en":"Template","vi":"Mẫu","note":"Khung tài liệu chuẩn hóa"},"rubric":{"en":"Rubric","vi":"Tiêu chí chấm","note":"Bảng tiêu chí đánh giá capstone"},"portfolio":{"en":"Portfolio","vi":"Hồ sơ năng lực","note":"Tập hợp công việc QA","introducedIn":44},"star":{"en":"STAR Method","vi":"Phương pháp STAR","note":"Situation, Task, Action, Result","introducedIn":44},"onboarding":{"en":"Onboarding","vi":"Hội nhập","note":"Làm quen công ty/sản phẩm mới","introducedIn":40},"mentoring":{"en":"Mentoring","vi":"Cố vấn","note":"Senior hướng dẫn junior","introducedIn":41},"lead":{"en":"Team Lead","vi":"Trưởng nhóm","note":"Quản lý team QA kỹ thuật"},"manager":{"en":"QA Manager","vi":"Quản lý QA","note":"Quản lý process, hiring, chiến lược"},"sdet":{"en":"Software Development Engineer in Test","vi":"QA biết lập trình","note":"Viết automation + framework"},"manual tester":{"en":"Manual Tester","vi":"Tester thủ công","note":"Chuyên test bằng tay, ET, test design"},"quality culture":{"en":"Quality Culture","vi":"Văn hóa chất lượng","note":"Cả team coi quality là trách nhiệm chung"},"gatekeeper":{"en":"Gatekeeper","vi":"Người gác cổng","note":"QA KHÔNG nên chỉ là người chặn release"},"advocacy":{"en":"Quality Advocacy","vi":"Đấu tranh cho chất lượng","note":"QA nói lên rủi ro một cách xây dựng"},"empathy":{"en":"User Empathy","vi":"Đồng cảm người dùng","note":"Đặt mình vào vị trí user thật"},"ownership":{"en":"Ownership","vi":"Tinh thần sở hữu","note":"Coi chất lượng là trách nhiệm của mình"},"curiosity":{"en":"Learning Curiosity","vi":"Tò mò học hỏi","note":"Luôn hỏi tại sao, đọc spec, khám phá"},"collaboration":{"en":"Collaboration","vi":"Hợp tác","note":"Làm việc cùng dev/PM/design hiệu quả"},"thoroughness":{"en":"Thoroughness","vi":"Tính kỹ lưỡng","note":"Test đủ rủi ro quan trọng"},"speed":{"en":"Speed","vi":"Tốc độ","note":"Cân bằng với deadline agile"},"risk":{"en":"Risk","vi":"Rủi ro","note":"Khả năng điều xấu xảy ra × mức ảnh hưởng"},"mitigation":{"en":"Mitigation","vi":"Giảm thiểu rủi ro","note":"Hành động giảm khả năng/ảnh hưởng"},"contingency":{"en":"Contingency","vi":"Dự phòng","note":"Kế hoạch B khi rủi ro xảy ra"},"reproduce":{"en":"Reproduce","vi":"Tái hiện (lỗi)","note":"Làm lại đúng các bước để bug xuất hiện lại","introducedIn":24},"expected":{"en":"Expected Result","vi":"Kết quả mong đợi","note":"App NÊN làm gì theo spec","introducedIn":24},"actual":{"en":"Actual Result","vi":"Kết quả thực tế","note":"App THỰC SỰ làm gì khi test","introducedIn":24},"steps to reproduce":{"en":"Steps to Reproduce","vi":"Các bước tái hiện","note":"Phần quan trọng nhất bug report","introducedIn":24},"credential":{"en":"Credential","vi":"Thông tin đăng nhập","note":"Username, password, token","introducedIn":21},"spec":{"en":"Specification","vi":"Đặc tả","note":"Mô tả chi tiết tính năng phải làm","introducedIn":15},"deploy":{"en":"Deploy","vi":"Triển khai","note":"Đưa code lên server cho user dùng","introducedIn":3},"feature":{"en":"Feature","vi":"Tính năng","note":"Một chức năng cụ thể của sản phẩm","introducedIn":2},"ship":{"en":"Ship","vi":"Giao hàng / release","note":"Đưa tính năng ra cho user","introducedIn":6},"verify":{"en":"Verify","vi":"Xác minh","note":"Kiểm tra bug đã được sửa đúng chưa","introducedIn":23},"validate":{"en":"Validate","vi":"Thẩm định","note":"Kiểm tra có đúng nhu cầu user không","introducedIn":6},"input":{"en":"Input","vi":"Dữ liệu đầu vào","note":"Thông tin user nhập vào form","introducedIn":17},"output":{"en":"Output","vi":"Kết quả đầu ra","note":"Phản hồi hệ thống trả về","introducedIn":17},"workflow":{"en":"Workflow","vi":"Quy trình làm việc","note":"Chuỗi bước từ A đến B","introducedIn":3},"login":{"en":"Login","vi":"Đăng nhập","note":"Xác thực user vào hệ thống","introducedIn":21},"checkout":{"en":"Checkout","vi":"Thanh toán","note":"Hoàn tất đơn hàng","introducedIn":21},"cart":{"en":"Cart","vi":"Giỏ hàng","note":"Nơi chứa sản phẩm trước khi mua","introducedIn":20},"submit":{"en":"Submit","vi":"Gửi form","note":"Nhấn nút gửi thông tin","introducedIn":17},"error message":{"en":"Error Message","vi":"Thông báo lỗi","note":"Text hiện khi có lỗi","introducedIn":24},"crash":{"en":"Crash","vi":"Sập app","note":"App đột ngột dừng hoạt động","introducedIn":25},"freeze":{"en":"Freeze","vi":"Treo app","note":"App không phản hồi","introducedIn":9},"timeout":{"en":"Timeout","vi":"Hết thời gian chờ","note":"Request quá lâu không trả về","introducedIn":32},"increment":{"en":"Increment","vi":"Gia tăng","note":"Phần sản phẩm hoàn thiện cuối sprint","introducedIn":13},"incremental":{"en":"Incremental","vi":"Tăng dần","note":"Phát triển từng phần nhỏ","introducedIn":13},"ceremony":{"en":"Ceremony","vi":"Nghi thức Scrum","note":"Planning, Daily, Review, Retro","introducedIn":14},"standup":{"en":"Standup","vi":"Họp daily","note":"Sync 15 phút mỗi sáng","introducedIn":14},"backlog refinement":{"en":"Backlog Refinement","vi":"Tinh chỉnh backlog","note":"Làm rõ story trước sprint","introducedIn":15},"deliverable":{"en":"Deliverable","vi":"Sản phẩm bàn giao","note":"Output cụ thể cuối sprint","introducedIn":13},"estimate":{"en":"Estimate","vi":"Ước lượng","note":"Đo effort story cần bao nhiêu","introducedIn":14},"triage":{"en":"Triage","vi":"Phân loại","note":"Dev/lead xem bug và quyết định xử lý","introducedIn":23},"sign off":{"en":"Sign-off","vi":"Phê duyệt","note":"Chấp thuận chính thức để release","introducedIn":6},"go/no-go":{"en":"Go/No-Go","vi":"Quyết định release","note":"Họp quyết có ship hay không","introducedIn":6},"test execution":{"en":"Test Execution","vi":"Thực thi test","note":"Chạy test case và ghi kết quả","introducedIn":16},"precondition":{"en":"Precondition","vi":"Điều kiện tiên quyết","note":"Trạng thái cần có trước khi test","introducedIn":16},"postcondition":{"en":"Postcondition","vi":"Điều kiện hậu","note":"Trạng thái sau khi test xong","introducedIn":16},"pass":{"en":"Pass","vi":"Đạt","note":"Test case thành công","introducedIn":16},"fail":{"en":"Fail","vi":"Không đạt","note":"Test case phát hiện lỗi","introducedIn":16},"blocked":{"en":"Blocked","vi":"Bị chặn","note":"Không test được vì môi trường/data","introducedIn":16},"skip":{"en":"Skip","vi":"Bỏ qua","note":"Không chạy test case lần này","introducedIn":16},"charter":{"en":"Charter","vi":"Bản mô tả ET","note":"Mục tiêu session exploratory testing","introducedIn":22},"observation":{"en":"Observation","vi":"Quan sát","note":"Điều bạn thấy khi test","introducedIn":22},"attachment":{"en":"Attachment","vi":"Tệp đính kèm","note":"Screenshot, video, log file","introducedIn":24},"viewport":{"en":"Viewport","vi":"Khung nhìn","note":"Kích thước màn hình hiển thị","introducedIn":9},"bottleneck":{"en":"Bottleneck","vi":"Nút thắt","note":"Điểm hệ thống chậm nhất","introducedIn":32},"vulnerability":{"en":"Vulnerability","vi":"Lỗ hổng","note":"Điểm yếu bảo mật","introducedIn":33},"injection":{"en":"Injection","vi":"Tiêm mã","note":"Nhét code độc vào input","introducedIn":33},"authentication bypass":{"en":"Authentication Bypass","vi":"Vượt xác thực","note":"Vào hệ thống không cần login","introducedIn":33},"artifact":{"en":"Artifact","vi":"Artifact","note":"File output sau build","introducedIn":34},"flaky":{"en":"Flaky","vi":"Không ổn định","note":"Test lúc pass lúc fail","introducedIn":35},"maintainability":{"en":"Maintainability","vi":"Dễ bảo trì","note":"Automation cần dễ update","introducedIn":35},"request":{"en":"Request","vi":"Request","note":"Yêu cầu gửi đến server","introducedIn":36},"response":{"en":"Response","vi":"Response","note":"Phản hồi server trả về","introducedIn":36},"status code":{"en":"Status Code","vi":"Mã trạng thái HTTP","note":"200 OK, 404 Not Found, 500 Error","introducedIn":36},"anonymize":{"en":"Anonymize","vi":"Ẩn danh hóa","note":"Che thông tin cá nhân trong test data","introducedIn":37},"consent":{"en":"Consent","vi":"Đồng ý","note":"User cho phép thu thập data","introducedIn":37},"escalate":{"en":"Escalate","vi":"Leo thang","note":"Báo cáo lên cấp trên khi rủi ro cao","introducedIn":8},"consensus":{"en":"Consensus","vi":"Đồng thuận","note":"Team thống nhất quyết định","introducedIn":10},"deadline":{"en":"Deadline","vi":"Hạn chót","note":"Thời hạn phải hoàn thành","introducedIn":11},"trade-off":{"en":"Trade-off","vi":"Đánh đổi","note":"Cân nhắc giữa speed, scope, quality","introducedIn":11},"accountability":{"en":"Accountability","vi":"Trách nhiệm giải trình","note":"Ai chịu trách nhiệm kết quả","introducedIn":12},"fresher":{"en":"Fresher","vi":"Nhân viên mới","note":"Người mới vào nghề","introducedIn":40},"offer":{"en":"Offer","vi":"Thư mời làm việc","note":"Job offer từ công ty","introducedIn":44},"shift-right":{"en":"Shift-right","vi":"Shift-right testing","note":"Test monitoring ở production","introducedIn":39},"quality":{"en":"Quality","vi":"Chất lượng","note":"Mức độ sản phẩm đáp ứng nhu cầu người dùng"},"planning":{"en":"Planning","vi":"Lập kế hoạch","note":"Giai đoạn SDLC xác định phạm vi và ưu tiên"},"development":{"en":"Development","vi":"Phát triển","note":"Giai đoạn viết code và tích hợp tính năng"},"testing":{"en":"Testing","vi":"Kiểm thử","note":"Giai đoạn verify và validate sản phẩm"},"maintenance":{"en":"Maintenance","vi":"Bảo trì","note":"Giai đoạn sửa lỗi và cải tiến sau release"},"state":{"en":"State","vi":"Trạng thái","note":"Tình trạng dữ liệu/hệ thống tại một thời điểm"},"automation":{"en":"Test Automation","vi":"Tự động hóa test","note":"Script chạy test lặp lại thay người"},"confidence":{"en":"Confidence","vi":"Độ tin cậy","note":"Mức QA tin sản phẩm sẵn sàng release"},"persona":{"en":"Persona","vi":"Chân dung người dùng","note":"Mô tả user type để hướng test"},"user journey":{"en":"User Journey","vi":"Hành trình người dùng","note":"Chuỗi touchpoint user trải qua"},"accessibility":{"en":"Accessibility","vi":"Khả năng tiếp cận","note":"Sản phẩm dùng được với mọi khả năng"},"pain point":{"en":"Pain Point","vi":"Điểm đau","note":"Vấn đề user gặp khiến bỏ cuộc"},"usability":{"en":"Usability","vi":"Khả năng sử dụng","note":"Mức dễ học và dùng sản phẩm"},"feedback loop":{"en":"Feedback Loop","vi":"Vòng phản hồi","note":"Chu kỳ test → báo → sửa → retest"},"handoff":{"en":"Handoff","vi":"Bàn giao","note":"Chuyển giao công việc giữa role"},"dependency":{"en":"Dependency","vi":"Phụ thuộc","note":"Task/feature cần task khác hoàn thành trước"},"follow-through":{"en":"Follow-through","vi":"Theo sát đến cùng","note":"QA không dừng ở báo bug"},"sync":{"en":"Sync","vi":"Đồng bộ","note":"Họp nhanh align team"},"timebox":{"en":"Timebox","vi":"Giới hạn thời gian","note":"Test trong khung thời gian cố định"},"time-box":{"en":"Time-box","vi":"Giới hạn thời gian","note":"Kỹ thuật ET giới hạn session"},"given-when-then":{"en":"Given-When-Then","vi":"Gherkin format","note":"Cú pháp viết acceptance criteria"},"scenario":{"en":"Scenario","vi":"Kịch bản","note":"Một luồng test cụ thể trong BDD"},"sprint planning":{"en":"Sprint Planning","vi":"Lập kế hoạch sprint","note":"Chọn story và ước lượng sprint"},"daily scrum":{"en":"Daily Scrum","vi":"Daily Scrum","note":"Họp 15 phút sync tiến độ"},"sprint review":{"en":"Sprint Review","vi":"Review sprint","note":"Demo increment cho stakeholder"},"refinement":{"en":"Backlog Refinement","vi":"Tinh chỉnh backlog","note":"Làm rõ story trước sprint"},"definition of done":{"en":"Definition of Done","vi":"DoD","note":"Tiêu chí task được coi là xong"},"definition of ready":{"en":"Definition of Ready","vi":"DoR","note":"Story đủ rõ để dev bắt đầu"},"evidence":{"en":"Evidence","vi":"Bằng chứng","note":"Screenshot, log, data chứng minh bug"},"impact":{"en":"Impact","vi":"Tác động","note":"Mức ảnh hưởng bug tới user/kinh doanh"},"alignment":{"en":"Alignment","vi":"Đồng thuận","note":"Team hiểu cùng một mục tiêu chất lượng"},"quality gate":{"en":"Quality Gate","vi":"Cổng chất lượng","note":"Checkpoint trước khi chuyển giai đoạn"},"quality mission":{"en":"Quality Mission","vi":"Sứ mệnh QA","note":"QA tạo giá trị gì cho user và team"},"boundary value":{"en":"Boundary Value","vi":"Giá trị biên","note":"Test tại ranh giới input hợp lệ"},"valid class":{"en":"Valid Class","vi":"Lớp hợp lệ","note":"Nhóm input được chấp nhận"},"invalid class":{"en":"Invalid Class","vi":"Lớp không hợp lệ","note":"Nhóm input bị từ chối"},"off-by-one":{"en":"Off-by-one","vi":"Lệch một","note":"Lỗi biên phổ biến ±1"},"current state":{"en":"Current State","vi":"Trạng thái hiện tại","note":"State trước khi thực hiện action"},"invalid transition":{"en":"Invalid Transition","vi":"Chuyển trạng thái sai","note":"Hệ thống cho phép chuyển state không hợp lệ"},"business logic":{"en":"Business Logic","vi":"Logic nghiệp vụ","note":"Quy tắc xử lý theo domain"},"session charter":{"en":"Session Charter","vi":"Charter ET","note":"Mục tiêu và phạm vi session khám phá"},"hypothesis":{"en":"Hypothesis","vi":"Giả thuyết","note":"Dự đoán cần verify khi test"},"testing notes":{"en":"Testing Notes","vi":"Ghi chép test","note":"Note quan sát trong session ET"},"regression testing":{"en":"Regression Testing","vi":"Test hồi quy","note":"Đảm bảo fix không phá feature cũ"},"full regression":{"en":"Full Regression","vi":"Hồi quy đầy đủ","note":"Chạy lại toàn bộ suite quan trọng"},"build verification":{"en":"Build Verification","vi":"Xác minh build","note":"Smoke test trên build mới"},"release readiness":{"en":"Release Readiness","vi":"Sẵn sàng release","note":"Checklist trước khi ship"},"end-to-end":{"en":"End-to-End","vi":"E2E","note":"Test toàn flow từ UI đến database"},"critical path":{"en":"Critical Path","vi":"Luồng quan trọng","note":"User flow ảnh hưởng doanh thu/nền tảng"},"traceability matrix":{"en":"Traceability Matrix","vi":"Ma trận truy vết","note":"Liên kết requirement → test → bug"},"test strategy":{"en":"Test Strategy","vi":"Chiến lược test","note":"Cách tiếp cận test tổng thể cho dự án"},"bug lifecycle":{"en":"Bug Lifecycle","vi":"Vòng đời bug","note":"New → In Progress → Fixed → Verified → Closed"},"ready for qa":{"en":"Ready for QA","vi":"Sẵn sàng QA","note":"Build/feature đủ điều kiện để test"},"defect triage":{"en":"Defect Triage","vi":"Phân loại bug","note":"Team quyết định ưu tiên và assign bug"},"test environment":{"en":"Test Environment","vi":"Môi trường test","note":"Staging/QA nơi chạy test chính thức"},"seed data":{"en":"Seed Data","vi":"Dữ liệu mẫu","note":"Dataset cố định để test lặp lại"},"configuration drift":{"en":"Configuration Drift","vi":"Lệch cấu hình","note":"Env test khác production"},"load test":{"en":"Load Test","vi":"Test tải","note":"Test với số user dự kiến"},"stress test":{"en":"Stress Test","vi":"Test stress","note":"Vượt ngưỡng tải bình thường"},"soak test":{"en":"Soak Test","vi":"Test endurance","note":"Chạy tải kéo dài tìm memory leak"},"spike test":{"en":"Spike Test","vi":"Test spike","note":"Tăng đột biến traffic"},"owasp top 10":{"en":"OWASP Top 10","vi":"OWASP Top 10","note":"10 lỗ hổng web phổ biến nhất"},"ci/cd":{"en":"CI/CD","vi":"CI/CD","note":"Tích hợp và giao hàng liên tục"},"data privacy":{"en":"Data Privacy","vi":"Quyền riêng tư dữ liệu","note":"Bảo vệ thông tin cá nhân user"},"input validation":{"en":"Input Validation","vi":"Validate input","note":"Kiểm tra dữ liệu đầu vào hợp lệ"},"sensitive data":{"en":"Sensitive Data","vi":"Dữ liệu nhạy cảm","note":"PII, mật khẩu, thẻ tín dụng"},"qa portfolio":{"en":"QA Portfolio","vi":"Portfolio QA","note":"Tập hồ sơ bug report, test plan cho phỏng vấn"},"mission statement":{"en":"Mission Statement","vi":"Tuyên bố sứ mệnh","note":"1 đoạn mô tả giá trị QA bạn mang lại"},"qa metrics":{"en":"QA Metrics","vi":"Chỉ số QA","note":"Pass rate, defect density, escape rate"},"test automation":{"en":"Test Automation","vi":"Automation test","note":"Script thay thế test lặp tay"},"capstone":{"en":"Capstone","vi":"Dự án tổng kết","note":"Bài tập cuối khóa chứng minh năng lực"},"glossary":{"en":"Glossary","vi":"Thuật ngữ","note":"Từ điển EN-VI trong nghề QA"},"product owner":{"en":"Product Owner","vi":"Product Owner","note":"Người quyết định giá trị sản phẩm trong Scrum"},"developer":{"en":"Developer","vi":"Developer","note":"Người viết và bảo trì code"},"designer":{"en":"Designer","vi":"Designer","note":"Người thiết kế UI/UX"},"devops":{"en":"DevOps","vi":"DevOps","note":"Vai trò vận hành pipeline và hạ tầng"},"release gate":{"en":"Release Gate","vi":"Cổng release","note":"Checkpoint cuối trước go-live"},"release confidence":{"en":"Release Confidence","vi":"Tin cậy release","note":"Tuyên bố chất lượng từ QA"},"release risk":{"en":"Release Risk","vi":"Rủi ro release","note":"Rủi ro còn lại khi ship"},"risk slicing":{"en":"Risk Slicing","vi":"Cắt rủi ro","note":"Chia rủi ro lớn thành phần test được"},"risk statement":{"en":"Risk Statement","vi":"Câu rủi ro","note":"Mô tả rủi ro: điều gì xảy ra nếu bỏ sót"},"pass rate":{"en":"Pass Rate","vi":"Tỷ lệ pass","note":"Phần trăm test case pass"},"test report":{"en":"Test Report","vi":"Báo cáo test","note":"Tóm tắt kết quả test cho stakeholder"},"test scope":{"en":"Test Scope","vi":"Phạm vi test","note":"Ran giới feature/flow được test"},"execution log":{"en":"Execution Log","vi":"Nhật ký thực thi","note":"Ghi lại test đã chạy và kết quả"},"negative test":{"en":"Negative Test","vi":"Test tiêu cực","note":"Test input/hành vi không hợp lệ"},"representative value":{"en":"Representative Value","vi":"Giá trị đại diện","note":"Một giá trị tiêu biểu trong partition"},"input domain":{"en":"Input Domain","vi":"Miền input","note":"Tập giá trị input có thể"},"range validation":{"en":"Range Validation","vi":"Validate khoảng","note":"Kiểm tra min/max hợp lệ"},"next state":{"en":"Next State","vi":"Trạng thái kế","note":"State sau transition"},"event":{"en":"Event","vi":"Sự kiện","note":"Action trigger chuyển state"},"condition":{"en":"Condition","vi":"Điều kiện","note":"Rule quyết định output"},"rule":{"en":"Rule","vi":"Quy tắc","note":"Logic if-then trong decision table"},"action":{"en":"Action","vi":"Hành động","note":"Kết quả khi điều kiện thỏa"},"combination":{"en":"Combination","vi":"Tổ hợp","note":"Kết hợp nhiều điều kiện input"},"minimum":{"en":"Minimum","vi":"Giá trị tối thiểu","note":"Biên dưới của input"},"maximum":{"en":"Maximum","vi":"Giá trị tối đa","note":"Biên trên của input"},"core flow":{"en":"Core Flow","vi":"Luồng cốt lõi","note":"Happy path quan trọng nhất"},"business impact":{"en":"Business Impact","vi":"Tác động kinh doanh","note":"Bug ảnh hưởng doanh thu/brand"},"impact analysis":{"en":"Impact Analysis","vi":"Phân tích tác động","note":"Đánh giá bug ảnh hưởng ai, mức nào"},"preventive action":{"en":"Preventive Action","vi":"Hành động phòng ngừa","note":"Sửa quy trình để bug không lặp"},"action item":{"en":"Action Item","vi":"Việc cần làm","note":"Task cụ thể sau retro/review"},"closure":{"en":"Closure","vi":"Đóng ticket","note":"Xác nhận bug/issue đã xử lý xong"},"in progress":{"en":"In Progress","vi":"Đang xử lý","note":"Trạng thái bug đang được fix"},"contract":{"en":"Contract","vi":"Hợp đồng API","note":"Thỏa thuận request/response giữa services"},"logging":{"en":"Logging","vi":"Ghi log","note":"Ghi sự kiện hệ thống để debug"},"privacy":{"en":"Privacy","vi":"Quyền riêng tư","note":"Bảo vệ dữ liệu cá nhân user"},"performance":{"en":"Performance","vi":"Hiệu năng","note":"Tốc độ và khả năng chịu tải"},"security":{"en":"Security","vi":"Bảo mật","note":"Bảo vệ hệ thống khỏi tấn công"},"feedback":{"en":"Feedback","vi":"Phản hồi","note":"Thông tin QA gửi team để cải thiện"},"confidence level":{"en":"Confidence Level","vi":"Mức tin cậy","note":"Thang đo QA tin release ổn"},"test data management":{"en":"Test Data Management","vi":"Quản lý test data","note":"Tạo, reset, anonymize data test"},"junior_qa":{"en":"Junior QA","vi":"QA junior","note":"Vị trí QA mới vào nghề"},"mid_qa":{"en":"Mid QA","vi":"QA mid","note":"QA 2–4 năm kinh nghiệm"},"senior_qa":{"en":"Senior QA","vi":"QA senior","note":"QA dẫn dắt chiến lược test"},"qa_lead":{"en":"QA Lead","vi":"QA Lead","note":"Trưởng nhóm QA"},"qa_manager":{"en":"QA Manager","vi":"QA Manager","note":"Quản lý phòng QA"},"api contract":{"en":"API Contract","vi":"Hợp đồng API","note":"Schema request/response giữa client và server"},"idempotency":{"en":"Idempotency","vi":"Idempotency","note":"Request trùng không gây side-effect lặp"},"data masking":{"en":"Data Masking","vi":"Che dữ liệu","note":"Ẩn PII trong screenshot, log, attachment"},"least privilege":{"en":"Least Privilege","vi":"Quyền tối thiểu","note":"Chỉ cấp quyền truy cập cần thiết"},"sbi":{"en":"SBI","vi":"Situation-Behavior-Impact","note":"Khung feedback có cấu trúc"},"defect leakage":{"en":"Defect Leakage","vi":"Bug lọt production","note":"Defect escape sang môi trường prod"},"cycle time":{"en":"Cycle Time","vi":"Thời gian cycle","note":"Từ report bug đến close"},"flaky rate":{"en":"Flaky Rate","vi":"Tỷ lệ flaky","note":"Phần trăm test không ổn định qua các lần chạy"},"30-60-90 plan":{"en":"30-60-90 Plan","vi":"Kế hoạch 90 ngày","note":"Milestone onboarding 30/60/90"},"junior kpi":{"en":"Junior KPI","vi":"KPI junior","note":"Chỉ số đo tiến bộ junior QA"},"quality roadmap":{"en":"Quality Roadmap","vi":"Lộ trình chất lượng","note":"Kế hoạch cải thiện QA dài hạn"},"career ladder":{"en":"Career Ladder","vi":"Thang nghề","note":"Junior → Mid → Senior → Lead"},"specialization":{"en":"Specialization","vi":"Chuyên môn hóa","note":"Nhánh SDET, security, domain depth"},"staff qa":{"en":"Staff QA","vi":"Staff QA","note":"IC senior ảnh hưởng phạm vi org"},"case study":{"en":"Case Study","vi":"Case study","note":"Bài học tình huống có evidence"},"capstone rubric":{"en":"Capstone Rubric","vi":"Rubric capstone","note":"Tiêu chí chấm điểm capstone"},"career readiness":{"en":"Career Readiness","vi":"Sẵn sàng nghề","note":"Đủ artifact và mindset ứng tuyển"},"star method":{"en":"STAR Method","vi":"Phương pháp STAR","note":"Situation-Task-Action-Result cho phỏng vấn"}}
+    };
+    window.FEEDBACK_CONFIG = {"enabled":true,"formAction":"https://docs.google.com/forms/d/e/1FAIpQLSdSxV0QnNFHcdZR9TMtBbZAQJeoip6vMCf03LPUF10s7GgXsA/formResponse","entries":{"page":"entry.457933656","lineId":"entry.962497359","lineText":"entry.374117931","question":"entry.924007788","answer":"entry.225331071"},"labels":{"triggerTitle":"Hỏi về dòng này","modalTitle":"Đặt câu hỏi","lineLabel":"Đoạn bạn đang đọc","emailLabel":"Email của bạn","emailPlaceholder":"vd: ten@gmail.com","questionLabel":"Câu hỏi","questionPlaceholder":"Viết câu hỏi liên quan đến đoạn này…","submit":"Gửi câu hỏi","cancel":"Đóng","success":"Đã gửi câu hỏi. Cảm ơn bạn — chúng tôi sẽ phản hồi sớm.","notConfigured":"Hiện chưa gửi được. Vui lòng thử lại sau.","error":"Không gửi được lúc này. Vui lòng thử lại sau.","emailRequired":"Vui lòng nhập email để nhận phản hồi."}};
+    window.LEARNER_CONFIG = {"welcomeTitle":"Chào mừng đến Lộ trình QA","welcomeIntro":"Nhập tên và email để lưu tiến độ học trên trình duyệt này và gửi câu hỏi khi cần.","nameLabel":"Họ tên","namePlaceholder":"vd: Nguyễn Văn A","emailLabel":"Email","emailPlaceholder":"vd: ten@gmail.com","welcomeSubmit":"Bắt đầu học","logoutLabel":"Đăng xuất","logoutConfirm":"Đăng xuất sẽ xóa tiến độ học trên trình duyệt này và yêu cầu nhập lại tên/email. Tiếp tục?","senderPrefix":"Gửi với tư cách"};
+  </script>
+  <script src="/qa-guide/assets/js/learner.js" defer></script>
+  <script src="/qa-guide/assets/js/mermaid-init.js" defer></script>
+  <script src="/qa-guide/assets/js/theme.js" defer></script>
+  <script src="/qa-guide/assets/js/gamify.js" defer></script>
+  <script src="/qa-guide/assets/js/progress.js" defer></script>
+  <script src="/qa-guide/assets/js/quiz.js" defer></script>
+  <script src="/qa-guide/assets/js/glossary.js" defer></script>
+  <script src="/qa-guide/assets/js/feedback.js" defer></script>
+  <script src="/qa-guide/assets/js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,2838 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phụ lục A: Glossary EN↔VI — Lộ trình QA Engineer</title>
+  <meta name="description" content="Ebook HTML tiếng Việt dạy nghề QA từ con số 0: tư duy, manual testing, agile, và lộ trình sự nghiệp.">
+  <link rel="stylesheet" href="/qa-guide/assets/css/main.css">
+  <link rel="stylesheet" href="/qa-guide/assets/css/feedback.css">
+  <link rel="stylesheet" href="/qa-guide/assets/css/learner.css">
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js" defer></script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Bỏ qua đến nội dung chính</a>
+  <div class="app-shell">
+    <nav class="sidebar" aria-label="Mục lục khóa học">
+  <div class="sidebar__brand">
+    <a href="/qa-guide/">
+      <strong>Lộ trình QA Engineer</strong>
+      <span>Hướng dẫn toàn diện cho người chuyển ngành — 3 tháng</span>
+    </a>
+  </div>
+  <div class="sidebar__progress">
+    <div class="progress-bar"><div class="progress-bar__fill" id="global-progress"></div></div>
+    <span id="progress-text">0% hoàn thành</span>
+  </div>
+  <div class="sidebar__gamify" id="sidebar-gamify">
+    <div class="xp-bar" aria-label="Tiến độ XP">
+      <div class="xp-bar__fill" id="xp-bar-fill"></div>
+    </div>
+    <div class="gamify-meta">
+      <span class="streak-pill" id="gamify-streak"></span>
+      <span class="achievement-badge" id="gamify-level">Lv 1</span>
+      <span class="gamify-xp" id="gamify-xp-text">0 XP</span>
+    </div>
+  </div>
+  <div class="sidebar__learner" id="sidebar-learner" hidden>
+    <span class="sidebar__learner-name" id="learner-display-name"></span>
+    <span class="sidebar__learner-email" id="learner-display-email"></span>
+    <button type="button" class="learner-logout" id="learner-logout">Đăng xuất</button>
+  </div>
+  <ul class="sidebar__links">
+    <li><a href="/qa-guide/search/">🔍 Tìm kiếm</a></li>
+    <li><a href="/qa-guide/dashboard/">📊 Bảng tiến độ</a></li>
+    <li><a href="/qa-guide/appendices/vietnam-job-market/"><strong>🇻🇳 VN Job Market</strong></a></li>
+    <li><a href="/qa-guide/appendices/practicing-qa/"><strong>🛠 Practicing QA</strong></a></li>
+    <li><a href="/qa-guide/appendices/advanced-qa/"><strong>📘 Part 2 Advanced</strong></a></li>
+    <li><a href="/qa-guide/appendices/glossary/">📖 Glossary</a></li>
+    <li><a href="/qa-guide/appendices/testing-mindset/">🧠 Tư duy QA</a></li>
+    <li><a href="/qa-guide/appendices/schedule/">📅 Lịch 12 tuần</a></li>
+  </ul>
+  
+  <details class="sidebar__month" open>
+    <summary>Tháng 1 — Nền tảng &amp; Tư duy QA</summary>
+    <ul>
+      
+      
+      <li>
+        <a href="/qa-guide/month-1/ch01/" data-chapter-link="1" class="chapter-link">
+          <span class="chapter-num">1.</span> Chào mừng đến với QA
+        </a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/qa-guide/month-1/ch02/" data-chapter-link="2" class="chapter-link">
+          <span class="chapter-num">2.</span> Phần mềm là gì
+        </a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/qa-guide/month-1/ch03/" data-chapter-link="3" class="chapter-link">
+          <span class="chapter-num">3.</span> Vòng đời phần mềm
+        </a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/qa-guide/month-1/ch04/" data-chapter-link="4" class="chapter-link">
+          <span class="chapter-num">4.</span> Frontend Backend Database
+        </a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/qa-guide/month-1/ch05/" data-chapter-link="5" class="chapter-link">
+          <span class="chapter-num">5.</span> Vai trò trong team
+        </a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/qa-guide/month-1/ch06/" data-chapter-link="6" class="chapter-link">
+          <span class="chapter-num">6.</span> Sứ mệnh của QA
+        </a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/qa-guide/month-1/ch07/" data-chapter-link="7" class="chapter-link">
+          <span class="chapter-num">7.</span> Manual và Automation
+        </a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/qa-guide/month-1/ch08/" data-chapter-link="8" class="chapter-link">
+          <span class="chapter-num">8.</span> Quality advocacy
+        </a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/qa-guide/month-1/ch09/" data-chapter-link="9" class="chapter-link">
+          <span class="chapter-num">9.</span> User empathy
+        </a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/qa-guide/month-1/ch10/" data-chapter-link="10" class="chapter-link">
+          <span class="chapter-num">10.</span> Collaboration
+        </a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/qa-guide/month-1/ch11/" data-chapter-link="11" class="chapter-link">
+          <span class="chapter-num">11.</span> Thoroughness vs Speed
+        </a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/qa-guide/month-1/ch12/" data-chapter-link="12" class="chapter-link">
+          <span class="chapter-num">12.</span> Ownership
+        </a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/qa-guide/month-1/ch13/" data-chapter-link="13" class="chapter-link">
+          <span class="chapter-num">13.</span> Agile Scrum
+        </a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/qa-guide/month-1/ch14/" data-chapter-link="14" class="chapter-link">
+          <span class="chapter-num">14.</span> Scrum ceremonies
+        </a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/qa-guide/month-1/ch15/" data-chapter-link="15" class="chapter-link">
+          <span class="chapter-num">15.</span> User stories
+        </a>
+      </li>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </ul>
+  </details>
+  
+  <details class="sidebar__month" open>
+    <summary>Tháng 2 — QA chuyên nghiệp (test + Jira + API + SQL)</summary>
+    <ul>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="/qa-guide/month-2/ch16/" data-chapter-link="16" class="chapter-link">
+          <span class="chapter-num">16.</span> Test case nền tảng
+        </a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/qa-guide/month-2/ch17/" data-chapter-link="17" class="chapter-link">
+          <span class="chapter-num">17.</span> Equivalence partitioning
+        </a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/qa-guide/month-2/ch18/" data-chapter-link="18" class="chapter-link">
+          <span class="chapter-num">18.</span> Boundary value analysis
+        </a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/qa-guide/month-2/ch19/" data-chapter-link="19" class="chapter-link">
+          <span class="chapter-num">19.</span> Decision table testing
+        </a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/qa-guide/month-2/ch20/" data-chapter-link="20" class="chapter-link">
+          <span class="chapter-num">20.</span> State transition testing
+        </a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/qa-guide/month-2/ch21/" data-chapter-link="21" class="chapter-link">
+          <span class="chapter-num">21.</span> Functional E2E với Sauce Demo
+        </a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/qa-guide/month-2/ch22/" data-chapter-link="22" class="chapter-link">
+          <span class="chapter-num">22.</span> Exploratory testing
+        </a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/qa-guide/month-2/ch23/" data-chapter-link="23" class="chapter-link">
+          <span class="chapter-num">23.</span> Bug lifecycle
+        </a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/qa-guide/month-2/ch24/" data-chapter-link="24" class="chapter-link">
+          <span class="chapter-num">24.</span> Bug report chuyên nghiệp
+        </a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/qa-guide/month-2/ch25/" data-chapter-link="25" class="chapter-link">
+          <span class="chapter-num">25.</span> Severity vs Priority
+        </a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/qa-guide/month-2/ch26/" data-chapter-link="26" class="chapter-link">
+          <span class="chapter-num">26.</span> Test documentation
+        </a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/qa-guide/month-2/ch27/" data-chapter-link="27" class="chapter-link">
+          <span class="chapter-num">27.</span> Regression testing
+        </a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/qa-guide/month-2/ch28/" data-chapter-link="28" class="chapter-link">
+          <span class="chapter-num">28.</span> Smoke và sanity
+        </a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/qa-guide/month-2/ch29/" data-chapter-link="29" class="chapter-link">
+          <span class="chapter-num">29.</span> Test environment
+        </a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/qa-guide/month-2/ch30/" data-chapter-link="30" class="chapter-link">
+          <span class="chapter-num">30.</span> Test reporting
+        </a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/qa-guide/month-2/ch31/" data-chapter-link="31" class="chapter-link">
+          <span class="chapter-num">31.</span> Capstone test plan
+        </a>
+      </li>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </ul>
+  </details>
+  
+  <details class="sidebar__month" open>
+    <summary>Tháng 3 — Sẵn sàng thị trường (Git + Playwright + portfolio)</summary>
+    <ul>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="/qa-guide/month-3/ch32/" data-chapter-link="32" class="chapter-link">
+          <span class="chapter-num">32.</span> Performance intro
+        </a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/qa-guide/month-3/ch33/" data-chapter-link="33" class="chapter-link">
+          <span class="chapter-num">33.</span> Security &amp; OWASP
+        </a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/qa-guide/month-3/ch34/" data-chapter-link="34" class="chapter-link">
+          <span class="chapter-num">34.</span> QA trong CI/CD
+        </a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/qa-guide/month-3/ch35/" data-chapter-link="35" class="chapter-link">
+          <span class="chapter-num">35.</span> Automation concepts
+        </a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/qa-guide/month-3/ch36/" data-chapter-link="36" class="chapter-link">
+          <span class="chapter-num">36.</span> API concept
+        </a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/qa-guide/month-3/ch37/" data-chapter-link="37" class="chapter-link">
+          <span class="chapter-num">37.</span> Data &amp; privacy
+        </a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/qa-guide/month-3/ch38/" data-chapter-link="38" class="chapter-link">
+          <span class="chapter-num">38.</span> Soft skills QA
+        </a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/qa-guide/month-3/ch39/" data-chapter-link="39" class="chapter-link">
+          <span class="chapter-num">39.</span> QA metrics
+        </a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/qa-guide/month-3/ch40/" data-chapter-link="40" class="chapter-link">
+          <span class="chapter-num">40.</span> Junior QA 90 days
+        </a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/qa-guide/month-3/ch41/" data-chapter-link="41" class="chapter-link">
+          <span class="chapter-num">41.</span> Mid/Senior QA
+        </a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/qa-guide/month-3/ch42/" data-chapter-link="42" class="chapter-link">
+          <span class="chapter-num">42.</span> Lead/Manager path
+        </a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/qa-guide/month-3/ch43/" data-chapter-link="43" class="chapter-link">
+          <span class="chapter-num">43.</span> Chuyên môn hóa QA
+        </a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/qa-guide/month-3/ch44/" data-chapter-link="44" class="chapter-link">
+          <span class="chapter-num">44.</span> Portfolio &amp; interview
+        </a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/qa-guide/month-3/ch45/" data-chapter-link="45" class="chapter-link">
+          <span class="chapter-num">45.</span> Capstone cuối khóa
+        </a>
+      </li>
+      
+      
+    </ul>
+  </details>
+  
+  <details class="sidebar__month" open>
+    <summary>Tháng 4 — Interview &amp; ứng tuyển (phụ lục)</summary>
+    <ul>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </ul>
+  </details>
+  
+  <details class="sidebar__month">
+    <summary>Phụ lục</summary>
+    <ul>
+      
+      <li><a href="/qa-guide/appendices/testing-mindset/">Tư duy kiểm thử chuyên nghiệp</a></li>
+      
+      <li><a href="/qa-guide/appendices/capstone-sample/">Mẫu capstone — Sauce Demo</a></li>
+      
+      <li><a href="/qa-guide/appendices/vietnam-job-market/">VN Job Market — Lộ trình 4 tháng</a></li>
+      
+      <li><a href="/qa-guide/appendices/glossary/">Phụ lục A: Glossary EN↔VI</a></li>
+      
+      <li><a href="/qa-guide/appendices/practicing-qa/">Practicing QA — Từ hiểu sang làm được</a></li>
+      
+      <li><a href="/qa-guide/appendices/templates/">Phụ lục B: Mẫu tài liệu QA</a></li>
+      
+      <li><a href="/qa-guide/appendices/advanced-qa/">QA Guide Advanced — Part 2</a></li>
+      
+      <li><a href="/qa-guide/appendices/references/">Phụ lục C: Tài liệu tham khảo tiếng Việt</a></li>
+      
+      <li><a href="/qa-guide/appendices/schedule/">Phụ lục D: Lịch học 16 tuần</a></li>
+      
+      <li><a href="/qa-guide/appendices/jira-for-qa/">Jira cho QA</a></li>
+      
+      <li><a href="/qa-guide/appendices/api-testing-handson/">API testing hands-on</a></li>
+      
+      <li><a href="/qa-guide/appendices/sql-for-qa/">SQL cho QA</a></li>
+      
+      <li><a href="/qa-guide/appendices/browser-devtools/">Browser DevTools cho QA</a></li>
+      
+      <li><a href="/qa-guide/appendices/qa-english/">QA English vocabulary</a></li>
+      
+      <li><a href="/qa-guide/appendices/git-for-qa/">Git cho QA</a></li>
+      
+      <li><a href="/qa-guide/appendices/playwright-intro/">Playwright intro</a></li>
+      
+      <li><a href="/qa-guide/appendices/portfolio-four-projects/">Portfolio 4 dự án</a></li>
+      
+      <li><a href="/qa-guide/appendices/interview-track/">Interview track QA</a></li>
+      
+      <li><a href="/qa-guide/appendices/career-vietnam/">Career QA tại Việt Nam</a></li>
+      
+      <li><a href="/qa-guide/appendices/day-one-workflow/">Workflow ngày 1 — Requirement đến Bug report</a></li>
+      
+      <li><a href="/qa-guide/appendices/requirement-analysis-lab/">Lab phân tích requirement</a></li>
+      
+      <li><a href="/qa-guide/appendices/risk-based-scenarios/">Risk-based testing — Scenarios thực tế</a></li>
+      
+      <li><a href="/qa-guide/appendices/exploratory-thinking/">Tư duy exploratory — Tester giàu kinh nghiệm nghĩ gì?</a></li>
+      
+      <li><a href="/qa-guide/appendices/buggy-apps-playground/">Buggy apps — Sân luyện có chủ đích</a></li>
+      
+      <li><a href="/qa-guide/appendices/production-escape-stories/">Production escapes — Vì sao bug lọt?</a></li>
+      
+      <li><a href="/qa-guide/appendices/economics-of-quality/">Economics of Quality — Tại sao trả tiền cho QA?</a></li>
+      
+      <li><a href="/qa-guide/appendices/requirements-in-the-wild/">Requirements in the wild — Đọc spec thực tế</a></li>
+      
+      <li><a href="/qa-guide/appendices/conflict-management-qa/">Conflict management — QA và stakeholder</a></li>
+      
+      <li><a href="/qa-guide/appendices/risk-release-decisions/">Risk &amp; release decisions — 2 giờ trước ship</a></li>
+      
+      <li><a href="/qa-guide/appendices/product-thinking-qa/">Product thinking cho QA</a></li>
+      
+      <li><a href="/qa-guide/appendices/workplace-war-stories/">Workplace war stories — Tình huống thực chiến</a></li>
+      
+    </ul>
+  </details>
+</nav>
+
+    <div class="main-area">
+      <header class="top-bar">
+        <button type="button" class="menu-toggle" aria-label="Mở menu" aria-expanded="false">☰</button>
+        <div class="top-bar__title">Lộ trình QA Engineer</div>
+        <div class="top-bar__actions">
+          <button type="button" class="theme-toggle" aria-label="Đổi giao diện sáng/tối">🌓</button>
+          <button type="button" class="print-toggle" aria-label="In trang" onclick="window.print()">🖨</button>
+        </div>
+      </header>
+      <main id="main-content" class="content">
+        <h1>Glossary — Thuật ngữ QA (388 mục)</h1>
+<p>Tra cứu thuật ngữ tiếng Anh thường gặp trong ngành QA. Click hoặc hover thuật ngữ có gạch chân trong các chương để xem nhanh.</p>
+<input type="search" id="glossary-search" placeholder="Tìm thuật ngữ..." aria-label="Tìm glossary" style="width:100%;padding:0.75rem;margin:1rem 0;border:1px solid var(--border);border-radius:8px;font-size:1rem">
+<div id="glossary-list">
+<div class="glossary-entry card" data-term="404" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>404 Not Found</strong> (404)
+  <p style="margin:0.35rem 0 0">Không tìm thấy</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>HTTP status: trang/resource không tồn tại</em></p>
+</div>
+<div class="glossary-entry card" data-term="500" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>500 Internal Server Error</strong> (500)
+  <p style="margin:0.35rem 0 0">Lỗi server</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>HTTP status: lỗi phía backend</em></p>
+</div>
+<div class="glossary-entry card" data-term="qa" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Quality Assurance</strong> (qa)
+  <p style="margin:0.35rem 0 0">Đảm bảo chất lượng</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Toàn bộ hoạt động đảm bảo sản phẩm đáp ứng yêu cầu</em></p>
+</div>
+<div class="glossary-entry card" data-term="qc" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Quality Control</strong> (qc)
+  <p style="margin:0.35rem 0 0">Kiểm soát chất lượng</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Hoạt động kiểm tra cụ thể</em></p>
+</div>
+<div class="glossary-entry card" data-term="bug" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Bug / Defect</strong> (bug)
+  <p style="margin:0.35rem 0 0">Lỗi phần mềm</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Hành vi không đúng so với mong đợi</em></p>
+</div>
+<div class="glossary-entry card" data-term="defect" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Defect</strong> (defect)
+  <p style="margin:0.35rem 0 0">Khuyết tật</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Tương đương bug trong ngữ cảnh chính thức</em></p>
+</div>
+<div class="glossary-entry card" data-term="test case" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Test Case</strong> (test case)
+  <p style="margin:0.35rem 0 0">Kịch bản kiểm thử</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Tập hợp bước, dữ liệu, kết quả mong đợi</em></p>
+</div>
+<div class="glossary-entry card" data-term="test plan" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Test Plan</strong> (test plan)
+  <p style="margin:0.35rem 0 0">Kế hoạch kiểm thử</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Tài liệu chiến lược test tổng thể</em></p>
+</div>
+<div class="glossary-entry card" data-term="test suite" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Test Suite</strong> (test suite)
+  <p style="margin:0.35rem 0 0">Bộ kiểm thử</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Nhóm test case liên quan</em></p>
+</div>
+<div class="glossary-entry card" data-term="requirement" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Requirement</strong> (requirement)
+  <p style="margin:0.35rem 0 0">Yêu cầu</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Mô tả chức năng hệ thống phải có</em></p>
+</div>
+<div class="glossary-entry card" data-term="user story" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>User Story</strong> (user story)
+  <p style="margin:0.35rem 0 0">Câu chuyện người dùng</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Yêu cầu dạng: Là [ai], tôi muốn [gì], để [lợi ích]</em></p>
+</div>
+<div class="glossary-entry card" data-term="acceptance criteria" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Acceptance Criteria</strong> (acceptance criteria)
+  <p style="margin:0.35rem 0 0">Tiêu chí chấp nhận</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Điều kiện để coi story là hoàn thành</em></p>
+</div>
+<div class="glossary-entry card" data-term="sprint" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Sprint</strong> (sprint)
+  <p style="margin:0.35rem 0 0">Chu kỳ phát triển ngắn</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Thường 1–2 tuần trong Scrum</em></p>
+</div>
+<div class="glossary-entry card" data-term="scrum" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Scrum</strong> (scrum)
+  <p style="margin:0.35rem 0 0">Khung Agile phổ biến</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Có Sprint, Daily, Review, Retro</em></p>
+</div>
+<div class="glossary-entry card" data-term="agile" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Agile</strong> (agile)
+  <p style="margin:0.35rem 0 0">Phương pháp linh hoạt</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Phát triển lặp, giao hàng liên tục</em></p>
+</div>
+<div class="glossary-entry card" data-term="sdlc" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Software Development Life Cycle</strong> (sdlc)
+  <p style="margin:0.35rem 0 0">Vòng đời phát triển phần mềm</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Từ ý tưởng đến bảo trì</em></p>
+</div>
+<div class="glossary-entry card" data-term="frontend" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Frontend</strong> (frontend)
+  <p style="margin:0.35rem 0 0">Giao diện người dùng</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Phần người dùng nhìn thấy và tương tác</em></p>
+</div>
+<div class="glossary-entry card" data-term="backend" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Backend</strong> (backend)
+  <p style="margin:0.35rem 0 0">Phía máy chủ</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Xử lý logic, dữ liệu, API</em></p>
+</div>
+<div class="glossary-entry card" data-term="database" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Database</strong> (database)
+  <p style="margin:0.35rem 0 0">Cơ sở dữ liệu</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Nơi lưu trữ dữ liệu lâu dài</em></p>
+</div>
+<div class="glossary-entry card" data-term="api" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Application Programming Interface</strong> (api)
+  <p style="margin:0.35rem 0 0">Giao diện lập trình ứng dụng</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Cách phần mềm giao tiếp</em></p>
+</div>
+<div class="glossary-entry card" data-term="rest" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>REST</strong> (rest)
+  <p style="margin:0.35rem 0 0">Kiến trúc API phổ biến</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Dùng HTTP methods: GET, POST, PUT, DELETE</em></p>
+</div>
+<div class="glossary-entry card" data-term="manual testing" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Manual Testing</strong> (manual testing)
+  <p style="margin:0.35rem 0 0">Kiểm thử thủ công</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Tester thực hiện bước bằng tay</em></p>
+</div>
+<div class="glossary-entry card" data-term="automated testing" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Automated Testing</strong> (automated testing)
+  <p style="margin:0.35rem 0 0">Kiểm thử tự động</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Script chạy test tự động</em></p>
+</div>
+<div class="glossary-entry card" data-term="regression" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Regression Testing</strong> (regression)
+  <p style="margin:0.35rem 0 0">Kiểm thử hồi quy</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Đảm bảo sửa lỗi không phá tính năng cũ</em></p>
+</div>
+<div class="glossary-entry card" data-term="smoke test" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Smoke Test</strong> (smoke test)
+  <p style="margin:0.35rem 0 0">Kiểm thử khói</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Test nhanh các chức năng chính</em></p>
+</div>
+<div class="glossary-entry card" data-term="sanity test" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Sanity Test</strong> (sanity test)
+  <p style="margin:0.35rem 0 0">Kiểm thử cơ bản</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Test hẹp sau khi sửa bug cụ thể</em></p>
+</div>
+<div class="glossary-entry card" data-term="exploratory testing" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Exploratory Testing</strong> (exploratory testing)
+  <p style="margin:0.35rem 0 0">Kiểm thử khám phá</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Vừa học vừa thiết kế test đồng thời</em></p>
+</div>
+<div class="glossary-entry card" data-term="functional testing" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Functional Testing</strong> (functional testing)
+  <p style="margin:0.35rem 0 0">Kiểm thử chức năng</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Verify tính năng hoạt động đúng spec</em></p>
+</div>
+<div class="glossary-entry card" data-term="non-functional testing" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Non-functional Testing</strong> (non-functional testing)
+  <p style="margin:0.35rem 0 0">Kiểm thử phi chức năng</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Performance, security, usability...</em></p>
+</div>
+<div class="glossary-entry card" data-term="performance testing" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Performance Testing</strong> (performance testing)
+  <p style="margin:0.35rem 0 0">Kiểm thử hiệu năng</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Đo tốc độ, throughput dưới tải</em></p>
+</div>
+<div class="glossary-entry card" data-term="load testing" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Load Testing</strong> (load testing)
+  <p style="margin:0.35rem 0 0">Kiểm thử tải</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Test với số user dự kiến</em></p>
+</div>
+<div class="glossary-entry card" data-term="stress testing" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Stress Testing</strong> (stress testing)
+  <p style="margin:0.35rem 0 0">Kiểm thử căng thẳng</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Vượt ngưỡng bình thường</em></p>
+</div>
+<div class="glossary-entry card" data-term="security testing" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Security Testing</strong> (security testing)
+  <p style="margin:0.35rem 0 0">Kiểm thử bảo mật</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Tìm lỗ hổng bảo mật</em></p>
+</div>
+<div class="glossary-entry card" data-term="severity" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Severity</strong> (severity)
+  <p style="margin:0.35rem 0 0">Mức độ nghiêm trọng</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Bug ảnh hưởng kỹ thuật thế nào</em></p>
+</div>
+<div class="glossary-entry card" data-term="priority" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Priority</strong> (priority)
+  <p style="margin:0.35rem 0 0">Độ ưu tiên</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Bug cần sửa trước hay sau</em></p>
+</div>
+<div class="glossary-entry card" data-term="reproducible" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Reproducible</strong> (reproducible)
+  <p style="margin:0.35rem 0 0">Có thể tái hiện</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Bug report phải mô tả cách lặp lại lỗi</em></p>
+</div>
+<div class="glossary-entry card" data-term="environment" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Environment</strong> (environment)
+  <p style="margin:0.35rem 0 0">Môi trường</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Staging, QA, Production</em></p>
+</div>
+<div class="glossary-entry card" data-term="staging" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Staging</strong> (staging)
+  <p style="margin:0.35rem 0 0">Môi trường pre-prod</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Gần giống production để test cuối</em></p>
+</div>
+<div class="glossary-entry card" data-term="production" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Production</strong> (production)
+  <p style="margin:0.35rem 0 0">Môi trường thật</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Người dùng thật đang dùng</em></p>
+</div>
+<div class="glossary-entry card" data-term="deployment" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Deployment</strong> (deployment)
+  <p style="margin:0.35rem 0 0">Triển khai</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Đưa code lên môi trường</em></p>
+</div>
+<div class="glossary-entry card" data-term="ci" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Continuous Integration</strong> (ci)
+  <p style="margin:0.35rem 0 0">Tích hợp liên tục</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Build/test tự động mỗi commit</em></p>
+</div>
+<div class="glossary-entry card" data-term="cd" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Continuous Delivery</strong> (cd)
+  <p style="margin:0.35rem 0 0">Giao hàng liên tục</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Sẵn sàng deploy bất cứ lúc nào</em></p>
+</div>
+<div class="glossary-entry card" data-term="pipeline" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Pipeline</strong> (pipeline)
+  <p style="margin:0.35rem 0 0">Pipeline CI/CD</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Chuỗi build-test-deploy</em></p>
+</div>
+<div class="glossary-entry card" data-term="commit" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Commit</strong> (commit)
+  <p style="margin:0.35rem 0 0">Commit code</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Lưu thay đổi vào Git</em></p>
+</div>
+<div class="glossary-entry card" data-term="pull request" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Pull Request</strong> (pull request)
+  <p style="margin:0.35rem 0 0">Yêu cầu gộp code</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>PR/MR để review trước khi merge</em></p>
+</div>
+<div class="glossary-entry card" data-term="code review" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Code Review</strong> (code review)
+  <p style="margin:0.35rem 0 0">Review mã nguồn</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Dev kiểm tra code của nhau</em></p>
+</div>
+<div class="glossary-entry card" data-term="dev" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Developer</strong> (dev)
+  <p style="margin:0.35rem 0 0">Lập trình viên</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Viết code</em></p>
+</div>
+<div class="glossary-entry card" data-term="pm" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Product Manager</strong> (pm)
+  <p style="margin:0.35rem 0 0">Quản lý sản phẩm</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Quyết định làm gì và thứ tự ưu tiên</em></p>
+</div>
+<div class="glossary-entry card" data-term="po" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Product Owner</strong> (po)
+  <p style="margin:0.35rem 0 0">Chủ sản phẩm</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Đại diện stakeholder trong Scrum</em></p>
+</div>
+<div class="glossary-entry card" data-term="ux" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>User Experience</strong> (ux)
+  <p style="margin:0.35rem 0 0">Trải nghiệm người dùng</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Thiết kế cách người dùng cảm nhận sản phẩm</em></p>
+</div>
+<div class="glossary-entry card" data-term="ui" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>User Interface</strong> (ui)
+  <p style="margin:0.35rem 0 0">Giao diện người dùng</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Nút, form, màu sắc, layout</em></p>
+</div>
+<div class="glossary-entry card" data-term="shift-left" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Shift-left</strong> (shift-left)
+  <p style="margin:0.35rem 0 0">Shift-left testing</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Test sớm hơn trong SDLC</em></p>
+</div>
+<div class="glossary-entry card" data-term="test data" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Test Data</strong> (test data)
+  <p style="margin:0.35rem 0 0">Dữ liệu kiểm thử</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Input dùng khi chạy test</em></p>
+</div>
+<div class="glossary-entry card" data-term="traceability" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Traceability</strong> (traceability)
+  <p style="margin:0.35rem 0 0">Truy vết</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Liên kết requirement → test case → bug</em></p>
+</div>
+<div class="glossary-entry card" data-term="equivalence partitioning" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Equivalence Partitioning</strong> (equivalence partitioning)
+  <p style="margin:0.35rem 0 0">Phân vùng tương đương</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Chia input thành nhóm hợp lệ/không hợp lệ</em></p>
+</div>
+<div class="glossary-entry card" data-term="boundary value analysis" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Boundary Value Analysis</strong> (boundary value analysis)
+  <p style="margin:0.35rem 0 0">Phân tích giá trị biên</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Test tại và cạnh ranh giới</em></p>
+</div>
+<div class="glossary-entry card" data-term="decision table" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Decision Table</strong> (decision table)
+  <p style="margin:0.35rem 0 0">Bảng quyết định</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Test logic nhiều điều kiện</em></p>
+</div>
+<div class="glossary-entry card" data-term="state transition" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>State Transition</strong> (state transition)
+  <p style="margin:0.35rem 0 0">Chuyển trạng thái</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Test flow thay đổi trạng thái hệ thống</em></p>
+</div>
+<div class="glossary-entry card" data-term="test pyramid" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Test Pyramid</strong> (test pyramid)
+  <p style="margin:0.35rem 0 0">Kim tự tháp kiểm thử</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Nhiều unit, ít E2E</em></p>
+</div>
+<div class="glossary-entry card" data-term="e2e" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>End-to-End</strong> (e2e)
+  <p style="margin:0.35rem 0 0">Đầu cuối</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Test toàn flow người dùng</em></p>
+</div>
+<div class="glossary-entry card" data-term="unit test" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Unit Test</strong> (unit test)
+  <p style="margin:0.35rem 0 0">Kiểm thử đơn vị</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Test function/class nhỏ nhất</em></p>
+</div>
+<div class="glossary-entry card" data-term="integration test" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Integration Test</strong> (integration test)
+  <p style="margin:0.35rem 0 0">Kiểm thử tích hợp</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Test nhiều module kết hợp</em></p>
+</div>
+<div class="glossary-entry card" data-term="flaky test" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Flaky Test</strong> (flaky test)
+  <p style="margin:0.35rem 0 0">Test không ổn định</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Lúc pass lúc fail không rõ lý do</em></p>
+</div>
+<div class="glossary-entry card" data-term="owasp" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>OWASP</strong> (owasp)
+  <p style="margin:0.35rem 0 0">Tổ chức bảo mật web</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>OWASP Top 10 là checklist phổ biến</em></p>
+</div>
+<div class="glossary-entry card" data-term="sql injection" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>SQL Injection</strong> (sql injection)
+  <p style="margin:0.35rem 0 0">Tiêm SQL</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Lỗ hổng inject query độc hại</em></p>
+</div>
+<div class="glossary-entry card" data-term="xss" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Cross-Site Scripting</strong> (xss)
+  <p style="margin:0.35rem 0 0">Script chéo trang</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Inject script vào trang web</em></p>
+</div>
+<div class="glossary-entry card" data-term="pii" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Personally Identifiable Information</strong> (pii)
+  <p style="margin:0.35rem 0 0">Thông tin nhận dạng cá nhân</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Email, CMND, SĐT...</em></p>
+</div>
+<div class="glossary-entry card" data-term="kpi" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Key Performance Indicator</strong> (kpi)
+  <p style="margin:0.35rem 0 0">Chỉ số KPI</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Metric đo hiệu quả</em></p>
+</div>
+<div class="glossary-entry card" data-term="risk-based testing" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Risk-based Testing</strong> (risk-based testing)
+  <p style="margin:0.35rem 0 0">Test theo rủi ro</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Ưu tiên vùng rủi ro cao</em></p>
+</div>
+<div class="glossary-entry card" data-term="retrospective" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Retrospective</strong> (retrospective)
+  <p style="margin:0.35rem 0 0">Họp cải tiến</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Cuối sprint: tốt/xấu/cải thiện</em></p>
+</div>
+<div class="glossary-entry card" data-term="daily standup" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Daily Standup</strong> (daily standup)
+  <p style="margin:0.35rem 0 0">Họp daily</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>15 phút sync tiến độ mỗi ngày</em></p>
+</div>
+<div class="glossary-entry card" data-term="backlog" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Backlog</strong> (backlog)
+  <p style="margin:0.35rem 0 0">Danh sách công việc</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Tập story/task chưa làm</em></p>
+</div>
+<div class="glossary-entry card" data-term="epic" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Epic</strong> (epic)
+  <p style="margin:0.35rem 0 0">Epic</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Nhóm user story lớn</em></p>
+</div>
+<div class="glossary-entry card" data-term="story point" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Story Point</strong> (story point)
+  <p style="margin:0.35rem 0 0">Điểm story</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Ước lượng effort tương đối</em></p>
+</div>
+<div class="glossary-entry card" data-term="velocity" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Velocity</strong> (velocity)
+  <p style="margin:0.35rem 0 0">Vận tốc team</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Story point hoàn thành mỗi sprint</em></p>
+</div>
+<div class="glossary-entry card" data-term="dod" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Definition of Done</strong> (dod)
+  <p style="margin:0.35rem 0 0">DoD</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Tiêu chí chung task hoàn thành</em></p>
+</div>
+<div class="glossary-entry card" data-term="dor" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Definition of Ready</strong> (dor)
+  <p style="margin:0.35rem 0 0">DoR</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Story đủ rõ để bắt đầu</em></p>
+</div>
+<div class="glossary-entry card" data-term="blocker" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Blocker</strong> (blocker)
+  <p style="margin:0.35rem 0 0">Vật cản</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Vấn đề chặn tiến độ</em></p>
+</div>
+<div class="glossary-entry card" data-term="hotfix" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Hotfix</strong> (hotfix)
+  <p style="margin:0.35rem 0 0">Sửa khẩn</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Patch nhanh cho production</em></p>
+</div>
+<div class="glossary-entry card" data-term="rollback" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Rollback</strong> (rollback)
+  <p style="margin:0.35rem 0 0">Hoàn tác</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Quay về phiên bản trước</em></p>
+</div>
+<div class="glossary-entry card" data-term="release" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Release</strong> (release)
+  <p style="margin:0.35rem 0 0">Phát hành</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Phiên bản mới giao cho người dùng</em></p>
+</div>
+<div class="glossary-entry card" data-term="build" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Build</strong> (build)
+  <p style="margin:0.35rem 0 0">Build</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Biên dịch/đóng gói code</em></p>
+</div>
+<div class="glossary-entry card" data-term="version control" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Version Control</strong> (version control)
+  <p style="margin:0.35rem 0 0">Quản lý phiên bản</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Git, SVN...</em></p>
+</div>
+<div class="glossary-entry card" data-term="git" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Git</strong> (git)
+  <p style="margin:0.35rem 0 0">Hệ thống Git</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Version control phổ biến nhất</em></p>
+</div>
+<div class="glossary-entry card" data-term="branch" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Branch</strong> (branch)
+  <p style="margin:0.35rem 0 0">Nhánh</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Dòng phát triển tách biệt</em></p>
+</div>
+<div class="glossary-entry card" data-term="merge" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Merge</strong> (merge)
+  <p style="margin:0.35rem 0 0">Gộp</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Kết hợp branch vào nhau</em></p>
+</div>
+<div class="glossary-entry card" data-term="ticket" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Ticket</strong> (ticket)
+  <p style="margin:0.35rem 0 0">Phiếu công việc</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Task hoặc bug trên Jira/Linear</em></p>
+</div>
+<div class="glossary-entry card" data-term="jira" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Jira</strong> (jira)
+  <p style="margin:0.35rem 0 0">Công cụ quản lý</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Phổ biến cho bug tracking</em></p>
+</div>
+<div class="glossary-entry card" data-term="status" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Status</strong> (status)
+  <p style="margin:0.35rem 0 0">Trạng thái</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>New, In Progress, Done...</em></p>
+</div>
+<div class="glossary-entry card" data-term="assignee" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Assignee</strong> (assignee)
+  <p style="margin:0.35rem 0 0">Người được giao</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Ai chịu trách nhiệm ticket</em></p>
+</div>
+<div class="glossary-entry card" data-term="reporter" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Reporter</strong> (reporter)
+  <p style="margin:0.35rem 0 0">Người báo cáo</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Ai tạo bug report</em></p>
+</div>
+<div class="glossary-entry card" data-term="verification" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Verification</strong> (verification)
+  <p style="margin:0.35rem 0 0">Xác minh</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Build đúng theo spec không?</em></p>
+</div>
+<div class="glossary-entry card" data-term="validation" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Validation</strong> (validation)
+  <p style="margin:0.35rem 0 0">Thẩm định</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Build đúng thứ user cần không?</em></p>
+</div>
+<div class="glossary-entry card" data-term="uat" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>User Acceptance Testing</strong> (uat)
+  <p style="margin:0.35rem 0 0">UAT</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>User test chấp nhận trước go-live</em></p>
+</div>
+<div class="glossary-entry card" data-term="go-live" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Go-live</strong> (go-live)
+  <p style="margin:0.35rem 0 0">Ra mắt</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Đưa sản phẩm cho người dùng thật</em></p>
+</div>
+<div class="glossary-entry card" data-term="mvp" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Minimum Viable Product</strong> (mvp)
+  <p style="margin:0.35rem 0 0">Sản phẩm tối thiểu</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Phiên bản nhỏ nhất có giá trị</em></p>
+</div>
+<div class="glossary-entry card" data-term="scope" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Scope</strong> (scope)
+  <p style="margin:0.35rem 0 0">Phạm vi</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Ran giới công việc được làm</em></p>
+</div>
+<div class="glossary-entry card" data-term="scope creep" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Scope Creep</strong> (scope creep)
+  <p style="margin:0.35rem 0 0">Phạm vi tràn</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Yêu cầu thêm không kiểm soát</em></p>
+</div>
+<div class="glossary-entry card" data-term="edge case" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Edge Case</strong> (edge case)
+  <p style="margin:0.35rem 0 0">Trường hợp biên</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Tình huống hiếm nhưng quan trọng</em></p>
+</div>
+<div class="glossary-entry card" data-term="happy path" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Happy Path</strong> (happy path)
+  <p style="margin:0.35rem 0 0">Luồng thuận lợi</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>User dùng đúng cách, không lỗi</em></p>
+</div>
+<div class="glossary-entry card" data-term="negative testing" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Negative Testing</strong> (negative testing)
+  <p style="margin:0.35rem 0 0">Test tiêu cực</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Test input sai, hành vi lỗi</em></p>
+</div>
+<div class="glossary-entry card" data-term="positive testing" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Positive Testing</strong> (positive testing)
+  <p style="margin:0.35rem 0 0">Test tích cực</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Test input hợp lệ</em></p>
+</div>
+<div class="glossary-entry card" data-term="test charter" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Test Charter</strong> (test charter)
+  <p style="margin:0.35rem 0 0">Bản mô tả session ET</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Mục tiêu, phạm vi, thời gian ET session</em></p>
+</div>
+<div class="glossary-entry card" data-term="session-based testing" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Session-based Testing</strong> (session-based testing)
+  <p style="margin:0.35rem 0 0">ET theo phiên</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>ET có cấu trúc thời gian và ghi chép</em></p>
+</div>
+<div class="glossary-entry card" data-term="heuristic" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Heuristic</strong> (heuristic)
+  <p style="margin:0.35rem 0 0">Quy tắc kinh nghiệm</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Hướng dẫn khám phá khi test</em></p>
+</div>
+<div class="glossary-entry card" data-term="oracle" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Oracle</strong> (oracle)
+  <p style="margin:0.35rem 0 0">Oracle kiểm thử</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Cách biết kết quả đúng hay sai</em></p>
+</div>
+<div class="glossary-entry card" data-term="assertion" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Assertion</strong> (assertion)
+  <p style="margin:0.35rem 0 0">Khẳng định</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Trong automation: kiểm tra kết quả mong đợi</em></p>
+</div>
+<div class="glossary-entry card" data-term="mock" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Mock</strong> (mock)
+  <p style="margin:0.35rem 0 0">Mock object</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Giả lập dependency khi test</em></p>
+</div>
+<div class="glossary-entry card" data-term="stub" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Stub</strong> (stub)
+  <p style="margin:0.35rem 0 0">Stub</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Trả về dữ liệu cố định khi test</em></p>
+</div>
+<div class="glossary-entry card" data-term="test double" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Test Double</strong> (test double)
+  <p style="margin:0.35rem 0 0">Test double</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Thuật ngữ chung cho mock/stub/fake</em></p>
+</div>
+<div class="glossary-entry card" data-term="coverage" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Test Coverage</strong> (coverage)
+  <p style="margin:0.35rem 0 0">Độ phủ kiểm thử</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Phần code/requirement được test bao nhiêu %</em></p>
+</div>
+<div class="glossary-entry card" data-term="metric" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Metric</strong> (metric)
+  <p style="margin:0.35rem 0 0">Chỉ số</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Số liệu đo chất lượng hoặc tiến độ</em></p>
+</div>
+<div class="glossary-entry card" data-term="sla" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Service Level Agreement</strong> (sla)
+  <p style="margin:0.35rem 0 0">SLA</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Cam kết mức dịch vụ</em></p>
+</div>
+<div class="glossary-entry card" data-term="uptime" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Uptime</strong> (uptime)
+  <p style="margin:0.35rem 0 0">Thời gian hoạt động</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Hệ thống online bao lâu</em></p>
+</div>
+<div class="glossary-entry card" data-term="downtime" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Downtime</strong> (downtime)
+  <p style="margin:0.35rem 0 0">Thời gian ngừng</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Hệ thống offline</em></p>
+</div>
+<div class="glossary-entry card" data-term="latency" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Latency</strong> (latency)
+  <p style="margin:0.35rem 0 0">Độ trễ</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Thời gian phản hồi</em></p>
+</div>
+<div class="glossary-entry card" data-term="throughput" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Throughput</strong> (throughput)
+  <p style="margin:0.35rem 0 0">Thông lượng</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Số request xử lý/giây</em></p>
+</div>
+<div class="glossary-entry card" data-term="scalability" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Scalability</strong> (scalability)
+  <p style="margin:0.35rem 0 0">Khả năng mở rộng</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Hệ thống chịu tải tăng thế nào</em></p>
+</div>
+<div class="glossary-entry card" data-term="browser" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Browser</strong> (browser)
+  <p style="margin:0.35rem 0 0">Trình duyệt</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Chrome, Firefox, Safari</em></p>
+</div>
+<div class="glossary-entry card" data-term="cross-browser" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Cross-browser Testing</strong> (cross-browser)
+  <p style="margin:0.35rem 0 0">Test đa trình duyệt</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>App hoạt động trên nhiều browser</em></p>
+</div>
+<div class="glossary-entry card" data-term="responsive" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Responsive</strong> (responsive)
+  <p style="margin:0.35rem 0 0">Responsive design</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Giao diện adapt nhiều kích thước</em></p>
+</div>
+<div class="glossary-entry card" data-term="cookie" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Cookie</strong> (cookie)
+  <p style="margin:0.35rem 0 0">Cookie</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Dữ liệu trình duyệt lưu tạm</em></p>
+</div>
+<div class="glossary-entry card" data-term="session" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Session</strong> (session)
+  <p style="margin:0.35rem 0 0">Phiên đăng nhập</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Trạng thái user đang logged in</em></p>
+</div>
+<div class="glossary-entry card" data-term="authentication" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Authentication</strong> (authentication)
+  <p style="margin:0.35rem 0 0">Xác thực</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Verify user là ai (login)</em></p>
+</div>
+<div class="glossary-entry card" data-term="authorization" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Authorization</strong> (authorization)
+  <p style="margin:0.35rem 0 0">Phân quyền</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>User được phép làm gì</em></p>
+</div>
+<div class="glossary-entry card" data-term="http" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>HyperText Transfer Protocol</strong> (http)
+  <p style="margin:0.35rem 0 0">Giao thức HTTP</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Cách browser và server giao tiếp</em></p>
+</div>
+<div class="glossary-entry card" data-term="json" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>JSON</strong> (json)
+  <p style="margin:0.35rem 0 0">Định dạng JSON</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Cấu trúc dữ liệu text phổ biến cho API</em></p>
+</div>
+<div class="glossary-entry card" data-term="payload" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Payload</strong> (payload)
+  <p style="margin:0.35rem 0 0">Payload</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Dữ liệu trong request/response</em></p>
+</div>
+<div class="glossary-entry card" data-term="endpoint" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Endpoint</strong> (endpoint)
+  <p style="margin:0.35rem 0 0">Endpoint API</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>URL cụ thể của API</em></p>
+</div>
+<div class="glossary-entry card" data-term="postman" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Postman</strong> (postman)
+  <p style="margin:0.35rem 0 0">Công cụ test API</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Gửi request, xem response</em></p>
+</div>
+<div class="glossary-entry card" data-term="selenium" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Selenium</strong> (selenium)
+  <p style="margin:0.35rem 0 0">Framework automation web</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Điều khiển browser tự động</em></p>
+</div>
+<div class="glossary-entry card" data-term="playwright" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Playwright</strong> (playwright)
+  <p style="margin:0.35rem 0 0">Framework automation hiện đại</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Microsoft, hỗ trợ multi-browser</em></p>
+</div>
+<div class="glossary-entry card" data-term="cypress" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Cypress</strong> (cypress)
+  <p style="margin:0.35rem 0 0">Framework automation JS</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Phổ biến cho frontend JS apps</em></p>
+</div>
+<div class="glossary-entry card" data-term="locator" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Locator</strong> (locator)
+  <p style="margin:0.35rem 0 0">Bộ định vị element</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Cách automation tìm element trên UI</em></p>
+</div>
+<div class="glossary-entry card" data-term="selector" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Selector</strong> (selector)
+  <p style="margin:0.35rem 0 0">Selector CSS/XPath</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Cú pháp chọn element</em></p>
+</div>
+<div class="glossary-entry card" data-term="headless" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Headless Browser</strong> (headless)
+  <p style="margin:0.35rem 0 0">Browser không giao diện</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Chạy browser ẩn, nhanh hơn</em></p>
+</div>
+<div class="glossary-entry card" data-term="screenshot" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Screenshot</strong> (screenshot)
+  <p style="margin:0.35rem 0 0">Ảnh chụp màn hình</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Bằng chứng trực quan cho bug report</em></p>
+</div>
+<div class="glossary-entry card" data-term="log" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Log</strong> (log)
+  <p style="margin:0.35rem 0 0">Nhật ký</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Ghi lại sự kiện hệ thống</em></p>
+</div>
+<div class="glossary-entry card" data-term="debug" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Debug</strong> (debug)
+  <p style="margin:0.35rem 0 0">Gỡ lỗi</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Tìm nguyên nhân bug</em></p>
+</div>
+<div class="glossary-entry card" data-term="root cause" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Root Cause</strong> (root cause)
+  <p style="margin:0.35rem 0 0">Nguyên nhân gốc</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Lý do thật sự gây bug</em></p>
+</div>
+<div class="glossary-entry card" data-term="workaround" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Workaround</strong> (workaround)
+  <p style="margin:0.35rem 0 0">Cách tạm thời</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Giải pháp tạm chưa fix gốc</em></p>
+</div>
+<div class="glossary-entry card" data-term="fix" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Fix</strong> (fix)
+  <p style="margin:0.35rem 0 0">Sửa lỗi</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Dev sửa bug trong code</em></p>
+</div>
+<div class="glossary-entry card" data-term="retest" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Retest</strong> (retest)
+  <p style="margin:0.35rem 0 0">Test lại</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Chạy lại test case đã fail sau khi fix</em></p>
+</div>
+<div class="glossary-entry card" data-term="closed" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Closed</strong> (closed)
+  <p style="margin:0.35rem 0 0">Đóng</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Trạng thái bug đã xử lý xong</em></p>
+</div>
+<div class="glossary-entry card" data-term="reopened" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Reopened</strong> (reopened)
+  <p style="margin:0.35rem 0 0">Mở lại</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Bug tái phát sau khi đóng</em></p>
+</div>
+<div class="glossary-entry card" data-term="duplicate" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Duplicate</strong> (duplicate)
+  <p style="margin:0.35rem 0 0">Trùng lặp</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Bug report trùng bug khác</em></p>
+</div>
+<div class="glossary-entry card" data-term="wontfix" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Won&#39;t Fix</strong> (wontfix)
+  <p style="margin:0.35rem 0 0">Không sửa</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Quyết định chấp nhận bug</em></p>
+</div>
+<div class="glossary-entry card" data-term="technical debt" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Technical Debt</strong> (technical debt)
+  <p style="margin:0.35rem 0 0">Nợ kỹ thuật</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Shortcut code gây chi phí sau này</em></p>
+</div>
+<div class="glossary-entry card" data-term="refactoring" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Refactoring</strong> (refactoring)
+  <p style="margin:0.35rem 0 0">Tái cấu trúc</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Cải thiện code không đổi behavior</em></p>
+</div>
+<div class="glossary-entry card" data-term="legacy system" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Legacy System</strong> (legacy system)
+  <p style="margin:0.35rem 0 0">Hệ thống cũ</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Code cũ khó bảo trì</em></p>
+</div>
+<div class="glossary-entry card" data-term="microservices" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Microservices</strong> (microservices)
+  <p style="margin:0.35rem 0 0">Kiến trúc microservices</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>App chia thành service nhỏ độc lập</em></p>
+</div>
+<div class="glossary-entry card" data-term="monolith" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Monolith</strong> (monolith)
+  <p style="margin:0.35rem 0 0">Kiến trúc monolith</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Toàn bộ app trong một codebase</em></p>
+</div>
+<div class="glossary-entry card" data-term="saas" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Software as a Service</strong> (saas)
+  <p style="margin:0.35rem 0 0">Phần mềm dịch vụ</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Dùng qua web, trả phí subscription</em></p>
+</div>
+<div class="glossary-entry card" data-term="on-premise" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>On-premise</strong> (on-premise)
+  <p style="margin:0.35rem 0 0">Triển khai tại chỗ</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Cài trên server của khách hàng</em></p>
+</div>
+<div class="glossary-entry card" data-term="cloud" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Cloud</strong> (cloud)
+  <p style="margin:0.35rem 0 0">Đám mây</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>AWS, Azure, GCP...</em></p>
+</div>
+<div class="glossary-entry card" data-term="docker" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Docker</strong> (docker)
+  <p style="margin:0.35rem 0 0">Container hóa</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Đóng gói app và dependency</em></p>
+</div>
+<div class="glossary-entry card" data-term="kubernetes" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Kubernetes</strong> (kubernetes)
+  <p style="margin:0.35rem 0 0">Orchestration container</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Quản lý nhiều container</em></p>
+</div>
+<div class="glossary-entry card" data-term="monitoring" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Monitoring</strong> (monitoring)
+  <p style="margin:0.35rem 0 0">Giám sát</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Theo dõi health hệ thống production</em></p>
+</div>
+<div class="glossary-entry card" data-term="alert" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Alert</strong> (alert)
+  <p style="margin:0.35rem 0 0">Cảnh báo</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Thông báo khi metric vượt ngưỡng</em></p>
+</div>
+<div class="glossary-entry card" data-term="incident" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Incident</strong> (incident)
+  <p style="margin:0.35rem 0 0">Sự cố</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Sự kiện ảnh hưởng user/production</em></p>
+</div>
+<div class="glossary-entry card" data-term="postmortem" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Postmortem</strong> (postmortem)
+  <p style="margin:0.35rem 0 0">Phân tích sau sự cố</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Họp rút kinh nghiệm sau incident</em></p>
+</div>
+<div class="glossary-entry card" data-term="rca" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Root Cause Analysis</strong> (rca)
+  <p style="margin:0.35rem 0 0">Phân tích nguyên nhân gốc</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Tìm tại sao incident xảy ra</em></p>
+</div>
+<div class="glossary-entry card" data-term="stakeholder" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Stakeholder</strong> (stakeholder)
+  <p style="margin:0.35rem 0 0">Bên liên quan</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>PM, user, dev, QA, business</em></p>
+</div>
+<div class="glossary-entry card" data-term="requirement gap" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Requirement Gap</strong> (requirement gap)
+  <p style="margin:0.35rem 0 0">Khoảng trống yêu cầu</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Spec thiếu gây hiểu nhầm</em></p>
+</div>
+<div class="glossary-entry card" data-term="ambiguity" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Ambiguity</strong> (ambiguity)
+  <p style="margin:0.35rem 0 0">Mơ hồ</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Yêu cầu không rõ ràng</em></p>
+</div>
+<div class="glossary-entry card" data-term="assumption" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Assumption</strong> (assumption)
+  <p style="margin:0.35rem 0 0">Giả định</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Điều team cho là đúng nhưng chưa verify</em></p>
+</div>
+<div class="glossary-entry card" data-term="peer review" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Peer Review</strong> (peer review)
+  <p style="margin:0.35rem 0 0">Review đồng nghiệp</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>QA review test case của QA khác</em></p>
+</div>
+<div class="glossary-entry card" data-term="checklist" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Checklist</strong> (checklist)
+  <p style="margin:0.35rem 0 0">Danh sách kiểm tra</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Liệt kê mục cần verify</em></p>
+</div>
+<div class="glossary-entry card" data-term="template" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Template</strong> (template)
+  <p style="margin:0.35rem 0 0">Mẫu</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Khung tài liệu chuẩn hóa</em></p>
+</div>
+<div class="glossary-entry card" data-term="rubric" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Rubric</strong> (rubric)
+  <p style="margin:0.35rem 0 0">Tiêu chí chấm</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Bảng tiêu chí đánh giá capstone</em></p>
+</div>
+<div class="glossary-entry card" data-term="portfolio" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Portfolio</strong> (portfolio)
+  <p style="margin:0.35rem 0 0">Hồ sơ năng lực</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Tập hợp công việc QA</em></p>
+</div>
+<div class="glossary-entry card" data-term="star" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>STAR Method</strong> (star)
+  <p style="margin:0.35rem 0 0">Phương pháp STAR</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Situation, Task, Action, Result</em></p>
+</div>
+<div class="glossary-entry card" data-term="onboarding" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Onboarding</strong> (onboarding)
+  <p style="margin:0.35rem 0 0">Hội nhập</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Làm quen công ty/sản phẩm mới</em></p>
+</div>
+<div class="glossary-entry card" data-term="mentoring" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Mentoring</strong> (mentoring)
+  <p style="margin:0.35rem 0 0">Cố vấn</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Senior hướng dẫn junior</em></p>
+</div>
+<div class="glossary-entry card" data-term="lead" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Team Lead</strong> (lead)
+  <p style="margin:0.35rem 0 0">Trưởng nhóm</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Quản lý team QA kỹ thuật</em></p>
+</div>
+<div class="glossary-entry card" data-term="manager" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>QA Manager</strong> (manager)
+  <p style="margin:0.35rem 0 0">Quản lý QA</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Quản lý process, hiring, chiến lược</em></p>
+</div>
+<div class="glossary-entry card" data-term="sdet" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Software Development Engineer in Test</strong> (sdet)
+  <p style="margin:0.35rem 0 0">QA biết lập trình</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Viết automation + framework</em></p>
+</div>
+<div class="glossary-entry card" data-term="manual tester" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Manual Tester</strong> (manual tester)
+  <p style="margin:0.35rem 0 0">Tester thủ công</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Chuyên test bằng tay, ET, test design</em></p>
+</div>
+<div class="glossary-entry card" data-term="quality culture" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Quality Culture</strong> (quality culture)
+  <p style="margin:0.35rem 0 0">Văn hóa chất lượng</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Cả team coi quality là trách nhiệm chung</em></p>
+</div>
+<div class="glossary-entry card" data-term="gatekeeper" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Gatekeeper</strong> (gatekeeper)
+  <p style="margin:0.35rem 0 0">Người gác cổng</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>QA KHÔNG nên chỉ là người chặn release</em></p>
+</div>
+<div class="glossary-entry card" data-term="advocacy" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Quality Advocacy</strong> (advocacy)
+  <p style="margin:0.35rem 0 0">Đấu tranh cho chất lượng</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>QA nói lên rủi ro một cách xây dựng</em></p>
+</div>
+<div class="glossary-entry card" data-term="empathy" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>User Empathy</strong> (empathy)
+  <p style="margin:0.35rem 0 0">Đồng cảm người dùng</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Đặt mình vào vị trí user thật</em></p>
+</div>
+<div class="glossary-entry card" data-term="ownership" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Ownership</strong> (ownership)
+  <p style="margin:0.35rem 0 0">Tinh thần sở hữu</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Coi chất lượng là trách nhiệm của mình</em></p>
+</div>
+<div class="glossary-entry card" data-term="curiosity" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Learning Curiosity</strong> (curiosity)
+  <p style="margin:0.35rem 0 0">Tò mò học hỏi</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Luôn hỏi tại sao, đọc spec, khám phá</em></p>
+</div>
+<div class="glossary-entry card" data-term="collaboration" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Collaboration</strong> (collaboration)
+  <p style="margin:0.35rem 0 0">Hợp tác</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Làm việc cùng dev/PM/design hiệu quả</em></p>
+</div>
+<div class="glossary-entry card" data-term="thoroughness" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Thoroughness</strong> (thoroughness)
+  <p style="margin:0.35rem 0 0">Tính kỹ lưỡng</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Test đủ rủi ro quan trọng</em></p>
+</div>
+<div class="glossary-entry card" data-term="speed" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Speed</strong> (speed)
+  <p style="margin:0.35rem 0 0">Tốc độ</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Cân bằng với deadline agile</em></p>
+</div>
+<div class="glossary-entry card" data-term="risk" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Risk</strong> (risk)
+  <p style="margin:0.35rem 0 0">Rủi ro</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Khả năng điều xấu xảy ra × mức ảnh hưởng</em></p>
+</div>
+<div class="glossary-entry card" data-term="mitigation" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Mitigation</strong> (mitigation)
+  <p style="margin:0.35rem 0 0">Giảm thiểu rủi ro</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Hành động giảm khả năng/ảnh hưởng</em></p>
+</div>
+<div class="glossary-entry card" data-term="contingency" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Contingency</strong> (contingency)
+  <p style="margin:0.35rem 0 0">Dự phòng</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Kế hoạch B khi rủi ro xảy ra</em></p>
+</div>
+<div class="glossary-entry card" data-term="reproduce" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Reproduce</strong> (reproduce)
+  <p style="margin:0.35rem 0 0">Tái hiện (lỗi)</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Làm lại đúng các bước để bug xuất hiện lại</em></p>
+</div>
+<div class="glossary-entry card" data-term="expected" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Expected Result</strong> (expected)
+  <p style="margin:0.35rem 0 0">Kết quả mong đợi</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>App NÊN làm gì theo spec</em></p>
+</div>
+<div class="glossary-entry card" data-term="actual" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Actual Result</strong> (actual)
+  <p style="margin:0.35rem 0 0">Kết quả thực tế</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>App THỰC SỰ làm gì khi test</em></p>
+</div>
+<div class="glossary-entry card" data-term="steps to reproduce" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Steps to Reproduce</strong> (steps to reproduce)
+  <p style="margin:0.35rem 0 0">Các bước tái hiện</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Phần quan trọng nhất bug report</em></p>
+</div>
+<div class="glossary-entry card" data-term="credential" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Credential</strong> (credential)
+  <p style="margin:0.35rem 0 0">Thông tin đăng nhập</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Username, password, token</em></p>
+</div>
+<div class="glossary-entry card" data-term="spec" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Specification</strong> (spec)
+  <p style="margin:0.35rem 0 0">Đặc tả</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Mô tả chi tiết tính năng phải làm</em></p>
+</div>
+<div class="glossary-entry card" data-term="deploy" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Deploy</strong> (deploy)
+  <p style="margin:0.35rem 0 0">Triển khai</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Đưa code lên server cho user dùng</em></p>
+</div>
+<div class="glossary-entry card" data-term="feature" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Feature</strong> (feature)
+  <p style="margin:0.35rem 0 0">Tính năng</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Một chức năng cụ thể của sản phẩm</em></p>
+</div>
+<div class="glossary-entry card" data-term="ship" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Ship</strong> (ship)
+  <p style="margin:0.35rem 0 0">Giao hàng / release</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Đưa tính năng ra cho user</em></p>
+</div>
+<div class="glossary-entry card" data-term="verify" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Verify</strong> (verify)
+  <p style="margin:0.35rem 0 0">Xác minh</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Kiểm tra bug đã được sửa đúng chưa</em></p>
+</div>
+<div class="glossary-entry card" data-term="validate" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Validate</strong> (validate)
+  <p style="margin:0.35rem 0 0">Thẩm định</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Kiểm tra có đúng nhu cầu user không</em></p>
+</div>
+<div class="glossary-entry card" data-term="input" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Input</strong> (input)
+  <p style="margin:0.35rem 0 0">Dữ liệu đầu vào</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Thông tin user nhập vào form</em></p>
+</div>
+<div class="glossary-entry card" data-term="output" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Output</strong> (output)
+  <p style="margin:0.35rem 0 0">Kết quả đầu ra</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Phản hồi hệ thống trả về</em></p>
+</div>
+<div class="glossary-entry card" data-term="workflow" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Workflow</strong> (workflow)
+  <p style="margin:0.35rem 0 0">Quy trình làm việc</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Chuỗi bước từ A đến B</em></p>
+</div>
+<div class="glossary-entry card" data-term="login" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Login</strong> (login)
+  <p style="margin:0.35rem 0 0">Đăng nhập</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Xác thực user vào hệ thống</em></p>
+</div>
+<div class="glossary-entry card" data-term="checkout" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Checkout</strong> (checkout)
+  <p style="margin:0.35rem 0 0">Thanh toán</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Hoàn tất đơn hàng</em></p>
+</div>
+<div class="glossary-entry card" data-term="cart" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Cart</strong> (cart)
+  <p style="margin:0.35rem 0 0">Giỏ hàng</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Nơi chứa sản phẩm trước khi mua</em></p>
+</div>
+<div class="glossary-entry card" data-term="submit" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Submit</strong> (submit)
+  <p style="margin:0.35rem 0 0">Gửi form</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Nhấn nút gửi thông tin</em></p>
+</div>
+<div class="glossary-entry card" data-term="error message" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Error Message</strong> (error message)
+  <p style="margin:0.35rem 0 0">Thông báo lỗi</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Text hiện khi có lỗi</em></p>
+</div>
+<div class="glossary-entry card" data-term="crash" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Crash</strong> (crash)
+  <p style="margin:0.35rem 0 0">Sập app</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>App đột ngột dừng hoạt động</em></p>
+</div>
+<div class="glossary-entry card" data-term="freeze" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Freeze</strong> (freeze)
+  <p style="margin:0.35rem 0 0">Treo app</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>App không phản hồi</em></p>
+</div>
+<div class="glossary-entry card" data-term="timeout" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Timeout</strong> (timeout)
+  <p style="margin:0.35rem 0 0">Hết thời gian chờ</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Request quá lâu không trả về</em></p>
+</div>
+<div class="glossary-entry card" data-term="increment" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Increment</strong> (increment)
+  <p style="margin:0.35rem 0 0">Gia tăng</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Phần sản phẩm hoàn thiện cuối sprint</em></p>
+</div>
+<div class="glossary-entry card" data-term="incremental" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Incremental</strong> (incremental)
+  <p style="margin:0.35rem 0 0">Tăng dần</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Phát triển từng phần nhỏ</em></p>
+</div>
+<div class="glossary-entry card" data-term="ceremony" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Ceremony</strong> (ceremony)
+  <p style="margin:0.35rem 0 0">Nghi thức Scrum</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Planning, Daily, Review, Retro</em></p>
+</div>
+<div class="glossary-entry card" data-term="standup" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Standup</strong> (standup)
+  <p style="margin:0.35rem 0 0">Họp daily</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Sync 15 phút mỗi sáng</em></p>
+</div>
+<div class="glossary-entry card" data-term="backlog refinement" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Backlog Refinement</strong> (backlog refinement)
+  <p style="margin:0.35rem 0 0">Tinh chỉnh backlog</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Làm rõ story trước sprint</em></p>
+</div>
+<div class="glossary-entry card" data-term="deliverable" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Deliverable</strong> (deliverable)
+  <p style="margin:0.35rem 0 0">Sản phẩm bàn giao</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Output cụ thể cuối sprint</em></p>
+</div>
+<div class="glossary-entry card" data-term="estimate" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Estimate</strong> (estimate)
+  <p style="margin:0.35rem 0 0">Ước lượng</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Đo effort story cần bao nhiêu</em></p>
+</div>
+<div class="glossary-entry card" data-term="triage" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Triage</strong> (triage)
+  <p style="margin:0.35rem 0 0">Phân loại</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Dev/lead xem bug và quyết định xử lý</em></p>
+</div>
+<div class="glossary-entry card" data-term="sign off" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Sign-off</strong> (sign off)
+  <p style="margin:0.35rem 0 0">Phê duyệt</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Chấp thuận chính thức để release</em></p>
+</div>
+<div class="glossary-entry card" data-term="go/no-go" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Go/No-Go</strong> (go/no-go)
+  <p style="margin:0.35rem 0 0">Quyết định release</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Họp quyết có ship hay không</em></p>
+</div>
+<div class="glossary-entry card" data-term="test execution" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Test Execution</strong> (test execution)
+  <p style="margin:0.35rem 0 0">Thực thi test</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Chạy test case và ghi kết quả</em></p>
+</div>
+<div class="glossary-entry card" data-term="precondition" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Precondition</strong> (precondition)
+  <p style="margin:0.35rem 0 0">Điều kiện tiên quyết</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Trạng thái cần có trước khi test</em></p>
+</div>
+<div class="glossary-entry card" data-term="postcondition" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Postcondition</strong> (postcondition)
+  <p style="margin:0.35rem 0 0">Điều kiện hậu</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Trạng thái sau khi test xong</em></p>
+</div>
+<div class="glossary-entry card" data-term="pass" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Pass</strong> (pass)
+  <p style="margin:0.35rem 0 0">Đạt</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Test case thành công</em></p>
+</div>
+<div class="glossary-entry card" data-term="fail" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Fail</strong> (fail)
+  <p style="margin:0.35rem 0 0">Không đạt</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Test case phát hiện lỗi</em></p>
+</div>
+<div class="glossary-entry card" data-term="blocked" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Blocked</strong> (blocked)
+  <p style="margin:0.35rem 0 0">Bị chặn</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Không test được vì môi trường/data</em></p>
+</div>
+<div class="glossary-entry card" data-term="skip" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Skip</strong> (skip)
+  <p style="margin:0.35rem 0 0">Bỏ qua</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Không chạy test case lần này</em></p>
+</div>
+<div class="glossary-entry card" data-term="charter" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Charter</strong> (charter)
+  <p style="margin:0.35rem 0 0">Bản mô tả ET</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Mục tiêu session exploratory testing</em></p>
+</div>
+<div class="glossary-entry card" data-term="observation" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Observation</strong> (observation)
+  <p style="margin:0.35rem 0 0">Quan sát</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Điều bạn thấy khi test</em></p>
+</div>
+<div class="glossary-entry card" data-term="attachment" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Attachment</strong> (attachment)
+  <p style="margin:0.35rem 0 0">Tệp đính kèm</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Screenshot, video, log file</em></p>
+</div>
+<div class="glossary-entry card" data-term="viewport" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Viewport</strong> (viewport)
+  <p style="margin:0.35rem 0 0">Khung nhìn</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Kích thước màn hình hiển thị</em></p>
+</div>
+<div class="glossary-entry card" data-term="bottleneck" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Bottleneck</strong> (bottleneck)
+  <p style="margin:0.35rem 0 0">Nút thắt</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Điểm hệ thống chậm nhất</em></p>
+</div>
+<div class="glossary-entry card" data-term="vulnerability" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Vulnerability</strong> (vulnerability)
+  <p style="margin:0.35rem 0 0">Lỗ hổng</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Điểm yếu bảo mật</em></p>
+</div>
+<div class="glossary-entry card" data-term="injection" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Injection</strong> (injection)
+  <p style="margin:0.35rem 0 0">Tiêm mã</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Nhét code độc vào input</em></p>
+</div>
+<div class="glossary-entry card" data-term="authentication bypass" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Authentication Bypass</strong> (authentication bypass)
+  <p style="margin:0.35rem 0 0">Vượt xác thực</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Vào hệ thống không cần login</em></p>
+</div>
+<div class="glossary-entry card" data-term="artifact" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Artifact</strong> (artifact)
+  <p style="margin:0.35rem 0 0">Artifact</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>File output sau build</em></p>
+</div>
+<div class="glossary-entry card" data-term="flaky" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Flaky</strong> (flaky)
+  <p style="margin:0.35rem 0 0">Không ổn định</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Test lúc pass lúc fail</em></p>
+</div>
+<div class="glossary-entry card" data-term="maintainability" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Maintainability</strong> (maintainability)
+  <p style="margin:0.35rem 0 0">Dễ bảo trì</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Automation cần dễ update</em></p>
+</div>
+<div class="glossary-entry card" data-term="request" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Request</strong> (request)
+  <p style="margin:0.35rem 0 0">Request</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Yêu cầu gửi đến server</em></p>
+</div>
+<div class="glossary-entry card" data-term="response" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Response</strong> (response)
+  <p style="margin:0.35rem 0 0">Response</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Phản hồi server trả về</em></p>
+</div>
+<div class="glossary-entry card" data-term="status code" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Status Code</strong> (status code)
+  <p style="margin:0.35rem 0 0">Mã trạng thái HTTP</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>200 OK, 404 Not Found, 500 Error</em></p>
+</div>
+<div class="glossary-entry card" data-term="anonymize" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Anonymize</strong> (anonymize)
+  <p style="margin:0.35rem 0 0">Ẩn danh hóa</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Che thông tin cá nhân trong test data</em></p>
+</div>
+<div class="glossary-entry card" data-term="consent" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Consent</strong> (consent)
+  <p style="margin:0.35rem 0 0">Đồng ý</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>User cho phép thu thập data</em></p>
+</div>
+<div class="glossary-entry card" data-term="escalate" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Escalate</strong> (escalate)
+  <p style="margin:0.35rem 0 0">Leo thang</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Báo cáo lên cấp trên khi rủi ro cao</em></p>
+</div>
+<div class="glossary-entry card" data-term="consensus" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Consensus</strong> (consensus)
+  <p style="margin:0.35rem 0 0">Đồng thuận</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Team thống nhất quyết định</em></p>
+</div>
+<div class="glossary-entry card" data-term="deadline" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Deadline</strong> (deadline)
+  <p style="margin:0.35rem 0 0">Hạn chót</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Thời hạn phải hoàn thành</em></p>
+</div>
+<div class="glossary-entry card" data-term="trade-off" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Trade-off</strong> (trade-off)
+  <p style="margin:0.35rem 0 0">Đánh đổi</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Cân nhắc giữa speed, scope, quality</em></p>
+</div>
+<div class="glossary-entry card" data-term="accountability" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Accountability</strong> (accountability)
+  <p style="margin:0.35rem 0 0">Trách nhiệm giải trình</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Ai chịu trách nhiệm kết quả</em></p>
+</div>
+<div class="glossary-entry card" data-term="fresher" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Fresher</strong> (fresher)
+  <p style="margin:0.35rem 0 0">Nhân viên mới</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Người mới vào nghề</em></p>
+</div>
+<div class="glossary-entry card" data-term="offer" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Offer</strong> (offer)
+  <p style="margin:0.35rem 0 0">Thư mời làm việc</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Job offer từ công ty</em></p>
+</div>
+<div class="glossary-entry card" data-term="shift-right" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Shift-right</strong> (shift-right)
+  <p style="margin:0.35rem 0 0">Shift-right testing</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Test monitoring ở production</em></p>
+</div>
+<div class="glossary-entry card" data-term="quality" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Quality</strong> (quality)
+  <p style="margin:0.35rem 0 0">Chất lượng</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Mức độ sản phẩm đáp ứng nhu cầu người dùng</em></p>
+</div>
+<div class="glossary-entry card" data-term="planning" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Planning</strong> (planning)
+  <p style="margin:0.35rem 0 0">Lập kế hoạch</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Giai đoạn SDLC xác định phạm vi và ưu tiên</em></p>
+</div>
+<div class="glossary-entry card" data-term="development" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Development</strong> (development)
+  <p style="margin:0.35rem 0 0">Phát triển</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Giai đoạn viết code và tích hợp tính năng</em></p>
+</div>
+<div class="glossary-entry card" data-term="testing" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Testing</strong> (testing)
+  <p style="margin:0.35rem 0 0">Kiểm thử</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Giai đoạn verify và validate sản phẩm</em></p>
+</div>
+<div class="glossary-entry card" data-term="maintenance" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Maintenance</strong> (maintenance)
+  <p style="margin:0.35rem 0 0">Bảo trì</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Giai đoạn sửa lỗi và cải tiến sau release</em></p>
+</div>
+<div class="glossary-entry card" data-term="state" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>State</strong> (state)
+  <p style="margin:0.35rem 0 0">Trạng thái</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Tình trạng dữ liệu/hệ thống tại một thời điểm</em></p>
+</div>
+<div class="glossary-entry card" data-term="automation" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Test Automation</strong> (automation)
+  <p style="margin:0.35rem 0 0">Tự động hóa test</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Script chạy test lặp lại thay người</em></p>
+</div>
+<div class="glossary-entry card" data-term="confidence" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Confidence</strong> (confidence)
+  <p style="margin:0.35rem 0 0">Độ tin cậy</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Mức QA tin sản phẩm sẵn sàng release</em></p>
+</div>
+<div class="glossary-entry card" data-term="persona" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Persona</strong> (persona)
+  <p style="margin:0.35rem 0 0">Chân dung người dùng</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Mô tả user type để hướng test</em></p>
+</div>
+<div class="glossary-entry card" data-term="user journey" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>User Journey</strong> (user journey)
+  <p style="margin:0.35rem 0 0">Hành trình người dùng</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Chuỗi touchpoint user trải qua</em></p>
+</div>
+<div class="glossary-entry card" data-term="accessibility" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Accessibility</strong> (accessibility)
+  <p style="margin:0.35rem 0 0">Khả năng tiếp cận</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Sản phẩm dùng được với mọi khả năng</em></p>
+</div>
+<div class="glossary-entry card" data-term="pain point" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Pain Point</strong> (pain point)
+  <p style="margin:0.35rem 0 0">Điểm đau</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Vấn đề user gặp khiến bỏ cuộc</em></p>
+</div>
+<div class="glossary-entry card" data-term="usability" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Usability</strong> (usability)
+  <p style="margin:0.35rem 0 0">Khả năng sử dụng</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Mức dễ học và dùng sản phẩm</em></p>
+</div>
+<div class="glossary-entry card" data-term="feedback loop" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Feedback Loop</strong> (feedback loop)
+  <p style="margin:0.35rem 0 0">Vòng phản hồi</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Chu kỳ test → báo → sửa → retest</em></p>
+</div>
+<div class="glossary-entry card" data-term="handoff" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Handoff</strong> (handoff)
+  <p style="margin:0.35rem 0 0">Bàn giao</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Chuyển giao công việc giữa role</em></p>
+</div>
+<div class="glossary-entry card" data-term="dependency" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Dependency</strong> (dependency)
+  <p style="margin:0.35rem 0 0">Phụ thuộc</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Task/feature cần task khác hoàn thành trước</em></p>
+</div>
+<div class="glossary-entry card" data-term="follow-through" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Follow-through</strong> (follow-through)
+  <p style="margin:0.35rem 0 0">Theo sát đến cùng</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>QA không dừng ở báo bug</em></p>
+</div>
+<div class="glossary-entry card" data-term="sync" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Sync</strong> (sync)
+  <p style="margin:0.35rem 0 0">Đồng bộ</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Họp nhanh align team</em></p>
+</div>
+<div class="glossary-entry card" data-term="timebox" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Timebox</strong> (timebox)
+  <p style="margin:0.35rem 0 0">Giới hạn thời gian</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Test trong khung thời gian cố định</em></p>
+</div>
+<div class="glossary-entry card" data-term="time-box" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Time-box</strong> (time-box)
+  <p style="margin:0.35rem 0 0">Giới hạn thời gian</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Kỹ thuật ET giới hạn session</em></p>
+</div>
+<div class="glossary-entry card" data-term="given-when-then" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Given-When-Then</strong> (given-when-then)
+  <p style="margin:0.35rem 0 0">Gherkin format</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Cú pháp viết acceptance criteria</em></p>
+</div>
+<div class="glossary-entry card" data-term="scenario" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Scenario</strong> (scenario)
+  <p style="margin:0.35rem 0 0">Kịch bản</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Một luồng test cụ thể trong BDD</em></p>
+</div>
+<div class="glossary-entry card" data-term="sprint planning" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Sprint Planning</strong> (sprint planning)
+  <p style="margin:0.35rem 0 0">Lập kế hoạch sprint</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Chọn story và ước lượng sprint</em></p>
+</div>
+<div class="glossary-entry card" data-term="daily scrum" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Daily Scrum</strong> (daily scrum)
+  <p style="margin:0.35rem 0 0">Daily Scrum</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Họp 15 phút sync tiến độ</em></p>
+</div>
+<div class="glossary-entry card" data-term="sprint review" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Sprint Review</strong> (sprint review)
+  <p style="margin:0.35rem 0 0">Review sprint</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Demo increment cho stakeholder</em></p>
+</div>
+<div class="glossary-entry card" data-term="refinement" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Backlog Refinement</strong> (refinement)
+  <p style="margin:0.35rem 0 0">Tinh chỉnh backlog</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Làm rõ story trước sprint</em></p>
+</div>
+<div class="glossary-entry card" data-term="definition of done" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Definition of Done</strong> (definition of done)
+  <p style="margin:0.35rem 0 0">DoD</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Tiêu chí task được coi là xong</em></p>
+</div>
+<div class="glossary-entry card" data-term="definition of ready" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Definition of Ready</strong> (definition of ready)
+  <p style="margin:0.35rem 0 0">DoR</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Story đủ rõ để dev bắt đầu</em></p>
+</div>
+<div class="glossary-entry card" data-term="evidence" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Evidence</strong> (evidence)
+  <p style="margin:0.35rem 0 0">Bằng chứng</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Screenshot, log, data chứng minh bug</em></p>
+</div>
+<div class="glossary-entry card" data-term="impact" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Impact</strong> (impact)
+  <p style="margin:0.35rem 0 0">Tác động</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Mức ảnh hưởng bug tới user/kinh doanh</em></p>
+</div>
+<div class="glossary-entry card" data-term="alignment" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Alignment</strong> (alignment)
+  <p style="margin:0.35rem 0 0">Đồng thuận</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Team hiểu cùng một mục tiêu chất lượng</em></p>
+</div>
+<div class="glossary-entry card" data-term="quality gate" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Quality Gate</strong> (quality gate)
+  <p style="margin:0.35rem 0 0">Cổng chất lượng</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Checkpoint trước khi chuyển giai đoạn</em></p>
+</div>
+<div class="glossary-entry card" data-term="quality mission" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Quality Mission</strong> (quality mission)
+  <p style="margin:0.35rem 0 0">Sứ mệnh QA</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>QA tạo giá trị gì cho user và team</em></p>
+</div>
+<div class="glossary-entry card" data-term="boundary value" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Boundary Value</strong> (boundary value)
+  <p style="margin:0.35rem 0 0">Giá trị biên</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Test tại ranh giới input hợp lệ</em></p>
+</div>
+<div class="glossary-entry card" data-term="valid class" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Valid Class</strong> (valid class)
+  <p style="margin:0.35rem 0 0">Lớp hợp lệ</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Nhóm input được chấp nhận</em></p>
+</div>
+<div class="glossary-entry card" data-term="invalid class" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Invalid Class</strong> (invalid class)
+  <p style="margin:0.35rem 0 0">Lớp không hợp lệ</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Nhóm input bị từ chối</em></p>
+</div>
+<div class="glossary-entry card" data-term="off-by-one" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Off-by-one</strong> (off-by-one)
+  <p style="margin:0.35rem 0 0">Lệch một</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Lỗi biên phổ biến ±1</em></p>
+</div>
+<div class="glossary-entry card" data-term="current state" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Current State</strong> (current state)
+  <p style="margin:0.35rem 0 0">Trạng thái hiện tại</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>State trước khi thực hiện action</em></p>
+</div>
+<div class="glossary-entry card" data-term="invalid transition" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Invalid Transition</strong> (invalid transition)
+  <p style="margin:0.35rem 0 0">Chuyển trạng thái sai</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Hệ thống cho phép chuyển state không hợp lệ</em></p>
+</div>
+<div class="glossary-entry card" data-term="business logic" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Business Logic</strong> (business logic)
+  <p style="margin:0.35rem 0 0">Logic nghiệp vụ</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Quy tắc xử lý theo domain</em></p>
+</div>
+<div class="glossary-entry card" data-term="session charter" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Session Charter</strong> (session charter)
+  <p style="margin:0.35rem 0 0">Charter ET</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Mục tiêu và phạm vi session khám phá</em></p>
+</div>
+<div class="glossary-entry card" data-term="hypothesis" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Hypothesis</strong> (hypothesis)
+  <p style="margin:0.35rem 0 0">Giả thuyết</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Dự đoán cần verify khi test</em></p>
+</div>
+<div class="glossary-entry card" data-term="testing notes" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Testing Notes</strong> (testing notes)
+  <p style="margin:0.35rem 0 0">Ghi chép test</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Note quan sát trong session ET</em></p>
+</div>
+<div class="glossary-entry card" data-term="regression testing" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Regression Testing</strong> (regression testing)
+  <p style="margin:0.35rem 0 0">Test hồi quy</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Đảm bảo fix không phá feature cũ</em></p>
+</div>
+<div class="glossary-entry card" data-term="full regression" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Full Regression</strong> (full regression)
+  <p style="margin:0.35rem 0 0">Hồi quy đầy đủ</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Chạy lại toàn bộ suite quan trọng</em></p>
+</div>
+<div class="glossary-entry card" data-term="build verification" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Build Verification</strong> (build verification)
+  <p style="margin:0.35rem 0 0">Xác minh build</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Smoke test trên build mới</em></p>
+</div>
+<div class="glossary-entry card" data-term="release readiness" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Release Readiness</strong> (release readiness)
+  <p style="margin:0.35rem 0 0">Sẵn sàng release</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Checklist trước khi ship</em></p>
+</div>
+<div class="glossary-entry card" data-term="end-to-end" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>End-to-End</strong> (end-to-end)
+  <p style="margin:0.35rem 0 0">E2E</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Test toàn flow từ UI đến database</em></p>
+</div>
+<div class="glossary-entry card" data-term="critical path" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Critical Path</strong> (critical path)
+  <p style="margin:0.35rem 0 0">Luồng quan trọng</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>User flow ảnh hưởng doanh thu/nền tảng</em></p>
+</div>
+<div class="glossary-entry card" data-term="traceability matrix" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Traceability Matrix</strong> (traceability matrix)
+  <p style="margin:0.35rem 0 0">Ma trận truy vết</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Liên kết requirement → test → bug</em></p>
+</div>
+<div class="glossary-entry card" data-term="test strategy" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Test Strategy</strong> (test strategy)
+  <p style="margin:0.35rem 0 0">Chiến lược test</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Cách tiếp cận test tổng thể cho dự án</em></p>
+</div>
+<div class="glossary-entry card" data-term="bug lifecycle" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Bug Lifecycle</strong> (bug lifecycle)
+  <p style="margin:0.35rem 0 0">Vòng đời bug</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>New → In Progress → Fixed → Verified → Closed</em></p>
+</div>
+<div class="glossary-entry card" data-term="ready for qa" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Ready for QA</strong> (ready for qa)
+  <p style="margin:0.35rem 0 0">Sẵn sàng QA</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Build/feature đủ điều kiện để test</em></p>
+</div>
+<div class="glossary-entry card" data-term="defect triage" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Defect Triage</strong> (defect triage)
+  <p style="margin:0.35rem 0 0">Phân loại bug</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Team quyết định ưu tiên và assign bug</em></p>
+</div>
+<div class="glossary-entry card" data-term="test environment" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Test Environment</strong> (test environment)
+  <p style="margin:0.35rem 0 0">Môi trường test</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Staging/QA nơi chạy test chính thức</em></p>
+</div>
+<div class="glossary-entry card" data-term="seed data" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Seed Data</strong> (seed data)
+  <p style="margin:0.35rem 0 0">Dữ liệu mẫu</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Dataset cố định để test lặp lại</em></p>
+</div>
+<div class="glossary-entry card" data-term="configuration drift" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Configuration Drift</strong> (configuration drift)
+  <p style="margin:0.35rem 0 0">Lệch cấu hình</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Env test khác production</em></p>
+</div>
+<div class="glossary-entry card" data-term="load test" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Load Test</strong> (load test)
+  <p style="margin:0.35rem 0 0">Test tải</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Test với số user dự kiến</em></p>
+</div>
+<div class="glossary-entry card" data-term="stress test" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Stress Test</strong> (stress test)
+  <p style="margin:0.35rem 0 0">Test stress</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Vượt ngưỡng tải bình thường</em></p>
+</div>
+<div class="glossary-entry card" data-term="soak test" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Soak Test</strong> (soak test)
+  <p style="margin:0.35rem 0 0">Test endurance</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Chạy tải kéo dài tìm memory leak</em></p>
+</div>
+<div class="glossary-entry card" data-term="spike test" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Spike Test</strong> (spike test)
+  <p style="margin:0.35rem 0 0">Test spike</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Tăng đột biến traffic</em></p>
+</div>
+<div class="glossary-entry card" data-term="owasp top 10" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>OWASP Top 10</strong> (owasp top 10)
+  <p style="margin:0.35rem 0 0">OWASP Top 10</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>10 lỗ hổng web phổ biến nhất</em></p>
+</div>
+<div class="glossary-entry card" data-term="ci/cd" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>CI/CD</strong> (ci/cd)
+  <p style="margin:0.35rem 0 0">CI/CD</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Tích hợp và giao hàng liên tục</em></p>
+</div>
+<div class="glossary-entry card" data-term="data privacy" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Data Privacy</strong> (data privacy)
+  <p style="margin:0.35rem 0 0">Quyền riêng tư dữ liệu</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Bảo vệ thông tin cá nhân user</em></p>
+</div>
+<div class="glossary-entry card" data-term="input validation" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Input Validation</strong> (input validation)
+  <p style="margin:0.35rem 0 0">Validate input</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Kiểm tra dữ liệu đầu vào hợp lệ</em></p>
+</div>
+<div class="glossary-entry card" data-term="sensitive data" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Sensitive Data</strong> (sensitive data)
+  <p style="margin:0.35rem 0 0">Dữ liệu nhạy cảm</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>PII, mật khẩu, thẻ tín dụng</em></p>
+</div>
+<div class="glossary-entry card" data-term="qa portfolio" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>QA Portfolio</strong> (qa portfolio)
+  <p style="margin:0.35rem 0 0">Portfolio QA</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Tập hồ sơ bug report, test plan cho phỏng vấn</em></p>
+</div>
+<div class="glossary-entry card" data-term="mission statement" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Mission Statement</strong> (mission statement)
+  <p style="margin:0.35rem 0 0">Tuyên bố sứ mệnh</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>1 đoạn mô tả giá trị QA bạn mang lại</em></p>
+</div>
+<div class="glossary-entry card" data-term="qa metrics" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>QA Metrics</strong> (qa metrics)
+  <p style="margin:0.35rem 0 0">Chỉ số QA</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Pass rate, defect density, escape rate</em></p>
+</div>
+<div class="glossary-entry card" data-term="test automation" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Test Automation</strong> (test automation)
+  <p style="margin:0.35rem 0 0">Automation test</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Script thay thế test lặp tay</em></p>
+</div>
+<div class="glossary-entry card" data-term="capstone" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Capstone</strong> (capstone)
+  <p style="margin:0.35rem 0 0">Dự án tổng kết</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Bài tập cuối khóa chứng minh năng lực</em></p>
+</div>
+<div class="glossary-entry card" data-term="glossary" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Glossary</strong> (glossary)
+  <p style="margin:0.35rem 0 0">Thuật ngữ</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Từ điển EN-VI trong nghề QA</em></p>
+</div>
+<div class="glossary-entry card" data-term="product owner" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Product Owner</strong> (product owner)
+  <p style="margin:0.35rem 0 0">Product Owner</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Người quyết định giá trị sản phẩm trong Scrum</em></p>
+</div>
+<div class="glossary-entry card" data-term="developer" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Developer</strong> (developer)
+  <p style="margin:0.35rem 0 0">Developer</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Người viết và bảo trì code</em></p>
+</div>
+<div class="glossary-entry card" data-term="designer" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Designer</strong> (designer)
+  <p style="margin:0.35rem 0 0">Designer</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Người thiết kế UI/UX</em></p>
+</div>
+<div class="glossary-entry card" data-term="devops" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>DevOps</strong> (devops)
+  <p style="margin:0.35rem 0 0">DevOps</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Vai trò vận hành pipeline và hạ tầng</em></p>
+</div>
+<div class="glossary-entry card" data-term="release gate" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Release Gate</strong> (release gate)
+  <p style="margin:0.35rem 0 0">Cổng release</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Checkpoint cuối trước go-live</em></p>
+</div>
+<div class="glossary-entry card" data-term="release confidence" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Release Confidence</strong> (release confidence)
+  <p style="margin:0.35rem 0 0">Tin cậy release</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Tuyên bố chất lượng từ QA</em></p>
+</div>
+<div class="glossary-entry card" data-term="release risk" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Release Risk</strong> (release risk)
+  <p style="margin:0.35rem 0 0">Rủi ro release</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Rủi ro còn lại khi ship</em></p>
+</div>
+<div class="glossary-entry card" data-term="risk slicing" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Risk Slicing</strong> (risk slicing)
+  <p style="margin:0.35rem 0 0">Cắt rủi ro</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Chia rủi ro lớn thành phần test được</em></p>
+</div>
+<div class="glossary-entry card" data-term="risk statement" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Risk Statement</strong> (risk statement)
+  <p style="margin:0.35rem 0 0">Câu rủi ro</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Mô tả rủi ro: điều gì xảy ra nếu bỏ sót</em></p>
+</div>
+<div class="glossary-entry card" data-term="pass rate" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Pass Rate</strong> (pass rate)
+  <p style="margin:0.35rem 0 0">Tỷ lệ pass</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Phần trăm test case pass</em></p>
+</div>
+<div class="glossary-entry card" data-term="test report" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Test Report</strong> (test report)
+  <p style="margin:0.35rem 0 0">Báo cáo test</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Tóm tắt kết quả test cho stakeholder</em></p>
+</div>
+<div class="glossary-entry card" data-term="test scope" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Test Scope</strong> (test scope)
+  <p style="margin:0.35rem 0 0">Phạm vi test</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Ran giới feature/flow được test</em></p>
+</div>
+<div class="glossary-entry card" data-term="execution log" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Execution Log</strong> (execution log)
+  <p style="margin:0.35rem 0 0">Nhật ký thực thi</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Ghi lại test đã chạy và kết quả</em></p>
+</div>
+<div class="glossary-entry card" data-term="negative test" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Negative Test</strong> (negative test)
+  <p style="margin:0.35rem 0 0">Test tiêu cực</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Test input/hành vi không hợp lệ</em></p>
+</div>
+<div class="glossary-entry card" data-term="representative value" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Representative Value</strong> (representative value)
+  <p style="margin:0.35rem 0 0">Giá trị đại diện</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Một giá trị tiêu biểu trong partition</em></p>
+</div>
+<div class="glossary-entry card" data-term="input domain" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Input Domain</strong> (input domain)
+  <p style="margin:0.35rem 0 0">Miền input</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Tập giá trị input có thể</em></p>
+</div>
+<div class="glossary-entry card" data-term="range validation" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Range Validation</strong> (range validation)
+  <p style="margin:0.35rem 0 0">Validate khoảng</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Kiểm tra min/max hợp lệ</em></p>
+</div>
+<div class="glossary-entry card" data-term="next state" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Next State</strong> (next state)
+  <p style="margin:0.35rem 0 0">Trạng thái kế</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>State sau transition</em></p>
+</div>
+<div class="glossary-entry card" data-term="event" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Event</strong> (event)
+  <p style="margin:0.35rem 0 0">Sự kiện</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Action trigger chuyển state</em></p>
+</div>
+<div class="glossary-entry card" data-term="condition" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Condition</strong> (condition)
+  <p style="margin:0.35rem 0 0">Điều kiện</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Rule quyết định output</em></p>
+</div>
+<div class="glossary-entry card" data-term="rule" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Rule</strong> (rule)
+  <p style="margin:0.35rem 0 0">Quy tắc</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Logic if-then trong decision table</em></p>
+</div>
+<div class="glossary-entry card" data-term="action" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Action</strong> (action)
+  <p style="margin:0.35rem 0 0">Hành động</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Kết quả khi điều kiện thỏa</em></p>
+</div>
+<div class="glossary-entry card" data-term="combination" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Combination</strong> (combination)
+  <p style="margin:0.35rem 0 0">Tổ hợp</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Kết hợp nhiều điều kiện input</em></p>
+</div>
+<div class="glossary-entry card" data-term="minimum" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Minimum</strong> (minimum)
+  <p style="margin:0.35rem 0 0">Giá trị tối thiểu</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Biên dưới của input</em></p>
+</div>
+<div class="glossary-entry card" data-term="maximum" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Maximum</strong> (maximum)
+  <p style="margin:0.35rem 0 0">Giá trị tối đa</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Biên trên của input</em></p>
+</div>
+<div class="glossary-entry card" data-term="core flow" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Core Flow</strong> (core flow)
+  <p style="margin:0.35rem 0 0">Luồng cốt lõi</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Happy path quan trọng nhất</em></p>
+</div>
+<div class="glossary-entry card" data-term="business impact" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Business Impact</strong> (business impact)
+  <p style="margin:0.35rem 0 0">Tác động kinh doanh</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Bug ảnh hưởng doanh thu/brand</em></p>
+</div>
+<div class="glossary-entry card" data-term="impact analysis" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Impact Analysis</strong> (impact analysis)
+  <p style="margin:0.35rem 0 0">Phân tích tác động</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Đánh giá bug ảnh hưởng ai, mức nào</em></p>
+</div>
+<div class="glossary-entry card" data-term="preventive action" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Preventive Action</strong> (preventive action)
+  <p style="margin:0.35rem 0 0">Hành động phòng ngừa</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Sửa quy trình để bug không lặp</em></p>
+</div>
+<div class="glossary-entry card" data-term="action item" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Action Item</strong> (action item)
+  <p style="margin:0.35rem 0 0">Việc cần làm</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Task cụ thể sau retro/review</em></p>
+</div>
+<div class="glossary-entry card" data-term="closure" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Closure</strong> (closure)
+  <p style="margin:0.35rem 0 0">Đóng ticket</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Xác nhận bug/issue đã xử lý xong</em></p>
+</div>
+<div class="glossary-entry card" data-term="in progress" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>In Progress</strong> (in progress)
+  <p style="margin:0.35rem 0 0">Đang xử lý</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Trạng thái bug đang được fix</em></p>
+</div>
+<div class="glossary-entry card" data-term="contract" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Contract</strong> (contract)
+  <p style="margin:0.35rem 0 0">Hợp đồng API</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Thỏa thuận request/response giữa services</em></p>
+</div>
+<div class="glossary-entry card" data-term="logging" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Logging</strong> (logging)
+  <p style="margin:0.35rem 0 0">Ghi log</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Ghi sự kiện hệ thống để debug</em></p>
+</div>
+<div class="glossary-entry card" data-term="privacy" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Privacy</strong> (privacy)
+  <p style="margin:0.35rem 0 0">Quyền riêng tư</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Bảo vệ dữ liệu cá nhân user</em></p>
+</div>
+<div class="glossary-entry card" data-term="performance" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Performance</strong> (performance)
+  <p style="margin:0.35rem 0 0">Hiệu năng</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Tốc độ và khả năng chịu tải</em></p>
+</div>
+<div class="glossary-entry card" data-term="security" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Security</strong> (security)
+  <p style="margin:0.35rem 0 0">Bảo mật</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Bảo vệ hệ thống khỏi tấn công</em></p>
+</div>
+<div class="glossary-entry card" data-term="feedback" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Feedback</strong> (feedback)
+  <p style="margin:0.35rem 0 0">Phản hồi</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Thông tin QA gửi team để cải thiện</em></p>
+</div>
+<div class="glossary-entry card" data-term="confidence level" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Confidence Level</strong> (confidence level)
+  <p style="margin:0.35rem 0 0">Mức tin cậy</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Thang đo QA tin release ổn</em></p>
+</div>
+<div class="glossary-entry card" data-term="test data management" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Test Data Management</strong> (test data management)
+  <p style="margin:0.35rem 0 0">Quản lý test data</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Tạo, reset, anonymize data test</em></p>
+</div>
+<div class="glossary-entry card" data-term="junior_qa" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Junior QA</strong> (junior_qa)
+  <p style="margin:0.35rem 0 0">QA junior</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Vị trí QA mới vào nghề</em></p>
+</div>
+<div class="glossary-entry card" data-term="mid_qa" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Mid QA</strong> (mid_qa)
+  <p style="margin:0.35rem 0 0">QA mid</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>QA 2–4 năm kinh nghiệm</em></p>
+</div>
+<div class="glossary-entry card" data-term="senior_qa" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Senior QA</strong> (senior_qa)
+  <p style="margin:0.35rem 0 0">QA senior</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>QA dẫn dắt chiến lược test</em></p>
+</div>
+<div class="glossary-entry card" data-term="qa_lead" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>QA Lead</strong> (qa_lead)
+  <p style="margin:0.35rem 0 0">QA Lead</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Trưởng nhóm QA</em></p>
+</div>
+<div class="glossary-entry card" data-term="qa_manager" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>QA Manager</strong> (qa_manager)
+  <p style="margin:0.35rem 0 0">QA Manager</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Quản lý phòng QA</em></p>
+</div>
+<div class="glossary-entry card" data-term="api contract" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>API Contract</strong> (api contract)
+  <p style="margin:0.35rem 0 0">Hợp đồng API</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Schema request/response giữa client và server</em></p>
+</div>
+<div class="glossary-entry card" data-term="idempotency" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Idempotency</strong> (idempotency)
+  <p style="margin:0.35rem 0 0">Idempotency</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Request trùng không gây side-effect lặp</em></p>
+</div>
+<div class="glossary-entry card" data-term="data masking" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Data Masking</strong> (data masking)
+  <p style="margin:0.35rem 0 0">Che dữ liệu</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Ẩn PII trong screenshot, log, attachment</em></p>
+</div>
+<div class="glossary-entry card" data-term="least privilege" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Least Privilege</strong> (least privilege)
+  <p style="margin:0.35rem 0 0">Quyền tối thiểu</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Chỉ cấp quyền truy cập cần thiết</em></p>
+</div>
+<div class="glossary-entry card" data-term="sbi" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>SBI</strong> (sbi)
+  <p style="margin:0.35rem 0 0">Situation-Behavior-Impact</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Khung feedback có cấu trúc</em></p>
+</div>
+<div class="glossary-entry card" data-term="defect leakage" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Defect Leakage</strong> (defect leakage)
+  <p style="margin:0.35rem 0 0">Bug lọt production</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Defect escape sang môi trường prod</em></p>
+</div>
+<div class="glossary-entry card" data-term="cycle time" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Cycle Time</strong> (cycle time)
+  <p style="margin:0.35rem 0 0">Thời gian cycle</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Từ report bug đến close</em></p>
+</div>
+<div class="glossary-entry card" data-term="flaky rate" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Flaky Rate</strong> (flaky rate)
+  <p style="margin:0.35rem 0 0">Tỷ lệ flaky</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Phần trăm test không ổn định qua các lần chạy</em></p>
+</div>
+<div class="glossary-entry card" data-term="30-60-90 plan" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>30-60-90 Plan</strong> (30-60-90 plan)
+  <p style="margin:0.35rem 0 0">Kế hoạch 90 ngày</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Milestone onboarding 30/60/90</em></p>
+</div>
+<div class="glossary-entry card" data-term="junior kpi" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Junior KPI</strong> (junior kpi)
+  <p style="margin:0.35rem 0 0">KPI junior</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Chỉ số đo tiến bộ junior QA</em></p>
+</div>
+<div class="glossary-entry card" data-term="quality roadmap" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Quality Roadmap</strong> (quality roadmap)
+  <p style="margin:0.35rem 0 0">Lộ trình chất lượng</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Kế hoạch cải thiện QA dài hạn</em></p>
+</div>
+<div class="glossary-entry card" data-term="career ladder" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Career Ladder</strong> (career ladder)
+  <p style="margin:0.35rem 0 0">Thang nghề</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Junior → Mid → Senior → Lead</em></p>
+</div>
+<div class="glossary-entry card" data-term="specialization" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Specialization</strong> (specialization)
+  <p style="margin:0.35rem 0 0">Chuyên môn hóa</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Nhánh SDET, security, domain depth</em></p>
+</div>
+<div class="glossary-entry card" data-term="staff qa" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Staff QA</strong> (staff qa)
+  <p style="margin:0.35rem 0 0">Staff QA</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>IC senior ảnh hưởng phạm vi org</em></p>
+</div>
+<div class="glossary-entry card" data-term="case study" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Case Study</strong> (case study)
+  <p style="margin:0.35rem 0 0">Case study</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Bài học tình huống có evidence</em></p>
+</div>
+<div class="glossary-entry card" data-term="capstone rubric" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Capstone Rubric</strong> (capstone rubric)
+  <p style="margin:0.35rem 0 0">Rubric capstone</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Tiêu chí chấm điểm capstone</em></p>
+</div>
+<div class="glossary-entry card" data-term="career readiness" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>Career Readiness</strong> (career readiness)
+  <p style="margin:0.35rem 0 0">Sẵn sàng nghề</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Đủ artifact và mindset ứng tuyển</em></p>
+</div>
+<div class="glossary-entry card" data-term="star method" style="margin-bottom:0.75rem;padding:1rem">
+  <strong>STAR Method</strong> (star method)
+  <p style="margin:0.35rem 0 0">Phương pháp STAR</p>
+  <p style="margin:0.25rem 0 0;font-size:0.88rem;color:var(--text-muted)"><em>Situation-Task-Action-Result cho phỏng vấn</em></p>
+</div>
+</div>
+<script>
+document.getElementById("glossary-search")?.addEventListener("input", (e) => {
+  const q = e.target.value.toLowerCase();
+  document.querySelectorAll(".glossary-entry").forEach(el => {
+    const text = el.textContent.toLowerCase();
+    el.style.display = text.includes(q) ? "block" : "none";
+  });
+});
+</script>
+
+      </main>
+      <footer class="site-footer">
+        <p>TechBank Software · Hướng dẫn toàn diện cho người chuyển ngành — 3 tháng</p>
+        <p class="site-footer__hint">Có thắc mắc? Hover dòng bài học → icon 💬 để hỏi.</p>
+      </footer>
+    </div>
+  </div>
+  <dialog id="learner-welcome-dialog" class="learner-welcome-dialog" aria-labelledby="learner-welcome-title">
+  <form id="learner-welcome-form" class="learner-welcome-dialog__inner">
+    <header class="learner-welcome-dialog__header">
+      <h2 id="learner-welcome-title">Chào mừng đến Lộ trình QA</h2>
+    </header>
+    <p class="learner-welcome-dialog__intro">Nhập tên và email để lưu tiến độ học trên trình duyệt này và gửi câu hỏi khi cần.</p>
+    <div class="learner-welcome-dialog__body">
+      <label class="learner-welcome-dialog__label" for="learner-name">Họ tên</label>
+      <input
+        type="text"
+        id="learner-name"
+        name="name"
+        required
+        minlength="2"
+        maxlength="80"
+        autocomplete="name"
+        placeholder="vd: Nguyễn Văn A"
+      />
+      <label class="learner-welcome-dialog__label" for="learner-email">Email</label>
+      <input
+        type="email"
+        id="learner-email"
+        name="email"
+        required
+        autocomplete="email"
+        placeholder="vd: ten@gmail.com"
+      />
+      <p id="learner-welcome-error" class="learner-welcome-error" role="alert" hidden></p>
+    </div>
+    <footer class="learner-welcome-dialog__footer">
+      <button type="submit" class="btn btn--primary btn--block" id="learner-welcome-submit">Bắt đầu học</button>
+    </footer>
+  </form>
+</dialog>
+
+  <dialog id="feedback-dialog" class="feedback-dialog" aria-labelledby="feedback-dialog-title">
+  <form id="feedback-form" method="dialog" class="feedback-dialog__inner">
+    <header class="feedback-dialog__header">
+      <h2 id="feedback-dialog-title">Đặt câu hỏi</h2>
+      <button type="button" class="feedback-dialog__close" data-feedback-close aria-label="Đóng">×</button>
+    </header>
+    <div class="feedback-dialog__body">
+      <p class="feedback-dialog__meta">
+        <span class="feedback-dialog__label">Đoạn bạn đang đọc</span>
+        <code id="feedback-line-id" class="feedback-line-id"></code>
+      </p>
+      <blockquote id="feedback-line-preview" class="feedback-line-preview"></blockquote>
+      <p id="feedback-sender" class="feedback-sender" hidden></p>
+      <label class="feedback-dialog__label" for="feedback-question">Câu hỏi</label>
+      <textarea
+        id="feedback-question"
+        name="question"
+        rows="4"
+        required
+        maxlength="2000"
+        placeholder="Viết câu hỏi liên quan đến đoạn này…"
+      ></textarea>
+      <p id="feedback-status" class="feedback-status" role="status" hidden></p>
+    </div>
+    <footer class="feedback-dialog__footer">
+      <button type="button" class="btn" data-feedback-close>Đóng</button>
+      <button type="submit" class="btn btn--primary" id="feedback-submit">Gửi câu hỏi</button>
+    </footer>
+  </form>
+</dialog>
+
+  <div id="glossary-popover" class="glossary-popover" role="tooltip" hidden></div>
+  <script>
+    window.SITE_CONFIG = {
+      baseUrl: "/qa-guide/",
+      glossary: {"404":{"en":"404 Not Found","vi":"Không tìm thấy","note":"HTTP status: trang/resource không tồn tại"},"500":{"en":"500 Internal Server Error","vi":"Lỗi server","note":"HTTP status: lỗi phía backend"},"qa":{"en":"Quality Assurance","vi":"Đảm bảo chất lượng","note":"Toàn bộ hoạt động đảm bảo sản phẩm đáp ứng yêu cầu"},"qc":{"en":"Quality Control","vi":"Kiểm soát chất lượng","note":"Hoạt động kiểm tra cụ thể"},"bug":{"en":"Bug / Defect","vi":"Lỗi phần mềm","note":"Hành vi không đúng so với mong đợi"},"defect":{"en":"Defect","vi":"Khuyết tật","note":"Tương đương bug trong ngữ cảnh chính thức"},"test case":{"en":"Test Case","vi":"Kịch bản kiểm thử","note":"Tập hợp bước, dữ liệu, kết quả mong đợi"},"test plan":{"en":"Test Plan","vi":"Kế hoạch kiểm thử","note":"Tài liệu chiến lược test tổng thể"},"test suite":{"en":"Test Suite","vi":"Bộ kiểm thử","note":"Nhóm test case liên quan"},"requirement":{"en":"Requirement","vi":"Yêu cầu","note":"Mô tả chức năng hệ thống phải có"},"user story":{"en":"User Story","vi":"Câu chuyện người dùng","note":"Yêu cầu dạng: Là [ai], tôi muốn [gì], để [lợi ích]"},"acceptance criteria":{"en":"Acceptance Criteria","vi":"Tiêu chí chấp nhận","note":"Điều kiện để coi story là hoàn thành"},"sprint":{"en":"Sprint","vi":"Chu kỳ phát triển ngắn","note":"Thường 1–2 tuần trong Scrum"},"scrum":{"en":"Scrum","vi":"Khung Agile phổ biến","note":"Có Sprint, Daily, Review, Retro"},"agile":{"en":"Agile","vi":"Phương pháp linh hoạt","note":"Phát triển lặp, giao hàng liên tục"},"sdlc":{"en":"Software Development Life Cycle","vi":"Vòng đời phát triển phần mềm","note":"Từ ý tưởng đến bảo trì"},"frontend":{"en":"Frontend","vi":"Giao diện người dùng","note":"Phần người dùng nhìn thấy và tương tác"},"backend":{"en":"Backend","vi":"Phía máy chủ","note":"Xử lý logic, dữ liệu, API"},"database":{"en":"Database","vi":"Cơ sở dữ liệu","note":"Nơi lưu trữ dữ liệu lâu dài"},"api":{"en":"Application Programming Interface","vi":"Giao diện lập trình ứng dụng","note":"Cách phần mềm giao tiếp"},"rest":{"en":"REST","vi":"Kiến trúc API phổ biến","note":"Dùng HTTP methods: GET, POST, PUT, DELETE"},"manual testing":{"en":"Manual Testing","vi":"Kiểm thử thủ công","note":"Tester thực hiện bước bằng tay"},"automated testing":{"en":"Automated Testing","vi":"Kiểm thử tự động","note":"Script chạy test tự động"},"regression":{"en":"Regression Testing","vi":"Kiểm thử hồi quy","note":"Đảm bảo sửa lỗi không phá tính năng cũ"},"smoke test":{"en":"Smoke Test","vi":"Kiểm thử khói","note":"Test nhanh các chức năng chính"},"sanity test":{"en":"Sanity Test","vi":"Kiểm thử cơ bản","note":"Test hẹp sau khi sửa bug cụ thể"},"exploratory testing":{"en":"Exploratory Testing","vi":"Kiểm thử khám phá","note":"Vừa học vừa thiết kế test đồng thời"},"functional testing":{"en":"Functional Testing","vi":"Kiểm thử chức năng","note":"Verify tính năng hoạt động đúng spec"},"non-functional testing":{"en":"Non-functional Testing","vi":"Kiểm thử phi chức năng","note":"Performance, security, usability..."},"performance testing":{"en":"Performance Testing","vi":"Kiểm thử hiệu năng","note":"Đo tốc độ, throughput dưới tải"},"load testing":{"en":"Load Testing","vi":"Kiểm thử tải","note":"Test với số user dự kiến"},"stress testing":{"en":"Stress Testing","vi":"Kiểm thử căng thẳng","note":"Vượt ngưỡng bình thường"},"security testing":{"en":"Security Testing","vi":"Kiểm thử bảo mật","note":"Tìm lỗ hổng bảo mật"},"severity":{"en":"Severity","vi":"Mức độ nghiêm trọng","note":"Bug ảnh hưởng kỹ thuật thế nào"},"priority":{"en":"Priority","vi":"Độ ưu tiên","note":"Bug cần sửa trước hay sau"},"reproducible":{"en":"Reproducible","vi":"Có thể tái hiện","note":"Bug report phải mô tả cách lặp lại lỗi"},"environment":{"en":"Environment","vi":"Môi trường","note":"Staging, QA, Production","introducedIn":29},"staging":{"en":"Staging","vi":"Môi trường pre-prod","note":"Gần giống production để test cuối"},"production":{"en":"Production","vi":"Môi trường thật","note":"Người dùng thật đang dùng"},"deployment":{"en":"Deployment","vi":"Triển khai","note":"Đưa code lên môi trường"},"ci":{"en":"Continuous Integration","vi":"Tích hợp liên tục","note":"Build/test tự động mỗi commit"},"cd":{"en":"Continuous Delivery","vi":"Giao hàng liên tục","note":"Sẵn sàng deploy bất cứ lúc nào"},"pipeline":{"en":"Pipeline","vi":"Pipeline CI/CD","note":"Chuỗi build-test-deploy","introducedIn":34},"commit":{"en":"Commit","vi":"Commit code","note":"Lưu thay đổi vào Git","introducedIn":34},"pull request":{"en":"Pull Request","vi":"Yêu cầu gộp code","note":"PR/MR để review trước khi merge"},"code review":{"en":"Code Review","vi":"Review mã nguồn","note":"Dev kiểm tra code của nhau"},"dev":{"en":"Developer","vi":"Lập trình viên","note":"Viết code"},"pm":{"en":"Product Manager","vi":"Quản lý sản phẩm","note":"Quyết định làm gì và thứ tự ưu tiên"},"po":{"en":"Product Owner","vi":"Chủ sản phẩm","note":"Đại diện stakeholder trong Scrum"},"ux":{"en":"User Experience","vi":"Trải nghiệm người dùng","note":"Thiết kế cách người dùng cảm nhận sản phẩm"},"ui":{"en":"User Interface","vi":"Giao diện người dùng","note":"Nút, form, màu sắc, layout"},"shift-left":{"en":"Shift-left","vi":"Shift-left testing","note":"Test sớm hơn trong SDLC","introducedIn":6},"test data":{"en":"Test Data","vi":"Dữ liệu kiểm thử","note":"Input dùng khi chạy test"},"traceability":{"en":"Traceability","vi":"Truy vết","note":"Liên kết requirement → test case → bug"},"equivalence partitioning":{"en":"Equivalence Partitioning","vi":"Phân vùng tương đương","note":"Chia input thành nhóm hợp lệ/không hợp lệ"},"boundary value analysis":{"en":"Boundary Value Analysis","vi":"Phân tích giá trị biên","note":"Test tại và cạnh ranh giới"},"decision table":{"en":"Decision Table","vi":"Bảng quyết định","note":"Test logic nhiều điều kiện"},"state transition":{"en":"State Transition","vi":"Chuyển trạng thái","note":"Test flow thay đổi trạng thái hệ thống"},"test pyramid":{"en":"Test Pyramid","vi":"Kim tự tháp kiểm thử","note":"Nhiều unit, ít E2E"},"e2e":{"en":"End-to-End","vi":"Đầu cuối","note":"Test toàn flow người dùng"},"unit test":{"en":"Unit Test","vi":"Kiểm thử đơn vị","note":"Test function/class nhỏ nhất"},"integration test":{"en":"Integration Test","vi":"Kiểm thử tích hợp","note":"Test nhiều module kết hợp"},"flaky test":{"en":"Flaky Test","vi":"Test không ổn định","note":"Lúc pass lúc fail không rõ lý do"},"owasp":{"en":"OWASP","vi":"Tổ chức bảo mật web","note":"OWASP Top 10 là checklist phổ biến"},"sql injection":{"en":"SQL Injection","vi":"Tiêm SQL","note":"Lỗ hổng inject query độc hại"},"xss":{"en":"Cross-Site Scripting","vi":"Script chéo trang","note":"Inject script vào trang web"},"pii":{"en":"Personally Identifiable Information","vi":"Thông tin nhận dạng cá nhân","note":"Email, CMND, SĐT..."},"kpi":{"en":"Key Performance Indicator","vi":"Chỉ số KPI","note":"Metric đo hiệu quả","introducedIn":40},"risk-based testing":{"en":"Risk-based Testing","vi":"Test theo rủi ro","note":"Ưu tiên vùng rủi ro cao","introducedIn":41},"retrospective":{"en":"Retrospective","vi":"Họp cải tiến","note":"Cuối sprint: tốt/xấu/cải thiện"},"daily standup":{"en":"Daily Standup","vi":"Họp daily","note":"15 phút sync tiến độ mỗi ngày"},"backlog":{"en":"Backlog","vi":"Danh sách công việc","note":"Tập story/task chưa làm"},"epic":{"en":"Epic","vi":"Epic","note":"Nhóm user story lớn"},"story point":{"en":"Story Point","vi":"Điểm story","note":"Ước lượng effort tương đối"},"velocity":{"en":"Velocity","vi":"Vận tốc team","note":"Story point hoàn thành mỗi sprint"},"dod":{"en":"Definition of Done","vi":"DoD","note":"Tiêu chí chung task hoàn thành","introducedIn":15},"dor":{"en":"Definition of Ready","vi":"DoR","note":"Story đủ rõ để bắt đầu","introducedIn":15},"blocker":{"en":"Blocker","vi":"Vật cản","note":"Vấn đề chặn tiến độ","introducedIn":14},"hotfix":{"en":"Hotfix","vi":"Sửa khẩn","note":"Patch nhanh cho production","introducedIn":27},"rollback":{"en":"Rollback","vi":"Hoàn tác","note":"Quay về phiên bản trước","introducedIn":27},"release":{"en":"Release","vi":"Phát hành","note":"Phiên bản mới giao cho người dùng","introducedIn":3},"build":{"en":"Build","vi":"Build","note":"Biên dịch/đóng gói code","introducedIn":34},"version control":{"en":"Version Control","vi":"Quản lý phiên bản","note":"Git, SVN..."},"git":{"en":"Git","vi":"Hệ thống Git","note":"Version control phổ biến nhất"},"branch":{"en":"Branch","vi":"Nhánh","note":"Dòng phát triển tách biệt"},"merge":{"en":"Merge","vi":"Gộp","note":"Kết hợp branch vào nhau"},"ticket":{"en":"Ticket","vi":"Phiếu công việc","note":"Task hoặc bug trên Jira/Linear","introducedIn":23},"jira":{"en":"Jira","vi":"Công cụ quản lý","note":"Phổ biến cho bug tracking"},"status":{"en":"Status","vi":"Trạng thái","note":"New, In Progress, Done..."},"assignee":{"en":"Assignee","vi":"Người được giao","note":"Ai chịu trách nhiệm ticket"},"reporter":{"en":"Reporter","vi":"Người báo cáo","note":"Ai tạo bug report"},"verification":{"en":"Verification","vi":"Xác minh","note":"Build đúng theo spec không?"},"validation":{"en":"Validation","vi":"Thẩm định","note":"Build đúng thứ user cần không?"},"uat":{"en":"User Acceptance Testing","vi":"UAT","note":"User test chấp nhận trước go-live","introducedIn":6},"go-live":{"en":"Go-live","vi":"Ra mắt","note":"Đưa sản phẩm cho người dùng thật"},"mvp":{"en":"Minimum Viable Product","vi":"Sản phẩm tối thiểu","note":"Phiên bản nhỏ nhất có giá trị"},"scope":{"en":"Scope","vi":"Phạm vi","note":"Ran giới công việc được làm"},"scope creep":{"en":"Scope Creep","vi":"Phạm vi tràn","note":"Yêu cầu thêm không kiểm soát"},"edge case":{"en":"Edge Case","vi":"Trường hợp biên","note":"Tình huống hiếm nhưng quan trọng","introducedIn":9},"happy path":{"en":"Happy Path","vi":"Luồng thuận lợi","note":"User dùng đúng cách, không lỗi","introducedIn":21},"negative testing":{"en":"Negative Testing","vi":"Test tiêu cực","note":"Test input sai, hành vi lỗi","introducedIn":17},"positive testing":{"en":"Positive Testing","vi":"Test tích cực","note":"Test input hợp lệ","introducedIn":17},"test charter":{"en":"Test Charter","vi":"Bản mô tả session ET","note":"Mục tiêu, phạm vi, thời gian ET session"},"session-based testing":{"en":"Session-based Testing","vi":"ET theo phiên","note":"ET có cấu trúc thời gian và ghi chép"},"heuristic":{"en":"Heuristic","vi":"Quy tắc kinh nghiệm","note":"Hướng dẫn khám phá khi test","introducedIn":22},"oracle":{"en":"Oracle","vi":"Oracle kiểm thử","note":"Cách biết kết quả đúng hay sai","introducedIn":22},"assertion":{"en":"Assertion","vi":"Khẳng định","note":"Trong automation: kiểm tra kết quả mong đợi"},"mock":{"en":"Mock","vi":"Mock object","note":"Giả lập dependency khi test"},"stub":{"en":"Stub","vi":"Stub","note":"Trả về dữ liệu cố định khi test"},"test double":{"en":"Test Double","vi":"Test double","note":"Thuật ngữ chung cho mock/stub/fake"},"coverage":{"en":"Test Coverage","vi":"Độ phủ kiểm thử","note":"Phần code/requirement được test bao nhiêu %"},"metric":{"en":"Metric","vi":"Chỉ số","note":"Số liệu đo chất lượng hoặc tiến độ"},"sla":{"en":"Service Level Agreement","vi":"SLA","note":"Cam kết mức dịch vụ","introducedIn":32},"uptime":{"en":"Uptime","vi":"Thời gian hoạt động","note":"Hệ thống online bao lâu"},"downtime":{"en":"Downtime","vi":"Thời gian ngừng","note":"Hệ thống offline"},"latency":{"en":"Latency","vi":"Độ trễ","note":"Thời gian phản hồi","introducedIn":32},"throughput":{"en":"Throughput","vi":"Thông lượng","note":"Số request xử lý/giây","introducedIn":32},"scalability":{"en":"Scalability","vi":"Khả năng mở rộng","note":"Hệ thống chịu tải tăng thế nào"},"browser":{"en":"Browser","vi":"Trình duyệt","note":"Chrome, Firefox, Safari","introducedIn":21},"cross-browser":{"en":"Cross-browser Testing","vi":"Test đa trình duyệt","note":"App hoạt động trên nhiều browser"},"responsive":{"en":"Responsive","vi":"Responsive design","note":"Giao diện adapt nhiều kích thước","introducedIn":9},"cookie":{"en":"Cookie","vi":"Cookie","note":"Dữ liệu trình duyệt lưu tạm"},"session":{"en":"Session","vi":"Phiên đăng nhập","note":"Trạng thái user đang logged in"},"authentication":{"en":"Authentication","vi":"Xác thực","note":"Verify user là ai (login)"},"authorization":{"en":"Authorization","vi":"Phân quyền","note":"User được phép làm gì"},"http":{"en":"HyperText Transfer Protocol","vi":"Giao thức HTTP","note":"Cách browser và server giao tiếp"},"json":{"en":"JSON","vi":"Định dạng JSON","note":"Cấu trúc dữ liệu text phổ biến cho API"},"payload":{"en":"Payload","vi":"Payload","note":"Dữ liệu trong request/response","introducedIn":36},"endpoint":{"en":"Endpoint","vi":"Endpoint API","note":"URL cụ thể của API","introducedIn":36},"postman":{"en":"Postman","vi":"Công cụ test API","note":"Gửi request, xem response"},"selenium":{"en":"Selenium","vi":"Framework automation web","note":"Điều khiển browser tự động"},"playwright":{"en":"Playwright","vi":"Framework automation hiện đại","note":"Microsoft, hỗ trợ multi-browser"},"cypress":{"en":"Cypress","vi":"Framework automation JS","note":"Phổ biến cho frontend JS apps"},"locator":{"en":"Locator","vi":"Bộ định vị element","note":"Cách automation tìm element trên UI"},"selector":{"en":"Selector","vi":"Selector CSS/XPath","note":"Cú pháp chọn element"},"headless":{"en":"Headless Browser","vi":"Browser không giao diện","note":"Chạy browser ẩn, nhanh hơn"},"screenshot":{"en":"Screenshot","vi":"Ảnh chụp màn hình","note":"Bằng chứng trực quan cho bug report"},"log":{"en":"Log","vi":"Nhật ký","note":"Ghi lại sự kiện hệ thống"},"debug":{"en":"Debug","vi":"Gỡ lỗi","note":"Tìm nguyên nhân bug"},"root cause":{"en":"Root Cause","vi":"Nguyên nhân gốc","note":"Lý do thật sự gây bug","introducedIn":23},"workaround":{"en":"Workaround","vi":"Cách tạm thời","note":"Giải pháp tạm chưa fix gốc","introducedIn":24},"fix":{"en":"Fix","vi":"Sửa lỗi","note":"Dev sửa bug trong code"},"retest":{"en":"Retest","vi":"Test lại","note":"Chạy lại test case đã fail sau khi fix"},"closed":{"en":"Closed","vi":"Đóng","note":"Trạng thái bug đã xử lý xong"},"reopened":{"en":"Reopened","vi":"Mở lại","note":"Bug tái phát sau khi đóng"},"duplicate":{"en":"Duplicate","vi":"Trùng lặp","note":"Bug report trùng bug khác"},"wontfix":{"en":"Won't Fix","vi":"Không sửa","note":"Quyết định chấp nhận bug"},"technical debt":{"en":"Technical Debt","vi":"Nợ kỹ thuật","note":"Shortcut code gây chi phí sau này"},"refactoring":{"en":"Refactoring","vi":"Tái cấu trúc","note":"Cải thiện code không đổi behavior"},"legacy system":{"en":"Legacy System","vi":"Hệ thống cũ","note":"Code cũ khó bảo trì"},"microservices":{"en":"Microservices","vi":"Kiến trúc microservices","note":"App chia thành service nhỏ độc lập"},"monolith":{"en":"Monolith","vi":"Kiến trúc monolith","note":"Toàn bộ app trong một codebase"},"saas":{"en":"Software as a Service","vi":"Phần mềm dịch vụ","note":"Dùng qua web, trả phí subscription"},"on-premise":{"en":"On-premise","vi":"Triển khai tại chỗ","note":"Cài trên server của khách hàng"},"cloud":{"en":"Cloud","vi":"Đám mây","note":"AWS, Azure, GCP..."},"docker":{"en":"Docker","vi":"Container hóa","note":"Đóng gói app và dependency"},"kubernetes":{"en":"Kubernetes","vi":"Orchestration container","note":"Quản lý nhiều container"},"monitoring":{"en":"Monitoring","vi":"Giám sát","note":"Theo dõi health hệ thống production"},"alert":{"en":"Alert","vi":"Cảnh báo","note":"Thông báo khi metric vượt ngưỡng"},"incident":{"en":"Incident","vi":"Sự cố","note":"Sự kiện ảnh hưởng user/production"},"postmortem":{"en":"Postmortem","vi":"Phân tích sau sự cố","note":"Họp rút kinh nghiệm sau incident"},"rca":{"en":"Root Cause Analysis","vi":"Phân tích nguyên nhân gốc","note":"Tìm tại sao incident xảy ra"},"stakeholder":{"en":"Stakeholder","vi":"Bên liên quan","note":"PM, user, dev, QA, business","introducedIn":5},"requirement gap":{"en":"Requirement Gap","vi":"Khoảng trống yêu cầu","note":"Spec thiếu gây hiểu nhầm","introducedIn":15},"ambiguity":{"en":"Ambiguity","vi":"Mơ hồ","note":"Yêu cầu không rõ ràng"},"assumption":{"en":"Assumption","vi":"Giả định","note":"Điều team cho là đúng nhưng chưa verify"},"peer review":{"en":"Peer Review","vi":"Review đồng nghiệp","note":"QA review test case của QA khác"},"checklist":{"en":"Checklist","vi":"Danh sách kiểm tra","note":"Liệt kê mục cần verify"},"template":{"en":"Template","vi":"Mẫu","note":"Khung tài liệu chuẩn hóa"},"rubric":{"en":"Rubric","vi":"Tiêu chí chấm","note":"Bảng tiêu chí đánh giá capstone"},"portfolio":{"en":"Portfolio","vi":"Hồ sơ năng lực","note":"Tập hợp công việc QA","introducedIn":44},"star":{"en":"STAR Method","vi":"Phương pháp STAR","note":"Situation, Task, Action, Result","introducedIn":44},"onboarding":{"en":"Onboarding","vi":"Hội nhập","note":"Làm quen công ty/sản phẩm mới","introducedIn":40},"mentoring":{"en":"Mentoring","vi":"Cố vấn","note":"Senior hướng dẫn junior","introducedIn":41},"lead":{"en":"Team Lead","vi":"Trưởng nhóm","note":"Quản lý team QA kỹ thuật"},"manager":{"en":"QA Manager","vi":"Quản lý QA","note":"Quản lý process, hiring, chiến lược"},"sdet":{"en":"Software Development Engineer in Test","vi":"QA biết lập trình","note":"Viết automation + framework"},"manual tester":{"en":"Manual Tester","vi":"Tester thủ công","note":"Chuyên test bằng tay, ET, test design"},"quality culture":{"en":"Quality Culture","vi":"Văn hóa chất lượng","note":"Cả team coi quality là trách nhiệm chung"},"gatekeeper":{"en":"Gatekeeper","vi":"Người gác cổng","note":"QA KHÔNG nên chỉ là người chặn release"},"advocacy":{"en":"Quality Advocacy","vi":"Đấu tranh cho chất lượng","note":"QA nói lên rủi ro một cách xây dựng"},"empathy":{"en":"User Empathy","vi":"Đồng cảm người dùng","note":"Đặt mình vào vị trí user thật"},"ownership":{"en":"Ownership","vi":"Tinh thần sở hữu","note":"Coi chất lượng là trách nhiệm của mình"},"curiosity":{"en":"Learning Curiosity","vi":"Tò mò học hỏi","note":"Luôn hỏi tại sao, đọc spec, khám phá"},"collaboration":{"en":"Collaboration","vi":"Hợp tác","note":"Làm việc cùng dev/PM/design hiệu quả"},"thoroughness":{"en":"Thoroughness","vi":"Tính kỹ lưỡng","note":"Test đủ rủi ro quan trọng"},"speed":{"en":"Speed","vi":"Tốc độ","note":"Cân bằng với deadline agile"},"risk":{"en":"Risk","vi":"Rủi ro","note":"Khả năng điều xấu xảy ra × mức ảnh hưởng"},"mitigation":{"en":"Mitigation","vi":"Giảm thiểu rủi ro","note":"Hành động giảm khả năng/ảnh hưởng"},"contingency":{"en":"Contingency","vi":"Dự phòng","note":"Kế hoạch B khi rủi ro xảy ra"},"reproduce":{"en":"Reproduce","vi":"Tái hiện (lỗi)","note":"Làm lại đúng các bước để bug xuất hiện lại","introducedIn":24},"expected":{"en":"Expected Result","vi":"Kết quả mong đợi","note":"App NÊN làm gì theo spec","introducedIn":24},"actual":{"en":"Actual Result","vi":"Kết quả thực tế","note":"App THỰC SỰ làm gì khi test","introducedIn":24},"steps to reproduce":{"en":"Steps to Reproduce","vi":"Các bước tái hiện","note":"Phần quan trọng nhất bug report","introducedIn":24},"credential":{"en":"Credential","vi":"Thông tin đăng nhập","note":"Username, password, token","introducedIn":21},"spec":{"en":"Specification","vi":"Đặc tả","note":"Mô tả chi tiết tính năng phải làm","introducedIn":15},"deploy":{"en":"Deploy","vi":"Triển khai","note":"Đưa code lên server cho user dùng","introducedIn":3},"feature":{"en":"Feature","vi":"Tính năng","note":"Một chức năng cụ thể của sản phẩm","introducedIn":2},"ship":{"en":"Ship","vi":"Giao hàng / release","note":"Đưa tính năng ra cho user","introducedIn":6},"verify":{"en":"Verify","vi":"Xác minh","note":"Kiểm tra bug đã được sửa đúng chưa","introducedIn":23},"validate":{"en":"Validate","vi":"Thẩm định","note":"Kiểm tra có đúng nhu cầu user không","introducedIn":6},"input":{"en":"Input","vi":"Dữ liệu đầu vào","note":"Thông tin user nhập vào form","introducedIn":17},"output":{"en":"Output","vi":"Kết quả đầu ra","note":"Phản hồi hệ thống trả về","introducedIn":17},"workflow":{"en":"Workflow","vi":"Quy trình làm việc","note":"Chuỗi bước từ A đến B","introducedIn":3},"login":{"en":"Login","vi":"Đăng nhập","note":"Xác thực user vào hệ thống","introducedIn":21},"checkout":{"en":"Checkout","vi":"Thanh toán","note":"Hoàn tất đơn hàng","introducedIn":21},"cart":{"en":"Cart","vi":"Giỏ hàng","note":"Nơi chứa sản phẩm trước khi mua","introducedIn":20},"submit":{"en":"Submit","vi":"Gửi form","note":"Nhấn nút gửi thông tin","introducedIn":17},"error message":{"en":"Error Message","vi":"Thông báo lỗi","note":"Text hiện khi có lỗi","introducedIn":24},"crash":{"en":"Crash","vi":"Sập app","note":"App đột ngột dừng hoạt động","introducedIn":25},"freeze":{"en":"Freeze","vi":"Treo app","note":"App không phản hồi","introducedIn":9},"timeout":{"en":"Timeout","vi":"Hết thời gian chờ","note":"Request quá lâu không trả về","introducedIn":32},"increment":{"en":"Increment","vi":"Gia tăng","note":"Phần sản phẩm hoàn thiện cuối sprint","introducedIn":13},"incremental":{"en":"Incremental","vi":"Tăng dần","note":"Phát triển từng phần nhỏ","introducedIn":13},"ceremony":{"en":"Ceremony","vi":"Nghi thức Scrum","note":"Planning, Daily, Review, Retro","introducedIn":14},"standup":{"en":"Standup","vi":"Họp daily","note":"Sync 15 phút mỗi sáng","introducedIn":14},"backlog refinement":{"en":"Backlog Refinement","vi":"Tinh chỉnh backlog","note":"Làm rõ story trước sprint","introducedIn":15},"deliverable":{"en":"Deliverable","vi":"Sản phẩm bàn giao","note":"Output cụ thể cuối sprint","introducedIn":13},"estimate":{"en":"Estimate","vi":"Ước lượng","note":"Đo effort story cần bao nhiêu","introducedIn":14},"triage":{"en":"Triage","vi":"Phân loại","note":"Dev/lead xem bug và quyết định xử lý","introducedIn":23},"sign off":{"en":"Sign-off","vi":"Phê duyệt","note":"Chấp thuận chính thức để release","introducedIn":6},"go/no-go":{"en":"Go/No-Go","vi":"Quyết định release","note":"Họp quyết có ship hay không","introducedIn":6},"test execution":{"en":"Test Execution","vi":"Thực thi test","note":"Chạy test case và ghi kết quả","introducedIn":16},"precondition":{"en":"Precondition","vi":"Điều kiện tiên quyết","note":"Trạng thái cần có trước khi test","introducedIn":16},"postcondition":{"en":"Postcondition","vi":"Điều kiện hậu","note":"Trạng thái sau khi test xong","introducedIn":16},"pass":{"en":"Pass","vi":"Đạt","note":"Test case thành công","introducedIn":16},"fail":{"en":"Fail","vi":"Không đạt","note":"Test case phát hiện lỗi","introducedIn":16},"blocked":{"en":"Blocked","vi":"Bị chặn","note":"Không test được vì môi trường/data","introducedIn":16},"skip":{"en":"Skip","vi":"Bỏ qua","note":"Không chạy test case lần này","introducedIn":16},"charter":{"en":"Charter","vi":"Bản mô tả ET","note":"Mục tiêu session exploratory testing","introducedIn":22},"observation":{"en":"Observation","vi":"Quan sát","note":"Điều bạn thấy khi test","introducedIn":22},"attachment":{"en":"Attachment","vi":"Tệp đính kèm","note":"Screenshot, video, log file","introducedIn":24},"viewport":{"en":"Viewport","vi":"Khung nhìn","note":"Kích thước màn hình hiển thị","introducedIn":9},"bottleneck":{"en":"Bottleneck","vi":"Nút thắt","note":"Điểm hệ thống chậm nhất","introducedIn":32},"vulnerability":{"en":"Vulnerability","vi":"Lỗ hổng","note":"Điểm yếu bảo mật","introducedIn":33},"injection":{"en":"Injection","vi":"Tiêm mã","note":"Nhét code độc vào input","introducedIn":33},"authentication bypass":{"en":"Authentication Bypass","vi":"Vượt xác thực","note":"Vào hệ thống không cần login","introducedIn":33},"artifact":{"en":"Artifact","vi":"Artifact","note":"File output sau build","introducedIn":34},"flaky":{"en":"Flaky","vi":"Không ổn định","note":"Test lúc pass lúc fail","introducedIn":35},"maintainability":{"en":"Maintainability","vi":"Dễ bảo trì","note":"Automation cần dễ update","introducedIn":35},"request":{"en":"Request","vi":"Request","note":"Yêu cầu gửi đến server","introducedIn":36},"response":{"en":"Response","vi":"Response","note":"Phản hồi server trả về","introducedIn":36},"status code":{"en":"Status Code","vi":"Mã trạng thái HTTP","note":"200 OK, 404 Not Found, 500 Error","introducedIn":36},"anonymize":{"en":"Anonymize","vi":"Ẩn danh hóa","note":"Che thông tin cá nhân trong test data","introducedIn":37},"consent":{"en":"Consent","vi":"Đồng ý","note":"User cho phép thu thập data","introducedIn":37},"escalate":{"en":"Escalate","vi":"Leo thang","note":"Báo cáo lên cấp trên khi rủi ro cao","introducedIn":8},"consensus":{"en":"Consensus","vi":"Đồng thuận","note":"Team thống nhất quyết định","introducedIn":10},"deadline":{"en":"Deadline","vi":"Hạn chót","note":"Thời hạn phải hoàn thành","introducedIn":11},"trade-off":{"en":"Trade-off","vi":"Đánh đổi","note":"Cân nhắc giữa speed, scope, quality","introducedIn":11},"accountability":{"en":"Accountability","vi":"Trách nhiệm giải trình","note":"Ai chịu trách nhiệm kết quả","introducedIn":12},"fresher":{"en":"Fresher","vi":"Nhân viên mới","note":"Người mới vào nghề","introducedIn":40},"offer":{"en":"Offer","vi":"Thư mời làm việc","note":"Job offer từ công ty","introducedIn":44},"shift-right":{"en":"Shift-right","vi":"Shift-right testing","note":"Test monitoring ở production","introducedIn":39},"quality":{"en":"Quality","vi":"Chất lượng","note":"Mức độ sản phẩm đáp ứng nhu cầu người dùng"},"planning":{"en":"Planning","vi":"Lập kế hoạch","note":"Giai đoạn SDLC xác định phạm vi và ưu tiên"},"development":{"en":"Development","vi":"Phát triển","note":"Giai đoạn viết code và tích hợp tính năng"},"testing":{"en":"Testing","vi":"Kiểm thử","note":"Giai đoạn verify và validate sản phẩm"},"maintenance":{"en":"Maintenance","vi":"Bảo trì","note":"Giai đoạn sửa lỗi và cải tiến sau release"},"state":{"en":"State","vi":"Trạng thái","note":"Tình trạng dữ liệu/hệ thống tại một thời điểm"},"automation":{"en":"Test Automation","vi":"Tự động hóa test","note":"Script chạy test lặp lại thay người"},"confidence":{"en":"Confidence","vi":"Độ tin cậy","note":"Mức QA tin sản phẩm sẵn sàng release"},"persona":{"en":"Persona","vi":"Chân dung người dùng","note":"Mô tả user type để hướng test"},"user journey":{"en":"User Journey","vi":"Hành trình người dùng","note":"Chuỗi touchpoint user trải qua"},"accessibility":{"en":"Accessibility","vi":"Khả năng tiếp cận","note":"Sản phẩm dùng được với mọi khả năng"},"pain point":{"en":"Pain Point","vi":"Điểm đau","note":"Vấn đề user gặp khiến bỏ cuộc"},"usability":{"en":"Usability","vi":"Khả năng sử dụng","note":"Mức dễ học và dùng sản phẩm"},"feedback loop":{"en":"Feedback Loop","vi":"Vòng phản hồi","note":"Chu kỳ test → báo → sửa → retest"},"handoff":{"en":"Handoff","vi":"Bàn giao","note":"Chuyển giao công việc giữa role"},"dependency":{"en":"Dependency","vi":"Phụ thuộc","note":"Task/feature cần task khác hoàn thành trước"},"follow-through":{"en":"Follow-through","vi":"Theo sát đến cùng","note":"QA không dừng ở báo bug"},"sync":{"en":"Sync","vi":"Đồng bộ","note":"Họp nhanh align team"},"timebox":{"en":"Timebox","vi":"Giới hạn thời gian","note":"Test trong khung thời gian cố định"},"time-box":{"en":"Time-box","vi":"Giới hạn thời gian","note":"Kỹ thuật ET giới hạn session"},"given-when-then":{"en":"Given-When-Then","vi":"Gherkin format","note":"Cú pháp viết acceptance criteria"},"scenario":{"en":"Scenario","vi":"Kịch bản","note":"Một luồng test cụ thể trong BDD"},"sprint planning":{"en":"Sprint Planning","vi":"Lập kế hoạch sprint","note":"Chọn story và ước lượng sprint"},"daily scrum":{"en":"Daily Scrum","vi":"Daily Scrum","note":"Họp 15 phút sync tiến độ"},"sprint review":{"en":"Sprint Review","vi":"Review sprint","note":"Demo increment cho stakeholder"},"refinement":{"en":"Backlog Refinement","vi":"Tinh chỉnh backlog","note":"Làm rõ story trước sprint"},"definition of done":{"en":"Definition of Done","vi":"DoD","note":"Tiêu chí task được coi là xong"},"definition of ready":{"en":"Definition of Ready","vi":"DoR","note":"Story đủ rõ để dev bắt đầu"},"evidence":{"en":"Evidence","vi":"Bằng chứng","note":"Screenshot, log, data chứng minh bug"},"impact":{"en":"Impact","vi":"Tác động","note":"Mức ảnh hưởng bug tới user/kinh doanh"},"alignment":{"en":"Alignment","vi":"Đồng thuận","note":"Team hiểu cùng một mục tiêu chất lượng"},"quality gate":{"en":"Quality Gate","vi":"Cổng chất lượng","note":"Checkpoint trước khi chuyển giai đoạn"},"quality mission":{"en":"Quality Mission","vi":"Sứ mệnh QA","note":"QA tạo giá trị gì cho user và team"},"boundary value":{"en":"Boundary Value","vi":"Giá trị biên","note":"Test tại ranh giới input hợp lệ"},"valid class":{"en":"Valid Class","vi":"Lớp hợp lệ","note":"Nhóm input được chấp nhận"},"invalid class":{"en":"Invalid Class","vi":"Lớp không hợp lệ","note":"Nhóm input bị từ chối"},"off-by-one":{"en":"Off-by-one","vi":"Lệch một","note":"Lỗi biên phổ biến ±1"},"current state":{"en":"Current State","vi":"Trạng thái hiện tại","note":"State trước khi thực hiện action"},"invalid transition":{"en":"Invalid Transition","vi":"Chuyển trạng thái sai","note":"Hệ thống cho phép chuyển state không hợp lệ"},"business logic":{"en":"Business Logic","vi":"Logic nghiệp vụ","note":"Quy tắc xử lý theo domain"},"session charter":{"en":"Session Charter","vi":"Charter ET","note":"Mục tiêu và phạm vi session khám phá"},"hypothesis":{"en":"Hypothesis","vi":"Giả thuyết","note":"Dự đoán cần verify khi test"},"testing notes":{"en":"Testing Notes","vi":"Ghi chép test","note":"Note quan sát trong session ET"},"regression testing":{"en":"Regression Testing","vi":"Test hồi quy","note":"Đảm bảo fix không phá feature cũ"},"full regression":{"en":"Full Regression","vi":"Hồi quy đầy đủ","note":"Chạy lại toàn bộ suite quan trọng"},"build verification":{"en":"Build Verification","vi":"Xác minh build","note":"Smoke test trên build mới"},"release readiness":{"en":"Release Readiness","vi":"Sẵn sàng release","note":"Checklist trước khi ship"},"end-to-end":{"en":"End-to-End","vi":"E2E","note":"Test toàn flow từ UI đến database"},"critical path":{"en":"Critical Path","vi":"Luồng quan trọng","note":"User flow ảnh hưởng doanh thu/nền tảng"},"traceability matrix":{"en":"Traceability Matrix","vi":"Ma trận truy vết","note":"Liên kết requirement → test → bug"},"test strategy":{"en":"Test Strategy","vi":"Chiến lược test","note":"Cách tiếp cận test tổng thể cho dự án"},"bug lifecycle":{"en":"Bug Lifecycle","vi":"Vòng đời bug","note":"New → In Progress → Fixed → Verified → Closed"},"ready for qa":{"en":"Ready for QA","vi":"Sẵn sàng QA","note":"Build/feature đủ điều kiện để test"},"defect triage":{"en":"Defect Triage","vi":"Phân loại bug","note":"Team quyết định ưu tiên và assign bug"},"test environment":{"en":"Test Environment","vi":"Môi trường test","note":"Staging/QA nơi chạy test chính thức"},"seed data":{"en":"Seed Data","vi":"Dữ liệu mẫu","note":"Dataset cố định để test lặp lại"},"configuration drift":{"en":"Configuration Drift","vi":"Lệch cấu hình","note":"Env test khác production"},"load test":{"en":"Load Test","vi":"Test tải","note":"Test với số user dự kiến"},"stress test":{"en":"Stress Test","vi":"Test stress","note":"Vượt ngưỡng tải bình thường"},"soak test":{"en":"Soak Test","vi":"Test endurance","note":"Chạy tải kéo dài tìm memory leak"},"spike test":{"en":"Spike Test","vi":"Test spike","note":"Tăng đột biến traffic"},"owasp top 10":{"en":"OWASP Top 10","vi":"OWASP Top 10","note":"10 lỗ hổng web phổ biến nhất"},"ci/cd":{"en":"CI/CD","vi":"CI/CD","note":"Tích hợp và giao hàng liên tục"},"data privacy":{"en":"Data Privacy","vi":"Quyền riêng tư dữ liệu","note":"Bảo vệ thông tin cá nhân user"},"input validation":{"en":"Input Validation","vi":"Validate input","note":"Kiểm tra dữ liệu đầu vào hợp lệ"},"sensitive data":{"en":"Sensitive Data","vi":"Dữ liệu nhạy cảm","note":"PII, mật khẩu, thẻ tín dụng"},"qa portfolio":{"en":"QA Portfolio","vi":"Portfolio QA","note":"Tập hồ sơ bug report, test plan cho phỏng vấn"},"mission statement":{"en":"Mission Statement","vi":"Tuyên bố sứ mệnh","note":"1 đoạn mô tả giá trị QA bạn mang lại"},"qa metrics":{"en":"QA Metrics","vi":"Chỉ số QA","note":"Pass rate, defect density, escape rate"},"test automation":{"en":"Test Automation","vi":"Automation test","note":"Script thay thế test lặp tay"},"capstone":{"en":"Capstone","vi":"Dự án tổng kết","note":"Bài tập cuối khóa chứng minh năng lực"},"glossary":{"en":"Glossary","vi":"Thuật ngữ","note":"Từ điển EN-VI trong nghề QA"},"product owner":{"en":"Product Owner","vi":"Product Owner","note":"Người quyết định giá trị sản phẩm trong Scrum"},"developer":{"en":"Developer","vi":"Developer","note":"Người viết và bảo trì code"},"designer":{"en":"Designer","vi":"Designer","note":"Người thiết kế UI/UX"},"devops":{"en":"DevOps","vi":"DevOps","note":"Vai trò vận hành pipeline và hạ tầng"},"release gate":{"en":"Release Gate","vi":"Cổng release","note":"Checkpoint cuối trước go-live"},"release confidence":{"en":"Release Confidence","vi":"Tin cậy release","note":"Tuyên bố chất lượng từ QA"},"release risk":{"en":"Release Risk","vi":"Rủi ro release","note":"Rủi ro còn lại khi ship"},"risk slicing":{"en":"Risk Slicing","vi":"Cắt rủi ro","note":"Chia rủi ro lớn thành phần test được"},"risk statement":{"en":"Risk Statement","vi":"Câu rủi ro","note":"Mô tả rủi ro: điều gì xảy ra nếu bỏ sót"},"pass rate":{"en":"Pass Rate","vi":"Tỷ lệ pass","note":"Phần trăm test case pass"},"test report":{"en":"Test Report","vi":"Báo cáo test","note":"Tóm tắt kết quả test cho stakeholder"},"test scope":{"en":"Test Scope","vi":"Phạm vi test","note":"Ran giới feature/flow được test"},"execution log":{"en":"Execution Log","vi":"Nhật ký thực thi","note":"Ghi lại test đã chạy và kết quả"},"negative test":{"en":"Negative Test","vi":"Test tiêu cực","note":"Test input/hành vi không hợp lệ"},"representative value":{"en":"Representative Value","vi":"Giá trị đại diện","note":"Một giá trị tiêu biểu trong partition"},"input domain":{"en":"Input Domain","vi":"Miền input","note":"Tập giá trị input có thể"},"range validation":{"en":"Range Validation","vi":"Validate khoảng","note":"Kiểm tra min/max hợp lệ"},"next state":{"en":"Next State","vi":"Trạng thái kế","note":"State sau transition"},"event":{"en":"Event","vi":"Sự kiện","note":"Action trigger chuyển state"},"condition":{"en":"Condition","vi":"Điều kiện","note":"Rule quyết định output"},"rule":{"en":"Rule","vi":"Quy tắc","note":"Logic if-then trong decision table"},"action":{"en":"Action","vi":"Hành động","note":"Kết quả khi điều kiện thỏa"},"combination":{"en":"Combination","vi":"Tổ hợp","note":"Kết hợp nhiều điều kiện input"},"minimum":{"en":"Minimum","vi":"Giá trị tối thiểu","note":"Biên dưới của input"},"maximum":{"en":"Maximum","vi":"Giá trị tối đa","note":"Biên trên của input"},"core flow":{"en":"Core Flow","vi":"Luồng cốt lõi","note":"Happy path quan trọng nhất"},"business impact":{"en":"Business Impact","vi":"Tác động kinh doanh","note":"Bug ảnh hưởng doanh thu/brand"},"impact analysis":{"en":"Impact Analysis","vi":"Phân tích tác động","note":"Đánh giá bug ảnh hưởng ai, mức nào"},"preventive action":{"en":"Preventive Action","vi":"Hành động phòng ngừa","note":"Sửa quy trình để bug không lặp"},"action item":{"en":"Action Item","vi":"Việc cần làm","note":"Task cụ thể sau retro/review"},"closure":{"en":"Closure","vi":"Đóng ticket","note":"Xác nhận bug/issue đã xử lý xong"},"in progress":{"en":"In Progress","vi":"Đang xử lý","note":"Trạng thái bug đang được fix"},"contract":{"en":"Contract","vi":"Hợp đồng API","note":"Thỏa thuận request/response giữa services"},"logging":{"en":"Logging","vi":"Ghi log","note":"Ghi sự kiện hệ thống để debug"},"privacy":{"en":"Privacy","vi":"Quyền riêng tư","note":"Bảo vệ dữ liệu cá nhân user"},"performance":{"en":"Performance","vi":"Hiệu năng","note":"Tốc độ và khả năng chịu tải"},"security":{"en":"Security","vi":"Bảo mật","note":"Bảo vệ hệ thống khỏi tấn công"},"feedback":{"en":"Feedback","vi":"Phản hồi","note":"Thông tin QA gửi team để cải thiện"},"confidence level":{"en":"Confidence Level","vi":"Mức tin cậy","note":"Thang đo QA tin release ổn"},"test data management":{"en":"Test Data Management","vi":"Quản lý test data","note":"Tạo, reset, anonymize data test"},"junior_qa":{"en":"Junior QA","vi":"QA junior","note":"Vị trí QA mới vào nghề"},"mid_qa":{"en":"Mid QA","vi":"QA mid","note":"QA 2–4 năm kinh nghiệm"},"senior_qa":{"en":"Senior QA","vi":"QA senior","note":"QA dẫn dắt chiến lược test"},"qa_lead":{"en":"QA Lead","vi":"QA Lead","note":"Trưởng nhóm QA"},"qa_manager":{"en":"QA Manager","vi":"QA Manager","note":"Quản lý phòng QA"},"api contract":{"en":"API Contract","vi":"Hợp đồng API","note":"Schema request/response giữa client và server"},"idempotency":{"en":"Idempotency","vi":"Idempotency","note":"Request trùng không gây side-effect lặp"},"data masking":{"en":"Data Masking","vi":"Che dữ liệu","note":"Ẩn PII trong screenshot, log, attachment"},"least privilege":{"en":"Least Privilege","vi":"Quyền tối thiểu","note":"Chỉ cấp quyền truy cập cần thiết"},"sbi":{"en":"SBI","vi":"Situation-Behavior-Impact","note":"Khung feedback có cấu trúc"},"defect leakage":{"en":"Defect Leakage","vi":"Bug lọt production","note":"Defect escape sang môi trường prod"},"cycle time":{"en":"Cycle Time","vi":"Thời gian cycle","note":"Từ report bug đến close"},"flaky rate":{"en":"Flaky Rate","vi":"Tỷ lệ flaky","note":"Phần trăm test không ổn định qua các lần chạy"},"30-60-90 plan":{"en":"30-60-90 Plan","vi":"Kế hoạch 90 ngày","note":"Milestone onboarding 30/60/90"},"junior kpi":{"en":"Junior KPI","vi":"KPI junior","note":"Chỉ số đo tiến bộ junior QA"},"quality roadmap":{"en":"Quality Roadmap","vi":"Lộ trình chất lượng","note":"Kế hoạch cải thiện QA dài hạn"},"career ladder":{"en":"Career Ladder","vi":"Thang nghề","note":"Junior → Mid → Senior → Lead"},"specialization":{"en":"Specialization","vi":"Chuyên môn hóa","note":"Nhánh SDET, security, domain depth"},"staff qa":{"en":"Staff QA","vi":"Staff QA","note":"IC senior ảnh hưởng phạm vi org"},"case study":{"en":"Case Study","vi":"Case study","note":"Bài học tình huống có evidence"},"capstone rubric":{"en":"Capstone Rubric","vi":"Rubric capstone","note":"Tiêu chí chấm điểm capstone"},"career readiness":{"en":"Career Readiness","vi":"Sẵn sàng nghề","note":"Đủ artifact và mindset ứng tuyển"},"star method":{"en":"STAR Method","vi":"Phương pháp STAR","note":"Situation-Task-Action-Result cho phỏng vấn"}}
+    };
+    window.FEEDBACK_CONFIG = {"enabled":true,"formAction":"https://docs.google.com/forms/d/e/1FAIpQLSdSxV0QnNFHcdZR9TMtBbZAQJeoip6vMCf03LPUF10s7GgXsA/formResponse","entries":{"page":"entry.457933656","lineId":"entry.962497359","lineText":"entry.374117931","question":"entry.924007788","answer":"entry.225331071"},"labels":{"triggerTitle":"Hỏi về dòng này","modalTitle":"Đặt câu hỏi","lineLabel":"Đoạn bạn đang đọc","emailLabel":"Email của bạn","emailPlaceholder":"vd: ten@gmail.com","questionLabel":"Câu hỏi","questionPlaceholder":"Viết câu hỏi liên quan đến đoạn này…","submit":"Gửi câu hỏi","cancel":"Đóng","success":"Đã gửi câu hỏi. Cảm ơn bạn — chúng tôi sẽ phản hồi sớm.","notConfigured":"Hiện chưa gửi được. Vui lòng thử lại sau.","error":"Không gửi được lúc này. Vui lòng thử lại sau.","emailRequired":"Vui lòng nhập email để nhận phản hồi."}};
+    window.LEARNER_CONFIG = {"welcomeTitle":"Chào mừng đến Lộ trình QA","welcomeIntro":"Nhập tên và email để lưu tiến độ học trên trình duyệt này và gửi câu hỏi khi cần.","nameLabel":"Họ tên","namePlaceholder":"vd: Nguyễn Văn A","emailLabel":"Email","emailPlaceholder":"vd: ten@gmail.com","welcomeSubmit":"Bắt đầu học","logoutLabel":"Đăng xuất","logoutConfirm":"Đăng xuất sẽ xóa tiến độ học trên trình duyệt này và yêu cầu nhập lại tên/email. Tiếp tục?","senderPrefix":"Gửi với tư cách"};
+  </script>
+  <script src="/qa-guide/assets/js/learner.js" defer></script>
+  <script src="/qa-guide/assets/js/mermaid-init.js" defer></script>
+  <script src="/qa-guide/assets/js/theme.js" defer></script>
+  <script src="/qa-guide/assets/js/gamify.js" defer></script>
+  <script src="/qa-guide/assets/js/progress.js" defer></script>
+  <script src="/qa-guide/assets/js/quiz.js" defer></script>
+  <script src="/qa-guide/assets/js/glossary.js" defer></script>
+  <script src="/qa-guide/assets/js/feedback.js" defer></script>
+  <script src="/qa-guide/assets/js/main.js" defer></script>
+</body>
+</html>
